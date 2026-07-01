@@ -1,4 +1,9 @@
-محتویات داخل این پوشه را در ریشه Repository آپلود کنید و فایل‌های هم‌نام را جایگزین کنید.
+این بسته اصلاحی شامل فایل عکس نیز هست.
 
-Commit message:
-Add OpenFOAM professional training
+روش آپلود:
+1. همه محتویات داخل این پوشه را در ریشه Repository آپلود کنید.
+2. فایل‌های هم‌نام را جایگزین کنید.
+3. Commit message:
+Fix profile photo and OpenFOAM update
+
+پس از انتشار، سایت را با Ctrl + F5 بازخوانی کنید.
