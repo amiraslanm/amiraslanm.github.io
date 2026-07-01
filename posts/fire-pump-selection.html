@@ -1,48 +1,56 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>انتخاب پمپ آتش‌نشانی در سایت صنعتی | امیر اصلان مسافری</title>
-  <meta name="description" content="چارچوب مهندسی انتخاب پمپ آتش‌نشانی بر اساس دبی، هد، افت شبکه و NPSH.">
+<!doctype html><html lang="fa" dir="rtl" data-theme="dark"><head><title>Fire Pump Selection | Amir Aslan Mosaferi</title><meta name="description" content="A practical framework for industrial fire pump selection.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Amir Aslan Mosaferi">
+  <meta name="theme-color" content="#08111f">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
+</head><body><div class="scroll-progress" id="scrollProgress"></div>
 <header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="../index.html"><span class="brand-mark">AM</span><span><strong>Amir Aslan Mosaferi</strong><small>Technical Blog</small></span></a>
-    <nav class="main-nav static-nav"><a href="../index.html" data-fa="خانه" data-en="Home">خانه</a><a href="../blog.html" data-fa="وبلاگ" data-en="Blog">وبلاگ</a><a href="../index.html#contact" data-fa="تماس" data-en="Contact">تماس</a></nav>
-    <div class="nav-actions"><button id="langToggle" class="icon-btn" type="button">EN</button><button id="themeToggle" class="icon-btn" type="button">◐</button></div>
+  <div class="container nav-shell">
+    <a class="brand" href="../index.html#home" aria-label="Amir Aslan Mosaferi home">
+      <span class="brand-mark">AM</span>
+      <span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small data-fa="مهندس مکانیک و حفاظت حریق" data-en="Mechanical & Fire Protection Engineer">مهندس مکانیک و حفاظت حریق</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="../index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+      <a href="../index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+      <a href="../index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
+      <a href="../index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+      <a href="../blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+      <a href="../index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="Change language">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Change theme"><span class="theme-icon">◐</span></button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
   </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="../index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+    <a href="../index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+    <a href="../index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
+    <a href="../index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+    <a href="../blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+    <a href="../index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+  </nav>
 </header>
-<main>
-<article class="article">
-  <header class="article-header container narrow">
-    <span class="post-cat">Fire Protection</span>
-    <h1>چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی</h1>
-    <p class="lead">از تعریف سناریوی حاکم تا کنترل فشار شبکه، منحنی پمپ و شرایط مکش.</p>
-    <div class="post-meta">Amir Aslan Mosaferi · 2026 · 8 min read</div>
-  </header>
-  <div class="article-body container narrow">
-
-    <p>انتخاب پمپ آتش‌نشانی فقط انتخاب یک نقطه دبی و فشار از کاتالوگ نیست. خروجی صحیح باید مستقیماً از سناریوی طراحی، آرایش شبکه، ارتفاعات، افت‌های مسیر و فشار موردنیاز در دورترین مصرف‌کننده استخراج شود.</p>
-    <h2>۱. تعیین سناریوی حاکم</h2>
-    <p>ابتدا باید مشخص شود کدام مصرف همزمان حاکم است: اسپرینکلر، هیدرانت، فایرباکس، مانیتور یا سیستم آب–فوم. جمع‌کردن همه مصرف‌ها بدون منطق سناریو معمولاً باعث انتخاب بیش‌ازحد بزرگ می‌شود؛ در مقابل، حذف مصرف همزمان واقعی می‌تواند طراحی را ناایمن کند.</p>
-    <h2>۲. محاسبه هد موردنیاز</h2>
-    <p>هد پمپ از مجموع هد استاتیک، افت اصطکاکی لوله و اتصالات، افت تجهیزات و فشار باقیمانده لازم در نقطه نهایی تشکیل می‌شود. فشار نامی لوله، جایگزین محاسبه هیدرولیکی نیست؛ PN فقط ظرفیت فشاری تجهیز را بیان می‌کند.</p>
-    <div class="formula">Pump Head = Static Head + Friction Loss + Equipment Loss + Required Residual Pressure</div>
-    <h2>۳. کنترل شرایط مکش و NPSH</h2>
-    <p>در مخازن مدفون، ارتفاع محور پمپ نسبت به حداقل تراز آب اهمیت ویژه‌ای دارد. طراحی مکش باید با حداقل طول، سرعت مناسب، افت کم و بدون نقاط حبس هوا انجام شود. سپس NPSH موجود با NPSH موردنیاز سازنده، همراه با حاشیه اطمینان مناسب، مقایسه می‌شود.</p>
-    <h2>۴. بررسی کل منحنی پمپ</h2>
-    <p>تنها نقطه نامی کافی نیست. فشار در حالت بسته، عملکرد در 100 درصد و 150 درصد دبی و سازگاری موتور با توان موردنیاز باید بررسی شود. همچنین بیشینه فشار قابل‌تحمل شبکه در شرایط churn باید کنترل شود.</p>
-    <h2>۵. خروجی قابل دفاع</h2>
-    <p>گزارش نهایی باید سناریوی حاکم، مسیر بحرانی، فرضیات، مشخصات لوله، ترازها، افت‌ها، نقطه کار پمپ، منحنی سازنده و کنترل فشار اجزای شبکه را شفاف ثبت کند. این ساختار تصمیم مهندسی را برای کارفرما، مشاور و سازنده قابل ردیابی می‌کند.</p>
-    <div class="note"><strong>نکته:</strong> اعداد نهایی هر پروژه باید بر اساس نقشه‌های مصوب، دیتاشیت تجهیزات و محاسبات هیدرولیکی همان پروژه تعیین شوند.</div>
-
+<main><article class="article"><header class="article-header container narrow reveal"><a class="back-link" href="../blog.html" data-fa="← بازگشت به یادداشت‌ها" data-en="← Back to insights">← بازگشت به یادداشت‌ها</a><p class="eyebrow">FIRE PROTECTION · 8 MIN</p><h1 data-fa="چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی" data-en="A Framework for Industrial Fire Pump Selection">چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی</h1><p class="article-lead" data-fa="از تعریف سناریوی حاکم تا محاسبه هد، کنترل NPSH و بررسی کامل منحنی پمپ." data-en="From governing-scenario definition to head calculation, NPSH review and full pump-curve assessment.">از تعریف سناریوی حاکم تا محاسبه هد، کنترل NPSH و بررسی کامل منحنی پمپ.</p><div class="article-meta">Amir Aslan Mosaferi · 2026</div></header><div class="article-body container narrow"><section class="reveal"><p data-fa="انتخاب پمپ آتش‌نشانی فقط انتخاب یک نقطه دبی و فشار از کاتالوگ نیست. خروجی صحیح باید از سناریوی طراحی، آرایش شبکه، ارتفاعات، افت‌های مسیر و فشار موردنیاز در دورترین مصرف‌کننده استخراج شود." data-en="Fire pump selection is not simply choosing a flow and pressure point from a catalogue. The correct duty must be derived from the design scenario, network arrangement, elevations, path losses and required pressure at the most remote demand point.">انتخاب پمپ آتش‌نشانی فقط انتخاب یک نقطه دبی و فشار از کاتالوگ نیست. خروجی صحیح باید از سناریوی طراحی، آرایش شبکه، ارتفاعات، افت‌های مسیر و فشار موردنیاز در دورترین مصرف‌کننده استخراج شود.</p></section><section class="reveal"><h2 data-fa="۱. سناریوی حاکم را مشخص کنید" data-en="1. Identify the governing scenario">۱. سناریوی حاکم را مشخص کنید</h2><p data-fa="ابتدا تعیین کنید کدام مصرف همزمان حاکم است: اسپرینکلر، هیدرانت، فایرباکس، مانیتور یا سیستم آب–فوم. جمع‌کردن همه مصرف‌ها بدون منطق سناریو معمولاً به انتخاب بیش‌ازحد بزرگ منجر می‌شود؛ حذف مصرف همزمان واقعی نیز طراحی را ناایمن می‌کند." data-en="First determine which simultaneous demand governs: sprinklers, hydrants, fire boxes, monitors or a water–foam system. Adding every demand without scenario logic usually oversizes the pump, while omitting a real concurrent demand creates an unsafe design.">ابتدا تعیین کنید کدام مصرف همزمان حاکم است: اسپرینکلر، هیدرانت، فایرباکس، مانیتور یا سیستم آب–فوم. جمع‌کردن همه مصرف‌ها بدون منطق سناریو معمولاً به انتخاب بیش‌ازحد بزرگ منجر می‌شود؛ حذف مصرف همزمان واقعی نیز طراحی را ناایمن می‌کند.</p></section><section class="reveal"><h2 data-fa="۲. هد موردنیاز را تجزیه کنید" data-en="2. Break down required head">۲. هد موردنیاز را تجزیه کنید</h2><div class="formula">Pump Head = Static Head + Friction Loss + Equipment Loss + Required Residual Pressure</div><p data-fa="فشار نامی لوله جایگزین محاسبه هیدرولیکی نیست. PN یا Class فقط ظرفیت فشاری تجهیز را بیان می‌کند؛ نقطه کار پمپ باید از محاسبه مسیر بحرانی به دست آید." data-en="Pipe pressure rating does not replace hydraulic calculation. PN or Class only indicates pressure capacity; the pump duty point must come from the critical-path calculation.">فشار نامی لوله جایگزین محاسبه هیدرولیکی نیست. PN یا Class فقط ظرفیت فشاری تجهیز را بیان می‌کند؛ نقطه کار پمپ باید از محاسبه مسیر بحرانی به دست آید.</p></section><section class="reveal"><h2 data-fa="۳. شرایط مکش و NPSH را کنترل کنید" data-en="3. Check suction conditions and NPSH">۳. شرایط مکش و NPSH را کنترل کنید</h2><p data-fa="در مخزن مدفون، ارتفاع محور پمپ نسبت به حداقل تراز آب، افت خط مکش و احتمال حبس هوا اهمیت ویژه دارد. NPSH موجود باید با NPSH موردنیاز سازنده و حاشیه مناسب مقایسه شود." data-en="For a buried tank, pump centreline elevation relative to minimum water level, suction-line losses and air-pocket risks are critical. Available NPSH must be compared with the manufacturer's required NPSH using an appropriate margin.">در مخزن مدفون، ارتفاع محور پمپ نسبت به حداقل تراز آب، افت خط مکش و احتمال حبس هوا اهمیت ویژه دارد. NPSH موجود باید با NPSH موردنیاز سازنده و حاشیه مناسب مقایسه شود.</p></section><section class="reveal"><h2 data-fa="۴. کل منحنی پمپ را بررسی کنید" data-en="4. Review the entire pump curve">۴. کل منحنی پمپ را بررسی کنید</h2><p data-fa="فقط نقطه نامی کافی نیست. فشار shutoff، عملکرد در دبی نامی و 150 درصد دبی، توان موتور و بیشینه فشار شبکه باید بررسی شوند." data-en="The rated point alone is not enough. Review shutoff pressure, performance at rated and 150% flow, motor power and maximum network pressure.">فقط نقطه نامی کافی نیست. فشار shutoff، عملکرد در دبی نامی و 150 درصد دبی، توان موتور و بیشینه فشار شبکه باید بررسی شوند.</p></section><aside class="article-note reveal"><b data-fa="اصل کلیدی" data-en="Key principle">اصل کلیدی</b><p data-fa="انتخاب پمپ باید یک تصمیم قابل ردیابی باشد: هر عدد باید به سناریو، نقشه، دیتاشیت یا محاسبه مشخصی متصل شود." data-en="Pump selection should be traceable: every number must connect to a defined scenario, drawing, datasheet or calculation.">انتخاب پمپ باید یک تصمیم قابل ردیابی باشد: هر عدد باید به سناریو، نقشه، دیتاشیت یا محاسبه مشخصی متصل شود.</p></aside></div></article></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="footer-brand" href="../index.html">AM</a><p data-fa="مهندسی دقیق برای مسائل پیچیده." data-en="Precision engineering for complex problems.">مهندسی دقیق برای مسائل پیچیده.</p></div>
+    <div class="footer-links">
+      <a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
   </div>
-</article>
-</main>
-<footer class="site-footer"><div class="container footer-grid"><p>© <span id="year"></span> Amir Aslan Mosaferi</p><a href="../blog.html">← Blog</a></div></footer>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="../assets/app.js"></script>
-</body>
-</html>
+</body></html>

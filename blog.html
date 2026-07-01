@@ -1,95 +1,56 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
+<!doctype html><html lang="fa" dir="rtl" data-theme="dark"><head><title>Technical Insights | Amir Aslan Mosaferi</title><meta name="description" content="Technical notes on CFD, fire protection, heat transfer and engineering documentation."><link rel="canonical" href="https://amiraslanm.github.io/blog.html">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>وبلاگ تخصصی | امیر اصلان مسافری</title>
-  <meta name="description" content="مقالات تخصصی درباره CFD، انتقال حرارت، حفاظت حریق و مدارک مهندسی.">
+  <meta name="author" content="Amir Aslan Mosaferi">
+  <meta name="theme-color" content="#08111f">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+</head><body><div class="scroll-progress" id="scrollProgress"></div>
 <header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html#home" aria-label="Amir Aslan Mosaferi home">
       <span class="brand-mark">AM</span>
-      <span><strong data-fa="امیر اصلان مسافری" data-en="Amir Aslan Mosaferi">امیر اصلان مسافری</strong><small data-fa="وبلاگ تخصصی" data-en="Technical Blog">وبلاگ تخصصی</small></span>
+      <span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small data-fa="مهندس مکانیک و حفاظت حریق" data-en="Mechanical & Fire Protection Engineer">مهندس مکانیک و حفاظت حریق</small></span>
     </a>
-    <nav class="main-nav static-nav">
-      <a href="index.html" data-fa="خانه" data-en="Home">خانه</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+      <a href="index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
       <a href="index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
-      <a href="blog.html" aria-current="page" data-fa="وبلاگ" data-en="Blog">وبلاگ</a>
-      <a href="index.html#contact" data-fa="تماس" data-en="Contact">تماس</a>
+      <a href="index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+      <a href="blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+      <a href="index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
     </nav>
     <div class="nav-actions">
-      <button id="langToggle" class="icon-btn" type="button">EN</button>
-      <button id="themeToggle" class="icon-btn" type="button">◐</button>
+      <button class="icon-btn" id="langToggle" type="button" aria-label="Change language">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Change theme"><span class="theme-icon">◐</span></button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+    <a href="index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+    <a href="index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
+    <a href="index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+    <a href="blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+    <a href="index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+  </nav>
 </header>
-<main>
-  <section class="page-hero">
-    <div class="container narrow">
-      <span class="eyebrow" data-fa="دانش فنی، تجربه واقعی پروژه" data-en="Technical knowledge. Real project lessons.">دانش فنی، تجربه واقعی پروژه</span>
-      <h1 data-fa="وبلاگ تخصصی مهندسی" data-en="Engineering Insights">وبلاگ تخصصی مهندسی</h1>
-      <p data-fa="یادداشت‌هایی درباره CFD، انتقال حرارت، حفاظت حریق، استانداردهای NFPA و فرآیند تهیه مدارک مهندسی."
-         data-en="Articles on CFD, heat transfer, fire protection, NFPA standards and engineering documentation.">
-         یادداشت‌هایی درباره CFD، انتقال حرارت، حفاظت حریق، استانداردهای NFPA و فرآیند تهیه مدارک مهندسی.
-      </p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="filter-row">
-        <button class="filter active" data-filter="all" data-fa="همه" data-en="All">همه</button>
-        <button class="filter" data-filter="fire" data-fa="حفاظت حریق" data-en="Fire Protection">حفاظت حریق</button>
-        <button class="filter" data-filter="cfd">CFD</button>
-        <button class="filter" data-filter="docs" data-fa="مدارک مهندسی" data-en="Documentation">مدارک مهندسی</button>
-      </div>
-      <div class="blog-grid">
-        <article class="post-card blog-item" data-category="fire">
-          <span class="post-cat" data-fa="حفاظت حریق" data-en="Fire Protection">حفاظت حریق</span>
-          <h2><a href="posts/fire-pump-selection.html" data-fa="چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی" data-en="A framework for industrial fire pump selection">چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی</a></h2>
-          <p data-fa="یک روش مرحله‌به‌مرحله برای تبدیل سناریوی حریق به دبی و فشار طراحی پمپ."
-             data-en="A step-by-step method to convert a fire scenario into design flow and pressure.">
-             یک روش مرحله‌به‌مرحله برای تبدیل سناریوی حریق به دبی و فشار طراحی پمپ.
-          </p>
-          <div class="post-meta">8 min · 2026</div>
-        </article>
-        <article class="post-card blog-item" data-category="cfd">
-          <span class="post-cat">CFD</span>
-          <h2><a href="posts/cfd-viv-mhd.html" data-fa="چگونه یک مسئله VIV–MHD را مدل‌سازی کنیم؟" data-en="How to model a VIV–MHD problem">چگونه یک مسئله VIV–MHD را مدل‌سازی کنیم؟</a></h2>
-          <p data-fa="نکات اصلی تنظیم حل، کوپلینگ سیال–سازه، استقلال شبکه و اعتبارسنجی."
-             data-en="Solver setup, fluid–structure coupling, mesh independence and validation.">
-             نکات اصلی تنظیم حل، کوپلینگ سیال–سازه، استقلال شبکه و اعتبارسنجی.
-          </p>
-          <div class="post-meta">10 min · 2026</div>
-        </article>
-        <article class="post-card blog-item" data-category="docs">
-          <span class="post-cat" data-fa="مدارک مهندسی" data-en="Documentation">مدارک مهندسی</span>
-          <h2 data-fa="چک‌لیست گزارش طراحی حرفه‌ای" data-en="Professional design report checklist">چک‌لیست گزارش طراحی حرفه‌ای</h2>
-          <p data-fa="ساختار پیشنهادی برای گزارش‌های طراحی، محاسبات و مکاتبات فنی."
-             data-en="A recommended structure for design reports, calculations and technical correspondence.">
-             ساختار پیشنهادی برای گزارش‌های طراحی، محاسبات و مکاتبات فنی.
-          </p>
-          <div class="post-meta" data-fa="به‌زودی" data-en="Coming soon">به‌زودی</div>
-        </article>
-        <article class="post-card blog-item" data-category="fire">
-          <span class="post-cat" data-fa="اعلام حریق" data-en="Fire Alarm">اعلام حریق</span>
-          <h2 data-fa="منطق طراحی سیستم زون‌ماژول" data-en="Zone-module fire alarm design logic">منطق طراحی سیستم زون‌ماژول</h2>
-          <p data-fa="اصول تقسیم زون، مانیتورینگ تجهیزات و ارتباط پنل اصلی با ساختمان‌ها."
-             data-en="Zone division, device monitoring and communication with the main panel.">
-             اصول تقسیم زون، مانیتورینگ تجهیزات و ارتباط پنل اصلی با ساختمان‌ها.
-          </p>
-          <div class="post-meta" data-fa="به‌زودی" data-en="Coming soon">به‌زودی</div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
+<main><section class="page-hero"><div class="container narrow reveal"><p class="eyebrow" data-fa="یادداشت‌های فنی" data-en="Technical insights">یادداشت‌های فنی</p><h1 data-fa="دانش مهندسی از دل پروژه و پژوهش" data-en="Engineering knowledge from projects and research">دانش مهندسی از دل پروژه و پژوهش</h1><p data-fa="یادداشت‌هایی کاربردی درباره CFD، انتقال حرارت، حفاظت حریق و فرآیند تهیه مدارک مهندسی." data-en="Practical notes on CFD, heat transfer, fire protection and engineering documentation.">یادداشت‌هایی کاربردی درباره CFD، انتقال حرارت، حفاظت حریق و فرآیند تهیه مدارک مهندسی.</p></div></section><section class="section"><div class="container"><div class="project-filters blog-filters"><button class="filter-btn active" data-filter="all" data-fa="همه" data-en="All">همه</button><button class="filter-btn" data-filter="fire">Fire</button><button class="filter-btn" data-filter="cfd">CFD</button><button class="filter-btn" data-filter="career">Career</button></div><div class="blog-list"><a class="blog-row reveal" data-category="fire" href="posts/fire-pump-selection.html"><div><span>Fire Protection · 8 min</span><h2 data-fa="چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی" data-en="A framework for industrial fire pump selection">چارچوب انتخاب پمپ آتش‌نشانی در سایت صنعتی</h2><p data-fa="روش مرحله‌به‌مرحله برای تبدیل سناریوی حریق به دبی، هد و کنترل مکش." data-en="A step-by-step method to turn a fire scenario into flow, head and suction checks.">روش مرحله‌به‌مرحله برای تبدیل سناریوی حریق به دبی، هد و کنترل مکش.</p></div><b>01 ↗</b></a><a class="blog-row reveal" data-category="cfd" href="posts/cfd-validation.html"><div><span>CFD · 9 min</span><h2 data-fa="چک‌لیست اعتبارسنجی یک مدل CFD قابل دفاع" data-en="A defensible CFD validation checklist">چک‌لیست اعتبارسنجی یک مدل CFD قابل دفاع</h2><p data-fa="چطور از یک کانتور زیبا عبور کنیم و مدل عددی قابل اعتماد بسازیم." data-en="How to move beyond attractive contours and build a trustworthy numerical model.">چطور از یک کانتور زیبا عبور کنیم و مدل عددی قابل اعتماد بسازیم.</p></div><b>02 ↗</b></a><a class="blog-row reveal" data-category="career" href="cv.html"><div><span>Career</span><h2 data-fa="رزومه مهندسی و پژوهشی" data-en="Engineering and research résumé">رزومه مهندسی و پژوهشی</h2><p data-fa="تجربه، تحصیلات، نرم‌افزارها و خروجی‌های پژوهشی در یک صفحه." data-en="Experience, education, software and research outputs in one place.">تجربه، تحصیلات، نرم‌افزارها و خروجی‌های پژوهشی در یک صفحه.</p></div><b>03 ↗</b></a></div></div></section></main>
 <footer class="site-footer">
-  <div class="container footer-grid"><p>© <span id="year"></span> Amir Aslan Mosaferi</p><a href="index.html" data-fa="بازگشت به صفحه اصلی" data-en="Back to home">بازگشت به صفحه اصلی</a></div>
+  <div class="container footer-grid">
+    <div><a class="footer-brand" href="index.html">AM</a><p data-fa="مهندسی دقیق برای مسائل پیچیده." data-en="Precision engineering for complex problems.">مهندسی دقیق برای مسائل پیچیده.</p></div>
+    <div class="footer-links">
+      <a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
+  </div>
 </footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="assets/app.js"></script>
-</body>
-</html>
+</body></html>

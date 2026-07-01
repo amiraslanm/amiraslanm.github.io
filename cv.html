@@ -1,104 +1,56 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>رزومه | امیر اصلان مسافری</title>
-  <meta name="description" content="رزومه حرفه‌ای امیر اصلان مسافری، مهندس مکانیک، CFD و حفاظت حریق.">
+<!doctype html><html lang="fa" dir="rtl" data-theme="dark"><head><title>CV | Amir Aslan Mosaferi</title><meta name="description" content="Professional CV of Amir Aslan Mosaferi, Mechanical Engineer specializing in CFD and fire protection.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Amir Aslan Mosaferi">
+  <meta name="theme-color" content="#08111f">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
-  <style>
-    .resume{max-width:980px;margin:50px auto;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:44px;box-shadow:var(--shadow)}
-    .resume-top{display:grid;grid-template-columns:1fr auto;gap:28px;border-bottom:2px solid var(--line);padding-bottom:28px;margin-bottom:32px}
-    .resume h1{font-size:2.4rem;margin-bottom:6px}.resume h2{font-size:1.35rem;color:var(--primary);border-bottom:1px solid var(--line);padding-bottom:8px;margin-top:34px}
-    .resume h3{margin-bottom:4px}.resume p{margin:4px 0;color:var(--muted)}.resume ul{margin-top:8px}
-    .resume-meta{text-align:end}.resume-meta a{display:block;color:var(--primary)}
-    .resume-item{margin-bottom:24px}.resume-item-head{display:flex;justify-content:space-between;gap:20px}
-    .resume-actions{display:flex;gap:10px;justify-content:center;margin:24px auto 0}
-    @media(max-width:700px){.resume{margin:20px auto;padding:24px}.resume-top{grid-template-columns:1fr}.resume-meta{text-align:start}.resume-item-head{display:block}}
-    @media print{
-      .site-header,.site-footer,.resume-actions{display:none!important}
-      body{background:white;color:#111}.resume{box-shadow:none;border:0;margin:0;max-width:none;padding:0}
-      .resume p{color:#333}.resume h2{color:#0b4f6c}
-    }
-  </style>
-</head>
-<body>
+<style>@media print{.site-header,.site-footer,.cv-actions{display:none!important}body{background:#fff!important;color:#111!important}.cv-sheet{box-shadow:none!important;border:0!important;margin:0!important;max-width:none!important}}</style></head><body>
 <header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html"><span class="brand-mark">AM</span><span><strong>Amir Aslan Mosaferi</strong><small data-fa="رزومه حرفه‌ای" data-en="Professional Resume">رزومه حرفه‌ای</small></span></a>
-    <nav class="main-nav static-nav"><a href="index.html" data-fa="خانه" data-en="Home">خانه</a><a href="blog.html" data-fa="وبلاگ" data-en="Blog">وبلاگ</a><a href="index.html#contact" data-fa="تماس" data-en="Contact">تماس</a></nav>
-    <div class="nav-actions"><button id="langToggle" class="icon-btn" type="button">EN</button><button id="themeToggle" class="icon-btn" type="button">◐</button></div>
+  <div class="container nav-shell">
+    <a class="brand" href="index.html#home" aria-label="Amir Aslan Mosaferi home">
+      <span class="brand-mark">AM</span>
+      <span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small data-fa="مهندس مکانیک و حفاظت حریق" data-en="Mechanical & Fire Protection Engineer">مهندس مکانیک و حفاظت حریق</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+      <a href="index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+      <a href="index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
+      <a href="index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+      <a href="blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+      <a href="index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="Change language">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Change theme"><span class="theme-icon">◐</span></button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
   </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
+    <a href="index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+    <a href="index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
+    <a href="index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
+    <a href="blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
+    <a href="index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+  </nav>
 </header>
-<main class="container">
-  <div class="resume">
-    <section class="resume-top">
-      <div>
-        <h1>Amir Aslan Mosaferi</h1>
-        <h3 data-fa="مهندس مکانیک | متخصص CFD و حفاظت حریق" data-en="Mechanical Engineer | CFD & Fire Protection Specialist">مهندس مکانیک | متخصص CFD و حفاظت حریق</h3>
-        <p data-fa="مهندس مکانیک با تجربه در تحلیل سیالات و انتقال حرارت، طراحی سیستم‌های حفاظت حریق، محاسبات هیدرولیکی و تهیه مدارک مهندسی."
-           data-en="Mechanical engineer experienced in CFD and heat transfer, fire protection design, hydraulic calculations and engineering documentation.">
-           مهندس مکانیک با تجربه در تحلیل سیالات و انتقال حرارت، طراحی سیستم‌های حفاظت حریق، محاسبات هیدرولیکی و تهیه مدارک مهندسی.
-        </p>
-      </div>
-      <div class="resume-meta">
-        <a href="mailto:amir.a.mosaferi@gmail.com">amir.a.mosaferi@gmail.com</a>
-        <span>Tehran, Iran</span>
-        <a href="https://orcid.org/0000-0001-9829-2598">ORCID</a>
-        <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ">Google Scholar</a>
-      </div>
-    </section>
-
-    <section>
-      <h2 data-fa="تجربه حرفه‌ای" data-en="Professional Experience">تجربه حرفه‌ای</h2>
-      <div class="resume-item">
-        <div class="resume-item-head"><h3 data-fa="مهندس حفاظت حریق — آدیش آذر مهر" data-en="Fire Protection Engineer — Adish Azar Mehr Co.">مهندس حفاظت حریق — آدیش آذر مهر</h3><strong>2025–Present</strong></div>
-        <ul>
-          <li data-fa="طراحی سیستم‌های اسپرینکلر، رایزر، هیدرانت، فوم و اعلام حریق مطابق الزامات پروژه و استانداردهای NFPA." data-en="Design of sprinkler, riser, hydrant, foam and fire alarm systems based on project requirements and NFPA standards.">طراحی سیستم‌های اسپرینکلر، رایزر، هیدرانت، فوم و اعلام حریق مطابق الزامات پروژه و استانداردهای NFPA.</li>
-          <li data-fa="محاسبات هیدرولیکی، انتخاب پمپ و مخزن و کنترل شبکه آب آتش‌نشانی پروژه‌های صنعتی." data-en="Hydraulic calculations, fire pump and storage selection, and industrial firewater network review.">محاسبات هیدرولیکی، انتخاب پمپ و مخزن و کنترل شبکه آب آتش‌نشانی پروژه‌های صنعتی.</li>
-          <li data-fa="تهیه گزارش طراحی، مکاتبات فنی، دیتاشیت و کنترل نقشه‌ها و مدارک فروشندگان." data-en="Preparation of design reports, technical correspondence and datasheets, plus vendor document review.">تهیه گزارش طراحی، مکاتبات فنی، دیتاشیت و کنترل نقشه‌ها و مدارک فروشندگان.</li>
-        </ul>
-      </div>
-      <div class="resume-item">
-        <div class="resume-item-head"><h3 data-fa="متخصص پروژه‌های HVAC — فیدار برق پارس" data-en="HVAC Project Specialist — Fidar Bargh Pars Co.">متخصص پروژه‌های HVAC — فیدار برق پارس</h3><strong>2024</strong></div>
-        <p data-fa="طراحی و کنترل سیستم‌های تهویه، فشار مثبت و تخلیه دود و هماهنگی مدارک مکانیکی پروژه." data-en="Design and review of ventilation, pressurization and smoke exhaust systems, with mechanical document coordination.">طراحی و کنترل سیستم‌های تهویه، فشار مثبت و تخلیه دود و هماهنگی مدارک مکانیکی پروژه.</p>
-      </div>
-      <div class="resume-item">
-        <div class="resume-item-head"><h3 data-fa="مهندس اعلام و اطفای حریق — PATSA" data-en="Fire Detection & Suppression Engineer — PATSA Co.">مهندس اعلام و اطفای حریق — PATSA</h3><strong>2020–2022</strong></div>
-        <p data-fa="فعالیت در طراحی سیستم‌های اعلام و اطفا، جانمایی تجهیزات و تهیه مدارک فنی پروژه‌های ساختمانی و صنعتی." data-en="Fire detection and suppression design, equipment layout and technical documentation for building and industrial projects.">فعالیت در طراحی سیستم‌های اعلام و اطفا، جانمایی تجهیزات و تهیه مدارک فنی پروژه‌های ساختمانی و صنعتی.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2 data-fa="تحصیلات" data-en="Education">تحصیلات</h2>
-      <div class="resume-item">
-        <div class="resume-item-head"><h3 data-fa="کارشناسی ارشد مهندسی مکانیک — دانشگاه خوارزمی" data-en="M.Sc. Mechanical Engineering — Kharazmi University">کارشناسی ارشد مهندسی مکانیک — دانشگاه خوارزمی</h3><strong>2019–2021</strong></div>
-        <p data-fa="گرایش طراحی کاربردی؛ پایان‌نامه درباره کنترل VIV و انتقال حرارت تحت میدان مغناطیسی." data-en="Applied Design; thesis on VIV suppression and convective heat transfer under magnetic field.">گرایش طراحی کاربردی؛ پایان‌نامه درباره کنترل VIV و انتقال حرارت تحت میدان مغناطیسی.</p>
-      </div>
-      <div class="resume-item">
-        <div class="resume-item-head"><h3 data-fa="کارشناسی مهندسی مکانیک — دانشگاه صنعتی شاهرود" data-en="B.Sc. Mechanical Engineering — Shahrood University of Technology">کارشناسی مهندسی مکانیک — دانشگاه صنعتی شاهرود</h3><strong>2014–2019</strong></div>
-      </div>
-    </section>
-
-    <section>
-      <h2 data-fa="مهارت‌های کلیدی" data-en="Core Skills">مهارت‌های کلیدی</h2>
-      <div class="tag-list"><span>ANSYS Fluent</span><span>OpenFOAM</span><span>COMSOL</span><span>AutoSprink</span><span>AutoCAD</span><span>Revit MEP</span><span>MATLAB</span><span>NFPA 13</span><span>NFPA 72</span><span>CFD</span><span>FSI</span><span>Heat Transfer</span></div>
-    </section>
-
-    <section>
-      <h2 data-fa="انتشارات منتخب" data-en="Selected Publications">انتشارات منتخب</h2>
-      <div class="resume-item">
-        <h3>International Communications in Heat and Mass Transfer — Elsevier</h3>
-        <p>Magnetohydrodynamic suppression of vortex-induced vibration and its effect on convective heat transfer · First Author · 2022</p>
-      </div>
-    </section>
+<main class="cv-page"><div class="container cv-actions"><button class="btn primary" onclick="window.print()" data-fa="چاپ یا ذخیره PDF" data-en="Print / Save PDF">چاپ یا ذخیره PDF</button><a class="btn secondary" href="index.html" data-fa="بازگشت به سایت" data-en="Back to website">بازگشت به سایت</a></div><article class="cv-sheet container"><header class="cv-header"><div><span class="cv-monogram">AM</span><h1>Amir Aslan Mosaferi</h1><h2>Mechanical Engineer · CFD · Heat Transfer · Fire Protection</h2><p data-fa="مهندس مکانیک با تجربه در تحلیل سیالات و انتقال حرارت، برهم‌کنش سیال–سازه، طراحی سیستم‌های حفاظت حریق و تهیه مدارک مهندسی." data-en="Mechanical engineer experienced in fluid and heat-transfer analysis, fluid–structure interaction, fire protection design and engineering documentation.">مهندس مکانیک با تجربه در تحلیل سیالات و انتقال حرارت، برهم‌کنش سیال–سازه، طراحی سیستم‌های حفاظت حریق و تهیه مدارک مهندسی.</p></div><address><a href="mailto:amir.a.mosaferi@gmail.com">amir.a.mosaferi@gmail.com</a><span>Tehran, Iran</span><a href="https://orcid.org/0000-0001-9829-2598">ORCID</a><a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ">Google Scholar</a></address></header><section class="cv-section"><h3 data-fa="تجربه حرفه‌ای" data-en="Professional Experience">تجربه حرفه‌ای</h3><div class="cv-item"><div><h4 data-fa="مهندس حفاظت حریق — آدیش آذر مهر" data-en="Fire Protection Engineer — Adish Azar Mehr Co.">مهندس حفاظت حریق — آدیش آذر مهر</h4><small>2025 — Present</small></div><ul><li data-fa="طراحی سیستم‌های اسپرینکلر، فوم، هیدرانت و اعلام حریق مطابق الزامات پروژه و استانداردهای NFPA." data-en="Design of sprinkler, foam, hydrant and fire alarm systems in accordance with project requirements and NFPA standards.">طراحی سیستم‌های اسپرینکلر، فوم، هیدرانت و اعلام حریق مطابق الزامات پروژه و استانداردهای NFPA.</li><li data-fa="محاسبات هیدرولیکی، انتخاب پمپ و ذخیره آب و کنترل شبکه‌های آب آتش‌نشانی صنعتی." data-en="Hydraulic calculations, pump and storage selection, and industrial firewater network review.">محاسبات هیدرولیکی، انتخاب پمپ و ذخیره آب و کنترل شبکه‌های آب آتش‌نشانی صنعتی.</li><li data-fa="تهیه گزارش طراحی، دیتاشیت، مشخصات فنی و مکاتبات مهندسی." data-en="Preparation of design reports, datasheets, technical specifications and engineering correspondence.">تهیه گزارش طراحی، دیتاشیت، مشخصات فنی و مکاتبات مهندسی.</li></ul></div><div class="cv-item"><div><h4 data-fa="متخصص پروژه‌های HVAC — فیدار برق پارس" data-en="HVAC Project Specialist — Fidar Bargh Pars Co.">متخصص پروژه‌های HVAC — فیدار برق پارس</h4><small>2024</small></div><p data-fa="طراحی و کنترل سیستم‌های تهویه، فشار مثبت و تخلیه دود و هماهنگی مدارک مکانیکی." data-en="Design and review of ventilation, pressurization and smoke exhaust systems, plus mechanical document coordination.">طراحی و کنترل سیستم‌های تهویه، فشار مثبت و تخلیه دود و هماهنگی مدارک مکانیکی.</p></div><div class="cv-item"><div><h4 data-fa="مهندس اعلام و اطفای حریق — PATSA" data-en="Fire Detection & Suppression Engineer — PATSA Co.">مهندس اعلام و اطفای حریق — PATSA</h4><small>2020 — 2022</small></div><p data-fa="طراحی، جانمایی تجهیزات و تهیه مدارک فنی سیستم‌های اعلام و اطفای حریق." data-en="Design, equipment layout and technical documentation for fire detection and suppression systems.">طراحی، جانمایی تجهیزات و تهیه مدارک فنی سیستم‌های اعلام و اطفای حریق.</p></div></section><section class="cv-section"><h3 data-fa="تحصیلات" data-en="Education">تحصیلات</h3><div class="cv-item"><div><h4 data-fa="کارشناسی ارشد مهندسی مکانیک — دانشگاه خوارزمی" data-en="M.Sc. Mechanical Engineering — Kharazmi University">کارشناسی ارشد مهندسی مکانیک — دانشگاه خوارزمی</h4><small>2019 — 2021</small></div><p data-fa="طراحی کاربردی؛ پایان‌نامه درباره کنترل VIV و انتقال حرارت تحت میدان مغناطیسی. نمره پایان‌نامه: 18.5/20." data-en="Applied Design; thesis on VIV suppression and convective heat transfer under magnetic field. Thesis grade: 18.5/20.">طراحی کاربردی؛ پایان‌نامه درباره کنترل VIV و انتقال حرارت تحت میدان مغناطیسی. نمره پایان‌نامه: 18.5/20.</p></div><div class="cv-item"><div><h4 data-fa="کارشناسی مهندسی مکانیک — دانشگاه صنعتی شاهرود" data-en="B.Sc. Mechanical Engineering — Shahrood University of Technology">کارشناسی مهندسی مکانیک — دانشگاه صنعتی شاهرود</h4><small>2014 — 2019</small></div></div></section><section class="cv-section"><h3 data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</h3><div class="tech-stack"><span>ANSYS Fluent</span><span>OpenFOAM</span><span>COMSOL</span><span>MATLAB</span><span>AutoSprink</span><span>AutoCAD</span><span>Revit MEP</span><span>NFPA 13</span><span>NFPA 20</span><span>NFPA 72</span><span>CFD</span><span>FSI</span><span>Heat Transfer</span></div></section><section class="cv-section"><h3 data-fa="انتشارات منتخب" data-en="Selected Publications">انتشارات منتخب</h3><div class="cv-item"><div><h4>International Communications in Heat and Mass Transfer — Elsevier</h4><small>2022 · Q1 · First Author</small></div><p>Magnetohydrodynamic suppression of vortex-induced vibration and its effect on convective heat transfer</p></div><div class="cv-item"><div><h4 data-fa="Journal of Applied and Computational Sciences in Mechanics" data-en="Journal of Applied and Computational Sciences in Mechanics">Journal of Applied and Computational Sciences in Mechanics</h4><small>2023 · First Author</small></div></div></section></article></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="footer-brand" href="index.html">AM</a><p data-fa="مهندسی دقیق برای مسائل پیچیده." data-en="Precision engineering for complex problems.">مهندسی دقیق برای مسائل پیچیده.</p></div>
+    <div class="footer-links">
+      <a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
   </div>
-  <div class="resume-actions">
-    <button class="btn primary" onclick="window.print()" data-fa="چاپ یا ذخیره PDF" data-en="Print / Save as PDF">چاپ یا ذخیره PDF</button>
-    <a class="btn secondary" href="index.html" data-fa="بازگشت" data-en="Back">بازگشت</a>
-  </div>
-</main>
-<footer class="site-footer"><div class="container footer-grid"><p>© <span id="year"></span> Amir Aslan Mosaferi</p></div></footer>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="assets/app.js"></script>
-</body>
-</html>
+</body></html>
