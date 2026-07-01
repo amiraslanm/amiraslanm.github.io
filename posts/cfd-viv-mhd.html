@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مدل‌سازی VIV–MHD | امیر اصلان مسافری</title>
+  <meta name="description" content="راهنمای فشرده تنظیم و اعتبارسنجی مدل عددی VIV تحت میدان مغناطیسی.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../index.html"><span class="brand-mark">AM</span><span><strong>Amir Aslan Mosaferi</strong><small>Technical Blog</small></span></a>
+    <nav class="main-nav static-nav"><a href="../index.html" data-fa="خانه" data-en="Home">خانه</a><a href="../blog.html" data-fa="وبلاگ" data-en="Blog">وبلاگ</a><a href="../index.html#contact" data-fa="تماس" data-en="Contact">تماس</a></nav>
+    <div class="nav-actions"><button id="langToggle" class="icon-btn" type="button">EN</button><button id="themeToggle" class="icon-btn" type="button">◐</button></div>
+  </div>
+</header>
+<main>
+<article class="article">
+  <header class="article-header container narrow">
+    <span class="post-cat">CFD · FSI · MHD</span>
+    <h1>چگونه یک مسئله VIV–MHD را مدل‌سازی کنیم؟</h1>
+    <p class="lead">اصول تنظیم دامنه، کوپلینگ دوطرفه، استقلال شبکه و اعتبارسنجی یک مسئله چندفیزیکی.</p>
+    <div class="post-meta">Amir Aslan Mosaferi · 2026 · 10 min read</div>
+  </header>
+  <div class="article-body container narrow">
+
+    <p>مدل‌سازی همزمان ارتعاشات القاشده با گردابه و میدان مغناطیسی، یک مسئله چندفیزیکی است. کیفیت نتیجه بیش از هر چیز به تعریف درست معادلات، کوپلینگ حرکت سازه و جریان و فرآیند اعتبارسنجی وابسته است.</p>
+    <h2>۱. تعریف مسئله فیزیکی</h2>
+    <p>ابتدا مشخص کنید جریان دوبعدی یا سه‌بعدی است، رژیم آرام یا آشفته است و میدان مغناطیسی در کدام جهت اعمال می‌شود. خواص سیال رسانا، عدد رینولدز، نسبت جرم، میرایی، فرکانس طبیعی و عدد کاهش‌یافته باید دقیق تعریف شوند.</p>
+    <h2>۲. دامنه و شبکه</h2>
+    <p>فاصله مرزهای ورودی، خروجی و جانبی از جسم باید به اندازه‌ای باشد که اثر بلوکی شدن و بازتاب عددی کاهش یابد. نزدیک استوانه، شبکه منظم و لایه مرزی کافی لازم است. برای حرکت جسم می‌توان از Dynamic Mesh یا روش‌های مبتنی بر overset استفاده کرد.</p>
+    <h2>۳. کوپلینگ دوطرفه</h2>
+    <p>در هر گام زمانی، نیروهای سیال به حل‌گر سازه منتقل می‌شوند و جابه‌جایی جدید سازه به دامنه سیال بازگردانده می‌شود. تعداد تکرارهای کوپلینگ و اندازه گام زمانی باید طوری انتخاب شود که پاسخ نیرو و جابه‌جایی همگرا شود.</p>
+    <h2>۴. استقلال شبکه و گام زمانی</h2>
+    <p>حداقل سه سطح شبکه و چند گام زمانی بررسی کنید. معیار مقایسه بهتر است فقط ضریب درگ نباشد؛ دامنه ارتعاش، فرکانس پاسخ، ضریب لیفت RMS و عدد ناسلت نیز باید کنترل شوند.</p>
+    <h2>۵. اعتبارسنجی</h2>
+    <p>پیش از بررسی اثر میدان مغناطیسی، مدل پایه VIV را با داده آزمایشگاهی یا مرجع معتبر اعتبارسنجی کنید. سپس اثر پارامتر مغناطیسی را جداگانه کنترل کنید. بدون این مرحله، تطابق ظاهری کانتورهای جریان برای اثبات صحت مدل کافی نیست.</p>
+    <div class="note"><strong>خروجی‌های کلیدی:</strong> پاسخ جابه‌جایی، طیف فرکانسی، ضرایب نیرو، فاز نیرو و حرکت، ساختار گردابه و تغییرات انتقال حرارت.</div>
+
+  </div>
+</article>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><p>© <span id="year"></span> Amir Aslan Mosaferi</p><a href="../blog.html">← Blog</a></div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
