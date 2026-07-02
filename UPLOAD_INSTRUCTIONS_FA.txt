@@ -1,9 +1,19 @@
-این بسته اصلاحی شامل فایل عکس نیز هست.
+بسته آپدیت دوره پوشش‌های مقاوم حریق
 
-روش آپلود:
-1. همه محتویات داخل این پوشه را در ریشه Repository آپلود کنید.
-2. فایل‌های هم‌نام را جایگزین کنید.
-3. Commit message:
-Fix profile photo and OpenFOAM update
+1) فایل ZIP را Extract کنید.
+2) در GitHub Repository سایت، Add file > Upload files را انتخاب کنید.
+3) همه فایل‌ها و پوشه‌های داخل بسته را آپلود کنید.
+4) مسیرهای مهم:
+   fire-resistant-coatings.html
+   education.html
+   index.html
+   assets/education.css
+   assets/education.js
+   sitemap.xml
+5) Commit message:
+   Add fire-resistant coatings education course
+6) Commit directly to main
+7) چند دقیقه بعد سایت را با Ctrl + Shift + R بازخوانی کنید.
 
-پس از انتشار، سایت را با Ctrl + F5 بازخوانی کنید.
+آدرس صفحه:
+https://amiraslanm.github.io/fire-resistant-coatings.html

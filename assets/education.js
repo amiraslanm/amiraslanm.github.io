@@ -1,5 +1,5 @@
 (()=>{
- const key='waterCourseProgressV1',done=new Set(JSON.parse(localStorage.getItem(key)||'[]').map(String));
+ const key=document.body.dataset.courseKey||'waterCourseProgressV1',done=new Set(JSON.parse(localStorage.getItem(key)||'[]').map(String));
  const buttons=[...document.querySelectorAll('.edu-complete')],bar=document.getElementById('eduProgressBar'),value=document.getElementById('eduProgressValue');
  const update=()=>{buttons.forEach(b=>b.classList.toggle('done',done.has(String(b.dataset.module))));const p=buttons.length?Math.round(done.size/buttons.length*100):0;if(bar)bar.style.width=p+'%';if(value)value.textContent=p+'%';localStorage.setItem(key,JSON.stringify([...done]))};
  buttons.forEach(b=>b.addEventListener('click',()=>{const id=String(b.dataset.module);done.has(id)?done.delete(id):done.add(id);update()}));update();
