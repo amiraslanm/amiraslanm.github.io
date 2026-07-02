@@ -153,3 +153,8 @@ html[dir="ltr"] .engineering-journey:before{right:auto;left:27px}
   .case-conclusion,.case-cta{padding:25px}
   .firewater-schematic{padding:10px;border-radius:22px}
 }
+
+
+/* V3.3 — No-photo profile presentation */
+.portrait-panel,.profile-photo,.portrait-shade,.cv-profile-photo,.cv-side{display:none!important}
+.monogram{display:grid!important}
