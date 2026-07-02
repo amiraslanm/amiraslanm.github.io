@@ -1,0 +1,360 @@
+
+/*
+  Dedicated Arak case-study stylesheet.
+  Kept separate from the global stylesheet to prevent stale-cache and override issues.
+*/
+
+.arak-case-page .case-hero-premium{
+  display:block;
+  padding:92px 0 72px;
+  overflow:hidden;
+}
+
+.arak-case-page .case-hero-premium .reveal{
+  opacity:1;
+  transform:none;
+}
+
+.arak-case-page .case-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);
+  gap:58px;
+  align-items:center;
+}
+
+.arak-case-page .case-hero-premium h1{
+  margin:0 0 22px;
+  max-width:800px;
+  font-size:clamp(2.5rem,4.5vw,4.9rem);
+  line-height:1.17;
+  color:var(--text);
+}
+
+.arak-case-page .case-lead{
+  max-width:780px;
+  margin:0;
+  color:var(--muted);
+  font-size:1.05rem;
+}
+
+.arak-case-page .case-hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:25px;
+}
+
+.arak-case-page .case-hero-tags span{
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:5px 11px;
+  border:1px solid rgba(86,215,255,.24);
+  border-radius:999px;
+  background:rgba(9,23,40,.78);
+  color:#d9f4ff;
+  font:700 .68rem/1.2 Inter,Arial,sans-serif;
+}
+
+.arak-case-page .firewater-schematic{
+  position:relative;
+  width:100%;
+  padding:22px;
+  overflow:hidden;
+  border:1px solid rgba(86,215,255,.22);
+  border-radius:30px;
+  background:
+    linear-gradient(145deg,rgba(15,39,64,.98),rgba(7,17,31,.99));
+  box-shadow:0 24px 80px rgba(0,0,0,.32);
+}
+
+.arak-case-page .firewater-schematic::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(120,180,220,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(120,180,220,.055) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+
+.arak-case-page .firewater-schematic svg{
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:auto;
+  overflow:visible;
+}
+
+.arak-case-page .network-main,
+.arak-case-page .network-branch{
+  fill:none !important;
+  stroke:url(#pipeGradient) !important;
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.arak-case-page .network-branch{
+  stroke-width:4;
+  opacity:.72;
+}
+
+.arak-case-page .network-node rect,
+.arak-case-page .network-node circle{
+  fill:#091827 !important;
+  stroke:#56d7ff !important;
+  stroke-width:2;
+}
+
+.arak-case-page .network-node path{
+  fill:rgba(86,215,255,.16) !important;
+  stroke:#56d7ff !important;
+  stroke-width:1.5;
+}
+
+.arak-case-page .network-node text,
+.arak-case-page .network-callout text{
+  fill:#edf8ff !important;
+  text-anchor:middle;
+  font-family:Inter,Arial,sans-serif;
+  font-weight:700;
+  font-size:13px;
+}
+
+.arak-case-page .network-node text:last-child{
+  fill:#9ebbd0 !important;
+  font-size:10px;
+}
+
+.arak-case-page .network-callout rect{
+  fill:#171d40 !important;
+  stroke:#8b7bff !important;
+  stroke-width:1.5;
+}
+
+.arak-case-page .network-callout text:last-child{
+  fill:#bab4ff !important;
+  font-size:11px;
+}
+
+.arak-case-page .flow-dot{
+  fill:#ffb86a !important;
+  stroke:none !important;
+}
+
+.arak-case-page .schematic-note{
+  position:relative;
+  z-index:2;
+  margin-top:4px;
+  color:#9bb1c5;
+  text-align:center;
+  font-size:.72rem;
+}
+
+.arak-case-page .case-wide{
+  max-width:1180px;
+}
+
+.arak-case-page .case-summary-four{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+
+.arak-case-page .intro-split{
+  display:grid;
+  grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);
+  gap:68px;
+  align-items:start;
+}
+
+.arak-case-page .intro-split > p{
+  margin:0;
+  color:var(--muted);
+  font-size:1.03rem;
+}
+
+.arak-case-page .section-inline-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:40px;
+  margin-bottom:28px;
+}
+
+.arak-case-page .section-inline-head > p{
+  max-width:430px;
+  margin:0;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
+.arak-case-page .engineering-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+
+.arak-case-page .engineering-metrics article{
+  min-height:145px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:23px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:var(--panel);
+}
+
+.arak-case-page .engineering-metrics span{
+  color:var(--cyan);
+  font:800 clamp(1.35rem,2.4vw,2.2rem)/1 Inter,Arial,sans-serif;
+}
+
+.arak-case-page .engineering-metrics small{
+  color:var(--muted);
+  font-size:.78rem;
+}
+
+.arak-case-page .engineering-journey{
+  position:relative;
+  margin-top:35px;
+}
+
+.arak-case-page .engineering-journey article{
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:24px;
+  padding-bottom:35px;
+}
+
+.arak-case-page .journey-number{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(86,215,255,.36);
+  border-radius:18px;
+  background:linear-gradient(145deg,#123652,#17244d);
+  color:var(--cyan);
+  font:800 .78rem Inter,Arial,sans-serif;
+}
+
+.arak-case-page .engineering-journey p{
+  margin:0;
+  color:var(--muted);
+}
+
+.arak-case-page .scenario-table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:var(--panel);
+}
+
+.arak-case-page .scenario-table{
+  width:100%;
+  min-width:760px;
+  border-collapse:collapse;
+}
+
+.arak-case-page .scenario-table th,
+.arak-case-page .scenario-table td{
+  padding:18px 20px;
+  border-bottom:1px solid var(--line);
+  text-align:start;
+}
+
+.arak-case-page .scenario-table th{
+  background:rgba(86,215,255,.045);
+  color:var(--cyan);
+  font-size:.73rem;
+}
+
+.arak-case-page .scenario-table td{
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+.arak-case-page .decision-grid-pro{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
+}
+
+.arak-case-page .decision-grid-pro article{
+  min-height:210px;
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:var(--panel);
+}
+
+.arak-case-page .case-conclusion{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:60px;
+  padding:38px;
+  border:1px solid rgba(86,215,255,.2);
+  border-radius:26px;
+  background:linear-gradient(135deg,rgba(14,39,64,.85),rgba(20,24,49,.88));
+}
+
+.arak-case-page .case-cta{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+  gap:45px;
+  align-items:center;
+  margin-top:65px;
+  padding:42px;
+  border:1px solid var(--line);
+  border-radius:26px;
+  background:var(--panel);
+}
+
+@media(max-width:1000px){
+  .arak-case-page .case-hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .arak-case-page .firewater-schematic{
+    max-width:760px;
+    margin:auto;
+  }
+
+  .arak-case-page .case-summary-four,
+  .arak-case-page .engineering-metrics,
+  .arak-case-page .decision-grid-pro{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .arak-case-page .intro-split,
+  .arak-case-page .case-conclusion,
+  .arak-case-page .case-cta{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:700px){
+  .arak-case-page .case-hero-premium{
+    padding:48px 0 60px;
+  }
+
+  .arak-case-page .case-summary-four,
+  .arak-case-page .engineering-metrics,
+  .arak-case-page .decision-grid-pro{
+    grid-template-columns:1fr;
+  }
+
+  .arak-case-page .section-inline-head{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .arak-case-page .firewater-schematic{
+    padding:8px;
+    border-radius:20px;
+  }
+}
