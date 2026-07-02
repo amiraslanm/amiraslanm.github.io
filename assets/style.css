@@ -63,3 +63,93 @@
 }
 .training-note strong{color:var(--cyan);margin-inline-end:6px}
 .training-item h3{color:var(--cyan)}
+
+
+/* V3.2 — Arak fire pump case study */
+.case-wide{max-width:1180px}
+.case-hero-premium{padding:100px 0 76px}
+.case-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.case-hero-premium h1{font-size:clamp(2.55rem,4.4vw,5rem)}
+.case-hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.case-hero-tags span{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(10,25,43,.62);font:700 .68rem Inter;color:#cbefff}
+
+.firewater-schematic{position:relative;border:1px solid rgba(86,215,255,.22);border-radius:30px;background:linear-gradient(145deg,rgba(15,39,64,.94),rgba(8,18,34,.98));padding:24px;box-shadow:var(--shadow);overflow:hidden}
+.firewater-schematic:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,180,220,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(120,180,220,.055) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent)}
+.firewater-schematic svg{position:relative;width:100%;height:auto;z-index:1}
+.network-main,.network-branch{fill:none;stroke:url(#pipeGradient);stroke-width:7;stroke-linecap:round;stroke-linejoin:round;filter:url(#glow)}
+.network-branch{stroke-width:4;opacity:.72}
+.network-node rect,.network-node circle{fill:rgba(8,18,34,.94);stroke:rgba(86,215,255,.65);stroke-width:2}
+.network-node path{fill:rgba(86,215,255,.16);stroke:#56d7ff;stroke-width:1.5}
+.network-node text,.network-callout text{fill:#eaf7ff;text-anchor:middle;font-family:Inter;font-weight:700;font-size:13px}
+.network-node text:last-child{fill:#8fb3ce;font-size:10px}
+.network-callout rect{fill:rgba(125,108,255,.13);stroke:rgba(125,108,255,.62);stroke-width:1.5}
+.network-callout text:last-child{fill:#aab8ff;font-size:11px}
+.flow-dot{fill:#ffb86a;filter:url(#glow);animation:networkPulse 2.3s ease-in-out infinite}
+.dot-b{animation-delay:.6s}.dot-c{animation-delay:1.2s}
+.schematic-note{position:relative;z-index:2;color:#91a8bc;font-size:.72rem;text-align:center;margin-top:4px}
+@keyframes networkPulse{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.4)}}
+
+.case-summary-four{grid-template-columns:repeat(4,1fr)}
+.intro-split{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.intro-split h2{font-size:clamp(2rem,3.2vw,3.4rem)}
+.intro-split>p{margin:0;color:var(--muted);font-size:1.05rem}
+
+.section-inline-head{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:28px}
+.section-inline-head>div{max-width:620px}
+.section-inline-head>p{max-width:430px;color:var(--muted);font-size:.88rem;margin:0}
+
+.engineering-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.engineering-metrics article{min-height:145px;padding:23px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,var(--panel),color-mix(in srgb,var(--panel) 82%,var(--bg)));display:flex;flex-direction:column;justify-content:space-between}
+.engineering-metrics span{font:800 clamp(1.35rem,2.4vw,2.25rem)/1 Inter;color:var(--cyan);letter-spacing:-.04em}
+.engineering-metrics small{color:var(--muted);font-size:.78rem}
+
+.engineering-journey{position:relative;margin-top:35px}
+.engineering-journey:before{content:"";position:absolute;top:12px;bottom:12px;right:27px;width:1px;background:linear-gradient(var(--cyan),rgba(125,108,255,.55),transparent)}
+html[dir="ltr"] .engineering-journey:before{right:auto;left:27px}
+.engineering-journey article{position:relative;display:grid;grid-template-columns:56px 1fr;gap:24px;padding-bottom:35px}
+.journey-number{position:relative;z-index:2;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#123652,#17244d);border:1px solid rgba(86,215,255,.36);font:800 .78rem Inter;color:var(--cyan);box-shadow:0 8px 25px rgba(0,0,0,.18)}
+.engineering-journey h3{font-size:1.15rem;margin:3px 0 7px}
+.engineering-journey p{margin:0;color:var(--muted);font-size:.94rem}
+
+.scenario-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.scenario-table{width:100%;border-collapse:collapse;min-width:760px}
+.scenario-table th,.scenario-table td{padding:18px 20px;text-align:start;border-bottom:1px solid var(--line)}
+.scenario-table th{font-size:.73rem;color:var(--cyan);background:rgba(86,215,255,.045)}
+.scenario-table td{font-size:.85rem;color:var(--muted)}
+.scenario-table td:first-child{font:700 .78rem Inter;color:var(--text)}
+.scenario-table tr:last-child td{border-bottom:0}
+
+.decision-grid-pro{grid-template-columns:repeat(3,1fr)}
+.decision-grid-pro article{position:relative;min-height:210px;padding:25px;overflow:hidden}
+.decision-grid-pro article>span{display:block;font:800 .72rem Inter;color:var(--cyan);margin-bottom:25px}
+.decision-grid-pro h3{font-size:1rem;margin:0 0 10px}
+.decision-grid-pro p{color:var(--muted)}
+
+.case-conclusion{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;padding:38px;border:1px solid rgba(86,215,255,.2);border-radius:26px;background:linear-gradient(135deg,rgba(14,39,64,.85),rgba(20,24,49,.88))}
+.case-conclusion h2{font-size:clamp(1.8rem,3vw,3rem)}
+.case-conclusion>p{color:#b7c7d8;margin:0}
+
+.case-note strong,.case-note span{display:block}
+.case-note strong{color:var(--amber);margin-bottom:7px}
+.case-cta{display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center;margin-top:65px;padding:42px;border-radius:26px;border:1px solid var(--line);background:var(--panel)}
+.case-cta h2{font-size:clamp(1.65rem,2.8vw,2.8rem);margin:0}
+.case-cta>div:last-child{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+
+@media(max-width:960px){
+  .case-hero-grid,.intro-split,.case-conclusion,.case-cta{grid-template-columns:1fr}
+  .case-summary-four{grid-template-columns:repeat(2,1fr)}
+  .engineering-metrics{grid-template-columns:repeat(2,1fr)}
+  .decision-grid-pro{grid-template-columns:repeat(2,1fr)}
+  .section-inline-head{align-items:flex-start;flex-direction:column}
+  .case-cta>div:last-child{justify-content:flex-start}
+}
+@media(max-width:700px){
+  .case-hero-premium{padding-top:55px}
+  .case-summary-four,.engineering-metrics,.decision-grid-pro{grid-template-columns:1fr}
+  .engineering-journey article{grid-template-columns:46px 1fr;gap:16px}
+  .journey-number{width:46px;height:46px;border-radius:14px}
+  .engineering-journey:before{right:22px}
+  html[dir="ltr"] .engineering-journey:before{right:auto;left:22px}
+  .case-conclusion,.case-cta{padding:25px}
+  .firewater-schematic{padding:10px;border-radius:22px}
+}

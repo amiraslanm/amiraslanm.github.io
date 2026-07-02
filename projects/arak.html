@@ -1,4 +1,16 @@
-<!doctype html><html lang="fa" dir="rtl" data-theme="dark"><head><title>Arak Fire Protection | Amir Aslan Mosaferi</title><meta name="description" content="Industrial firewater network and fire protection design case study."><link rel="canonical" href="https://amiraslanm.github.io/projects/arak-fire-protection.html">
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <title>Fire Pump & Firewater Network Design | Amir Aslan Mosaferi</title>
+  <meta name="description" content="Step-by-step fire pump design and hydraulic assessment for a multi-building industrial facility, including fire scenarios, GX network review, NPSH and storage sizing.">
+  <link rel="canonical" href="https://amiraslanm.github.io/projects/arak.html">
+  <meta property="og:title" content="Fire Pump & Firewater Network Design — Industrial Case Study">
+  <meta property="og:description" content="A professional engineering case study covering scenario development, hydraulic assessment, pump duty selection, NPSH review and firewater storage.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://amiraslanm.github.io/projects/arak.html">
+  <meta property="og:image" content="https://amiraslanm.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Amir Aslan Mosaferi">
@@ -9,7 +21,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-</head><body><div class="scroll-progress" id="scrollProgress"></div>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWork",
+    "name":"Fire Pump and Firewater Network Design for a Multi-Building Industrial Facility",
+    "author":{"@type":"Person","name":"Amir Aslan Mosaferi"},
+    "url":"https://amiraslanm.github.io/projects/arak.html",
+    "about":["Fire Protection Engineering","Fire Pump Selection","Hydraulic Analysis","NPSH","NFPA"]
+  }
+  </script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="cursor-glow" id="cursorGlow"></div>
+
 <header class="site-header">
   <div class="container nav-shell">
     <a class="brand" href="../index.html#home" aria-label="Amir Aslan Mosaferi home">
@@ -39,24 +66,266 @@
     <a href="../index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
   </nav>
 </header>
-<main><section class="case-hero cyan"><div class="container narrow reveal"><a class="back-link" href="../index.html#projects" data-fa="← بازگشت به پروژه‌ها" data-en="← Back to projects">← بازگشت به پروژه‌ها</a><p class="eyebrow">FIRE PROTECTION · INDUSTRIAL</p><h1 data-fa="طراحی حفاظت حریق پروژه صنعتی اراک" data-en="Arak Industrial Fire Protection Design">طراحی حفاظت حریق پروژه صنعتی اراک</h1><p class="case-lead" data-fa="یک مطالعه موردی در تحلیل شبکه آب آتش‌نشانی، سناریوهای همزمان، انتخاب پمپ و ذخیره آب." data-en="A case study in firewater network analysis, simultaneous demand scenarios, pump selection and water storage.">یک مطالعه موردی در تحلیل شبکه آب آتش‌نشانی، سناریوهای همزمان، انتخاب پمپ و ذخیره آب.</p></div></section><article class="case-body container narrow">
-<section class="case-summary reveal"><div><small data-fa="نوع پروژه" data-en="Project type">نوع پروژه</small><strong data-fa="سایت صنعتی چندساختمانی" data-en="Multi-building industrial site">سایت صنعتی چندساختمانی</strong></div><div><small data-fa="نقش" data-en="Role">نقش</small><strong data-fa="طراحی و کنترل هیدرولیکی" data-en="Design & hydraulic review">طراحی و کنترل هیدرولیکی</strong></div><div><small data-fa="استانداردها" data-en="Codes">استانداردها</small><strong>NFPA 13 / 20 / 11</strong></div></section>
-<section class="case-section reveal"><h2 data-fa="مسئله مهندسی" data-en="Engineering challenge">مسئله مهندسی</h2><p data-fa="شبکه آب آتش‌نشانی باید پاسخ‌گوی چند ساختمان با سناریوهای متفاوت اسپرینکلر، هوزریل، فایرباکس و آب–فوم باشد. هدف، تعیین سناریوی حاکم، کنترل افت شبکه و انتخاب یک راه‌حل قابل دفاع برای پمپ و ذخیره آب بود." data-en="The firewater network had to serve multiple buildings with different sprinkler, hose reel, fire box and water–foam scenarios. The objective was to identify the governing case, assess network losses and develop a defensible pump and storage solution.">شبکه آب آتش‌نشانی باید پاسخ‌گوی چند ساختمان با سناریوهای متفاوت اسپرینکلر، هوزریل، فایرباکس و آب–فوم باشد. هدف، تعیین سناریوی حاکم، کنترل افت شبکه و انتخاب یک راه‌حل قابل دفاع برای پمپ و ذخیره آب بود.</p></section>
-<section class="case-section reveal"><h2 data-fa="رویکرد" data-en="Approach">رویکرد</h2><ol class="process-list"><li><b data-fa="تعریف سناریوها" data-en="Define scenarios">تعریف سناریوها</b><span data-fa="تفکیک مصرف‌های همزمان واقعی و جلوگیری از جمع‌کردن غیرمنطقی همه مصرف‌کننده‌ها." data-en="Separate realistic simultaneous demands and avoid indiscriminate summation of every consumer.">تفکیک مصرف‌های همزمان واقعی و جلوگیری از جمع‌کردن غیرمنطقی همه مصرف‌کننده‌ها.</span></li><li><b data-fa="مدل هیدرولیکی" data-en="Hydraulic model">مدل هیدرولیکی</b><span data-fa="کنترل ترازها، مسیر بحرانی، قطر خطوط، افت اصطکاکی و فشار باقیمانده." data-en="Review elevations, critical path, line sizes, friction losses and residual pressure.">کنترل ترازها، مسیر بحرانی، قطر خطوط، افت اصطکاکی و فشار باقیمانده.</span></li><li><b data-fa="انتخاب پمپ و مخزن" data-en="Pump and storage selection">انتخاب پمپ و مخزن</b><span data-fa="هماهنگ‌سازی نقطه کار پمپ، منحنی عملکرد، زمان ذخیره و محدودیت فشاری شبکه." data-en="Coordinate pump duty point, performance curve, storage duration and network pressure limits.">هماهنگ‌سازی نقطه کار پمپ، منحنی عملکرد، زمان ذخیره و محدودیت فشاری شبکه.</span></li><li><b data-fa="کنترل مکش" data-en="Suction review">کنترل مکش</b><span data-fa="بررسی تراز حداقل آب، آرایش مکش و حاشیه NPSH برای مخزن مدفون." data-en="Assess minimum water level, suction arrangement and NPSH margin for the buried tank.">بررسی تراز حداقل آب، آرایش مکش و حاشیه NPSH برای مخزن مدفون.</span></li></ol></section>
-<section class="case-section reveal"><h2 data-fa="خروجی‌های کلیدی" data-en="Key deliverables">خروجی‌های کلیدی</h2><div class="deliverable-grid"><span data-fa="Design Basis و سناریوی حاکم" data-en="Design basis and governing scenario">Design Basis و سناریوی حاکم</span><span data-fa="محاسبات هیدرولیکی شبکه" data-en="Network hydraulic calculations">محاسبات هیدرولیکی شبکه</span><span data-fa="انتخاب پمپ و حجم ذخیره" data-en="Pump and storage selection">انتخاب پمپ و حجم ذخیره</span><span data-fa="مکاتبات فنی برای داده‌های خط" data-en="Technical correspondence for line data">مکاتبات فنی برای داده‌های خط</span></div></section>
-<div class="case-note reveal" data-fa="جزئیات عددی و نقشه‌های پروژه به دلیل محرمانگی منتشر نشده‌اند." data-en="Detailed calculations and drawings are omitted to protect project confidentiality.">جزئیات عددی و نقشه‌های پروژه به دلیل محرمانگی منتشر نشده‌اند.</div>
-</article></main>
+
+<main>
+  <section class="case-hero case-hero-premium cyan">
+    <div class="container case-hero-grid">
+      <div class="reveal">
+        <a class="back-link" href="../index.html#projects" data-fa="← بازگشت به پروژه‌ها" data-en="← Back to projects">← بازگشت به پروژه‌ها</a>
+        <p class="eyebrow">FIRE PUMP · FIREWATER NETWORK · INDUSTRIAL</p>
+        <h1 data-fa="طراحی پمپ و شبکه آب آتش‌نشانی برای یک مجموعه صنعتی چندساختمانی" data-en="Fire Pump & Firewater Network Design for a Multi-Building Industrial Facility">طراحی پمپ و شبکه آب آتش‌نشانی برای یک مجموعه صنعتی چندساختمانی</h1>
+        <p class="case-lead" data-fa="روایت مرحله‌به‌مرحله تبدیل نیازهای متفاوت سه ساختمان صنعتی به یک مبنای طراحی منسجم برای سناریوی حریق، محاسبات هیدرولیکی، انتخاب پمپ، کنترل فشار، NPSH و ذخیره آب." data-en="A step-by-step account of converting the different fire protection demands of three industrial buildings into a coordinated design basis for fire scenarios, hydraulic assessment, pump selection, pressure verification, NPSH and water storage.">روایت مرحله‌به‌مرحله تبدیل نیازهای متفاوت سه ساختمان صنعتی به یک مبنای طراحی منسجم برای سناریوی حریق، محاسبات هیدرولیکی، انتخاب پمپ، کنترل فشار، NPSH و ذخیره آب.</p>
+        <div class="case-hero-tags">
+          <span>AutoSprink</span><span>AutoCAD</span><span>NFPA 13</span><span>NFPA 20</span><span>NFPA 11</span>
+        </div>
+      </div>
+
+      <div class="firewater-schematic reveal" aria-label="Simplified industrial firewater network schematic">
+        <svg viewBox="0 0 760 500" role="img">
+          <defs>
+            <linearGradient id="pipeGradient" x1="0" x2="1">
+              <stop stop-color="#56d7ff"/>
+              <stop offset="1" stop-color="#7d6cff"/>
+            </linearGradient>
+            <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+
+          <path class="network-main" d="M120 370 H250 V250 H420 V150 H650"/>
+          <path class="network-branch" d="M250 250 V120"/>
+          <path class="network-branch" d="M420 250 V390"/>
+          <path class="network-branch" d="M570 150 V300"/>
+
+          <g class="network-node tank-node">
+            <rect x="50" y="320" width="120" height="100" rx="22"/>
+            <path d="M73 345 Q110 320 147 345 V392 H73Z"/>
+            <text x="110" y="375">TANK</text>
+            <text x="110" y="398">200 m³</text>
+          </g>
+
+          <g class="network-node pump-node">
+            <circle cx="250" cy="370" r="45"/>
+            <path d="M229 370h42M250 349v42"/>
+            <text x="250" y="438">FIRE PUMP</text>
+          </g>
+
+          <g class="network-node building-node">
+            <rect x="190" y="50" width="120" height="72" rx="16"/>
+            <text x="250" y="81">BLDG 401</text>
+            <text x="250" y="103">SPRINKLER / FOAM</text>
+          </g>
+
+          <g class="network-node building-node">
+            <rect x="355" y="390" width="130" height="72" rx="16"/>
+            <text x="420" y="421">BLDG 407</text>
+            <text x="420" y="443">FOAM FIRE BOX</text>
+          </g>
+
+          <g class="network-node building-node">
+            <rect x="505" y="300" width="130" height="72" rx="16"/>
+            <text x="570" y="331">BLDG 301</text>
+            <text x="570" y="353">HOSE REEL</text>
+          </g>
+
+          <g class="network-callout">
+            <rect x="480" y="74" width="180" height="48" rx="15"/>
+            <text x="570" y="96">GX MAIN LINE</text>
+            <text x="570" y="113">DN150 · PN16</text>
+          </g>
+
+          <circle class="flow-dot dot-a" cx="165" cy="370" r="6"/>
+          <circle class="flow-dot dot-b" cx="350" cy="250" r="6"/>
+          <circle class="flow-dot dot-c" cx="520" cy="150" r="6"/>
+        </svg>
+        <div class="schematic-note" data-fa="شماتیک ساده‌شده؛ جزئیات محرمانه حذف شده‌اند." data-en="Simplified schematic; confidential details omitted.">شماتیک ساده‌شده؛ جزئیات محرمانه حذف شده‌اند.</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="case-body container case-wide">
+    <section class="case-summary case-summary-four reveal">
+      <div><small data-fa="نوع پروژه" data-en="Project type">نوع پروژه</small><strong data-fa="سایت صنعتی چندساختمانی" data-en="Multi-building industrial facility">سایت صنعتی چندساختمانی</strong></div>
+      <div><small data-fa="نقش من" data-en="My role">نقش من</small><strong data-fa="طراحی، تحلیل و بازبینی هیدرولیکی" data-en="Design, analysis & hydraulic review">طراحی، تحلیل و بازبینی هیدرولیکی</strong></div>
+      <div><small data-fa="سیستم‌های بررسی‌شده" data-en="Systems assessed">سیستم‌های بررسی‌شده</small><strong>Sprinkler · Foam · Hose Reel</strong></div>
+      <div><small data-fa="ابزار و مراجع" data-en="Tools & references">ابزار و مراجع</small><strong>AutoSprink · AutoCAD · NFPA</strong></div>
+    </section>
+
+    <section class="case-section intro-split reveal">
+      <div>
+        <p class="eyebrow" data-fa="خلاصه اجرایی" data-en="Executive summary">خلاصه اجرایی</p>
+        <h2 data-fa="از چند تقاضای پراکنده تا یک تصمیم مهندسی قابل دفاع" data-en="From fragmented demands to a defensible engineering decision">از چند تقاضای پراکنده تا یک تصمیم مهندسی قابل دفاع</h2>
+      </div>
+      <p data-fa="چالش پروژه صرفاً انتخاب یک عدد از کاتالوگ پمپ نبود. لازم بود نیازهای متفاوت ساختمان‌های ۴۰۱، ۴۰۷ و ۳۰۱، وضعیت شبکه GX، اختلاف ارتفاع، افت مسیر، سیستم‌های آب و فوم و شرایط مخزن مدفون در یک چارچوب مشترک بررسی شوند. فرآیند طراحی به‌صورت تکرارشونده انجام شد؛ با دریافت هر داده جدید، سناریوها و نقطه کار پمپ دوباره کنترل شدند تا ضمن تأمین ایمنی، از بزرگ‌انتخابی غیرضروری جلوگیری شود." data-en="The challenge was not simply selecting a number from a pump catalogue. The different demands of Buildings 401, 407 and 301, the GX network, elevation differences, path losses, water and foam systems, and the buried storage tank had to be assessed within one coordinated framework. The design was iterative: as new data became available, scenarios and the pump duty point were reassessed to maintain safety while avoiding unnecessary oversizing.">چالش پروژه صرفاً انتخاب یک عدد از کاتالوگ پمپ نبود. لازم بود نیازهای متفاوت ساختمان‌های ۴۰۱، ۴۰۷ و ۳۰۱، وضعیت شبکه GX، اختلاف ارتفاع، افت مسیر، سیستم‌های آب و فوم و شرایط مخزن مدفون در یک چارچوب مشترک بررسی شوند. فرآیند طراحی به‌صورت تکرارشونده انجام شد؛ با دریافت هر داده جدید، سناریوها و نقطه کار پمپ دوباره کنترل شدند تا ضمن تأمین ایمنی، از بزرگ‌انتخابی غیرضروری جلوگیری شود.</p>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="section-inline-head">
+        <div><p class="eyebrow" data-fa="نتایج منتخب" data-en="Selected outcomes">نتایج منتخب</p><h2 data-fa="خروجی‌های قابل انتشار پروژه" data-en="Publishable project outcomes">خروجی‌های قابل انتشار پروژه</h2></div>
+        <p data-fa="اعداد زیر خلاصه پورتفولیوی طراحی هستند و جایگزین مدارک مصوب پروژه یا منحنی نهایی سازنده نیستند." data-en="The values below are a portfolio-level design summary and do not replace approved project documents or the final vendor curve.">اعداد زیر خلاصه پورتفولیوی طراحی هستند و جایگزین مدارک مصوب پروژه یا منحنی نهایی سازنده نیستند.</p>
+      </div>
+
+      <div class="engineering-metrics">
+        <article><span>03</span><small data-fa="ساختمان صنعتی بررسی‌شده" data-en="Industrial buildings assessed">ساختمان صنعتی بررسی‌شده</small></article>
+        <article><span>DN150</span><small data-fa="خط اصلی شبکه GX" data-en="GX firewater main">خط اصلی شبکه GX</small></article>
+        <article><span>PN16</span><small data-fa="کلاس فشاری اعلام‌شده" data-en="Declared pressure class">کلاس فشاری اعلام‌شده</small></article>
+        <article><span>750 GPM</span><small data-fa="دبی انتخاب مقدماتی پمپ" data-en="Preliminary selected pump flow">دبی انتخاب مقدماتی پمپ</small></article>
+        <article><span>130 PSI</span><small data-fa="فشار انتخاب مقدماتی پمپ" data-en="Preliminary selected pump pressure">فشار انتخاب مقدماتی پمپ</small></article>
+        <article><span>200,000 L</span><small data-fa="حجم پیشنهادی ذخیره آب" data-en="Recommended firewater storage">حجم پیشنهادی ذخیره آب</small></article>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow" data-fa="فرآیند طراحی" data-en="Engineering journey">فرآیند طراحی</p>
+      <h2 data-fa="مسیر مرحله‌به‌مرحله انتخاب پمپ" data-en="Step-by-step pump selection journey">مسیر مرحله‌به‌مرحله انتخاب پمپ</h2>
+
+      <div class="engineering-journey">
+        <article>
+          <div class="journey-number">01</div>
+          <div><h3 data-fa="تعریف محدوده سیستم" data-en="Define the system boundary">تعریف محدوده سیستم</h3><p data-fa="تعیین شد که پمپ‌خانه مرکزی باید سه ساختمان صنعتی با سیستم‌های اسپرینکلر، فوم فایرباکس و هوزریل را از طریق شبکه GX تغذیه کند." data-en="The central pump station was required to serve three industrial buildings with sprinkler, foam fire box and hose reel systems through the GX network.">تعیین شد که پمپ‌خانه مرکزی باید سه ساختمان صنعتی با سیستم‌های اسپرینکلر، فوم فایرباکس و هوزریل را از طریق شبکه GX تغذیه کند.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">02</div>
+          <div><h3 data-fa="جمع‌آوری و کنترل داده‌های ورودی" data-en="Collect and verify input data">جمع‌آوری و کنترل داده‌های ورودی</h3><p data-fa="ارتفاع‌ها، مسیرهای بحرانی، سایز خط، کلاس فشاری، تعداد مصرف‌کننده‌ها و خروجی‌های مدل هیدرولیکی از نقشه‌ها، نرم‌افزار و مکاتبات فنی استخراج شدند." data-en="Elevations, critical paths, line size, pressure class, consumer counts and hydraulic model outputs were collected from drawings, software results and technical correspondence.">ارتفاع‌ها، مسیرهای بحرانی، سایز خط، کلاس فشاری، تعداد مصرف‌کننده‌ها و خروجی‌های مدل هیدرولیکی از نقشه‌ها، نرم‌افزار و مکاتبات فنی استخراج شدند.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">03</div>
+          <div><h3 data-fa="توسعه سناریوهای حریق" data-en="Develop fire scenarios">توسعه سناریوهای حریق</h3><p data-fa="برای هر ساختمان سناریوی مستقل تعریف شد تا تقاضاهای واقعی هم‌زمان بررسی شوند و از جمع‌کردن غیرمنطقی تمام مصرف‌کننده‌ها جلوگیری شود." data-en="A separate scenario was developed for each building to assess realistic simultaneous demands and avoid indiscriminate summation of all consumers.">برای هر ساختمان سناریوی مستقل تعریف شد تا تقاضاهای واقعی هم‌زمان بررسی شوند و از جمع‌کردن غیرمنطقی تمام مصرف‌کننده‌ها جلوگیری شود.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">04</div>
+          <div><h3 data-fa="بازبینی مدل هیدرولیکی ساختمان ۴۰۱" data-en="Review the Building 401 hydraulic model">بازبینی مدل هیدرولیکی ساختمان ۴۰۱</h3><p data-fa="نتیجه اولیه مدل به‌عنوان سیگنال طراحی بررسی شد و فرضیات طبقه‌بندی خطر، ناحیه طراحی، اختلاف ارتفاع، افت مسیر و مرز محاسبات مجدداً کنترل شدند." data-en="The initial model result was treated as a design signal, prompting a review of hazard classification, design area, elevation, path losses and calculation boundaries.">نتیجه اولیه مدل به‌عنوان سیگنال طراحی بررسی شد و فرضیات طبقه‌بندی خطر، ناحیه طراحی، اختلاف ارتفاع، افت مسیر و مرز محاسبات مجدداً کنترل شدند.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">05</div>
+          <div><h3 data-fa="بررسی مستقل تقاضای سیستم فوم" data-en="Assess foam-system demand independently">بررسی مستقل تقاضای سیستم فوم</h3><p data-fa="دبی فوم فایرباکس‌ها، تعداد واحدهای هم‌زمان، درصد کنسانتره و حاشیه طراحی به‌صورت مستقل محاسبه و با سایر سناریوها مقایسه شد." data-en="Foam fire box flow, simultaneous units, concentrate percentage and design allowance were assessed independently and compared with the other scenarios.">دبی فوم فایرباکس‌ها، تعداد واحدهای هم‌زمان، درصد کنسانتره و حاشیه طراحی به‌صورت مستقل محاسبه و با سایر سناریوها مقایسه شد.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">06</div>
+          <div><h3 data-fa="مقایسه سناریوهای سه ساختمان" data-en="Compare the three building scenarios">مقایسه سناریوهای سه ساختمان</h3><p data-fa="سناریوهای اسپرینکلر، فوم فایرباکس و هوزریل در یک ماتریس تصمیم از نظر دبی، فشار، ارتفاع و مسیر بحرانی مقایسه شدند." data-en="Sprinkler, foam fire box and hose reel scenarios were compared in a decision matrix based on flow, pressure, elevation and critical path.">سناریوهای اسپرینکلر، فوم فایرباکس و هوزریل در یک ماتریس تصمیم از نظر دبی، فشار، ارتفاع و مسیر بحرانی مقایسه شدند.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">07</div>
+          <div><h3 data-fa="اصلاح نقطه کار پمپ" data-en="Refine the pump duty point">اصلاح نقطه کار پمپ</h3><p data-fa="انتخاب اولیه محافظه‌کارانه با تکمیل اطلاعات و بازبینی هم‌زمانی‌ها اصلاح شد. نقطه کار مقدماتی 750 GPM در 130 PSI برای ادامه کنترل‌ها انتخاب شد." data-en="The initially conservative selection was refined as data and concurrency assumptions were clarified. A preliminary duty point of 750 GPM at 130 PSI was selected for subsequent verification.">انتخاب اولیه محافظه‌کارانه با تکمیل اطلاعات و بازبینی هم‌زمانی‌ها اصلاح شد. نقطه کار مقدماتی 750 GPM در 130 PSI برای ادامه کنترل‌ها انتخاب شد.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">08</div>
+          <div><h3 data-fa="کنترل فشار شبکه GX" data-en="Verify GX network pressure">کنترل فشار شبکه GX</h3><p data-fa="فشار 130 PSI با کلاس PN16 مقایسه شد و لزوم کنترل فشار Churn پمپ، شیرآلات، اتصالات و تمام اجزای شبکه در شرایط حداکثر فشار ثبت شد." data-en="The 130 PSI duty was compared with the PN16 rating, while the need to verify pump churn pressure, valves, fittings and all network components at maximum pressure was documented.">فشار 130 PSI با کلاس PN16 مقایسه شد و لزوم کنترل فشار Churn پمپ، شیرآلات، اتصالات و تمام اجزای شبکه در شرایط حداکثر فشار ثبت شد.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">09</div>
+          <div><h3 data-fa="ارزیابی مکش و NPSH" data-en="Assess suction and NPSH">ارزیابی مکش و NPSH</h3><p data-fa="برای مخزن مدفون، حداقل تراز آب، ارتفاع محور پمپ، قطر و طول خط مکش، افت اتصالات و حاشیه NPSHa نسبت به NPSHr بررسی شدند." data-en="For the buried tank, minimum water level, pump centreline elevation, suction-line diameter and length, fitting losses, and NPSHa margin over NPSHr were reviewed.">برای مخزن مدفون، حداقل تراز آب، ارتفاع محور پمپ، قطر و طول خط مکش، افت اتصالات و حاشیه NPSHa نسبت به NPSHr بررسی شدند.</p></div>
+        </article>
+
+        <article>
+          <div class="journey-number">10</div>
+          <div><h3 data-fa="تعیین ذخیره آب و مستندسازی" data-en="Size storage and document the design">تعیین ذخیره آب و مستندسازی</h3><p data-fa="حجم محاسباتی با زمان تأمین پروژه کنترل شد و با لحاظ حاشیه اجرایی، حجم 200,000 لیتر پیشنهاد شد. فرضیات، داده‌های مفقود و درخواست‌های فنی نیز در مکاتبات رسمی ثبت شدند." data-en="Calculated storage was checked against the project duration, and 200,000 litres was recommended with an execution allowance. Assumptions, missing data and technical requests were recorded through formal correspondence.">حجم محاسباتی با زمان تأمین پروژه کنترل شد و با لحاظ حاشیه اجرایی، حجم 200,000 لیتر پیشنهاد شد. فرضیات، داده‌های مفقود و درخواست‌های فنی نیز در مکاتبات رسمی ثبت شدند.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="section-inline-head">
+        <div><p class="eyebrow" data-fa="ماتریس تصمیم" data-en="Decision matrix">ماتریس تصمیم</p><h2 data-fa="هر ساختمان چگونه در انتخاب پمپ اثر گذاشت؟" data-en="How each building influenced pump selection">هر ساختمان چگونه در انتخاب پمپ اثر گذاشت؟</h2></div>
+        <p data-fa="انتخاب پمپ با بزرگ‌ترین دبی به‌تنهایی انجام نشد؛ دبی و فشار موردنیاز هر سناریو به‌صورت هم‌زمان ارزیابی شدند." data-en="The pump was not selected from the largest flow alone; both flow and pressure requirements of each scenario were evaluated together.">انتخاب پمپ با بزرگ‌ترین دبی به‌تنهایی انجام نشد؛ دبی و فشار موردنیاز هر سناریو به‌صورت هم‌زمان ارزیابی شدند.</p>
+      </div>
+
+      <div class="scenario-table-wrap">
+        <table class="scenario-table">
+          <thead>
+            <tr>
+              <th data-fa="محدوده" data-en="Area">محدوده</th>
+              <th data-fa="سیستم اصلی" data-en="Primary system">سیستم اصلی</th>
+              <th data-fa="پارامتر بحرانی" data-en="Critical parameter">پارامتر بحرانی</th>
+              <th data-fa="نقش در تصمیم" data-en="Influence on decision">نقش در تصمیم</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Building 401</td>
+              <td>Sprinkler + Water/Foam</td>
+              <td data-fa="ارتفاع و مسیر هیدرولیکی بحرانی" data-en="Elevation and critical hydraulic path">ارتفاع و مسیر هیدرولیکی بحرانی</td>
+              <td data-fa="کنترل فشار موردنیاز و بازبینی مدل" data-en="Required-pressure verification and model review">کنترل فشار موردنیاز و بازبینی مدل</td>
+            </tr>
+            <tr>
+              <td>Building 407</td>
+              <td>Foam Fire Boxes</td>
+              <td data-fa="تعداد مصرف‌کننده هم‌زمان و دبی فوم" data-en="Simultaneous units and foam flow">تعداد مصرف‌کننده هم‌زمان و دبی فوم</td>
+              <td data-fa="کنترل سناریوی دبی سیستم فوم" data-en="Foam-system flow scenario check">کنترل سناریوی دبی سیستم فوم</td>
+            </tr>
+            <tr>
+              <td>Building 301</td>
+              <td>Hose Reels</td>
+              <td data-fa="فشار در بالاترین و دورترین مصرف‌کننده" data-en="Pressure at the highest and most remote outlet">فشار در بالاترین و دورترین مصرف‌کننده</td>
+              <td data-fa="کنترل فشار باقیمانده شبکه" data-en="Network residual-pressure verification">کنترل فشار باقیمانده شبکه</td>
+            </tr>
+            <tr>
+              <td>GX Network</td>
+              <td>DN150 · PN16</td>
+              <td data-fa="افت مسیر و بیشینه فشار قابل‌تحمل" data-en="Path loss and maximum allowable pressure">افت مسیر و بیشینه فشار قابل‌تحمل</td>
+              <td data-fa="کنترل نقطه کار و فشار Churn" data-en="Duty-point and churn-pressure verification">کنترل نقطه کار و فشار Churn</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <p class="eyebrow" data-fa="قضاوت مهندسی" data-en="Engineering judgement">قضاوت مهندسی</p>
+      <h2 data-fa="تصمیم‌های کلیدی که طراحی را قابل دفاع کردند" data-en="Key decisions that made the design defensible">تصمیم‌های کلیدی که طراحی را قابل دفاع کردند</h2>
+
+      <div class="decision-grid decision-grid-pro">
+        <article><span>01</span><h3 data-fa="تفکیک سناریوها" data-en="Scenario separation">تفکیک سناریوها</h3><p data-fa="به‌جای جمع تمام مصرف‌ها، هم‌زمانی واقعی هر ساختمان و سیستم بررسی شد." data-en="Realistic concurrency was assessed instead of summing every demand indiscriminately.">به‌جای جمع تمام مصرف‌ها، هم‌زمانی واقعی هر ساختمان و سیستم بررسی شد.</p></article>
+        <article><span>02</span><h3 data-fa="جلوگیری از Oversizing" data-en="Avoid unnecessary oversizing">جلوگیری از Oversizing</h3><p data-fa="انتخاب محافظه‌کارانه اولیه با ورود داده‌های معتبر اصلاح شد، بدون کاهش الزامات ایمنی." data-en="The initial conservative selection was refined as reliable data became available, without reducing safety requirements.">انتخاب محافظه‌کارانه اولیه با ورود داده‌های معتبر اصلاح شد، بدون کاهش الزامات ایمنی.</p></article>
+        <article><span>03</span><h3 data-fa="تفکیک فشار نامی و افت هیدرولیکی" data-en="Separate pressure rating from hydraulic loss">تفکیک فشار نامی و افت هیدرولیکی</h3><p data-fa="PN16 برای تحمل فشار بررسی شد؛ اما محاسبه افت همچنان بر اساس مسیر، قطر، زبری و اتصالات انجام گرفت." data-en="PN16 was used for pressure-capacity review, while hydraulic loss remained dependent on route, diameter, roughness and fittings.">PN16 برای تحمل فشار بررسی شد؛ اما محاسبه افت همچنان بر اساس مسیر، قطر، زبری و اتصالات انجام گرفت.</p></article>
+        <article><span>04</span><h3 data-fa="کنترل کل منحنی پمپ" data-en="Review the full pump curve">کنترل کل منحنی پمپ</h3><p data-fa="نقطه نامی، 150 درصد دبی، فشار Churn و توان موتور باید با منحنی نهایی سازنده تأیید شوند." data-en="Rated duty, 150% flow, churn pressure and motor power must be confirmed against the final vendor curve.">نقطه نامی، 150 درصد دبی، فشار Churn و توان موتور باید با منحنی نهایی سازنده تأیید شوند.</p></article>
+        <article><span>05</span><h3 data-fa="کنترل مکش مستقل از حجم مخزن" data-en="Treat suction separately from storage volume">کنترل مکش مستقل از حجم مخزن</h3><p data-fa="حجم مخزن تعیین‌کننده مدت تأمین است؛ عملکرد مکش به تراز آب، افت خط و NPSH وابسته است." data-en="Storage volume determines supply duration; suction performance depends on water level, line losses and NPSH.">حجم مخزن تعیین‌کننده مدت تأمین است؛ عملکرد مکش به تراز آب، افت خط و NPSH وابسته است.</p></article>
+        <article><span>06</span><h3 data-fa="ثبت عدم‌قطعیت‌ها" data-en="Document uncertainties">ثبت عدم‌قطعیت‌ها</h3><p data-fa="داده‌های موردنیاز خط GX و تجهیزات از طریق مکاتبات رسمی درخواست و محدودیت‌های طراحی ثبت شدند." data-en="Required GX line and equipment data were formally requested, and design limitations were documented.">داده‌های موردنیاز خط GX و تجهیزات از طریق مکاتبات رسمی درخواست و محدودیت‌های طراحی ثبت شدند.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <div class="case-conclusion">
+        <div>
+          <p class="eyebrow" data-fa="جمع‌بندی" data-en="Conclusion">جمع‌بندی</p>
+          <h2 data-fa="خروجی اصلی پروژه، فقط یک عدد پمپ نبود" data-en="The primary output was more than a pump number">خروجی اصلی پروژه، فقط یک عدد پمپ نبود</h2>
+        </div>
+        <p data-fa="ارزش اصلی کار، ایجاد یک منطق طراحی قابل ردیابی بود: محدوده سیستم مشخص شد، ورودی‌های ناقص شناسایی شدند، سناریوهای حریق مقایسه شدند، فشار و دبی هم‌زمان کنترل شدند، شرایط مخزن و مکش بررسی شد و انتخاب پمپ در قالب یک تصمیم مهندسی مستند ارائه گردید." data-en="The key value was a traceable design logic: the system boundary was defined, missing inputs were identified, fire scenarios were compared, flow and pressure were assessed together, storage and suction conditions were reviewed, and pump selection was presented as a documented engineering decision.">ارزش اصلی کار، ایجاد یک منطق طراحی قابل ردیابی بود: محدوده سیستم مشخص شد، ورودی‌های ناقص شناسایی شدند، سناریوهای حریق مقایسه شدند، فشار و دبی هم‌زمان کنترل شدند، شرایط مخزن و مکش بررسی شد و انتخاب پمپ در قالب یک تصمیم مهندسی مستند ارائه گردید.</p>
+      </div>
+    </section>
+
+    <div class="case-note reveal">
+      <strong data-fa="محرمانگی و حدود انتشار:" data-en="Confidentiality and publication limits:">محرمانگی و حدود انتشار:</strong>
+      <span data-fa="این صفحه یک خلاصه حرفه‌ای از فرآیند طراحی است. نقشه‌ها، نام کارفرما، مختصات سایت، محاسبات تفصیلی و داده‌های اختصاصی پروژه عمداً منتشر نشده‌اند." data-en="This page is a professional summary of the design process. Drawings, client identity, site coordinates, detailed calculations and proprietary project data are intentionally omitted.">این صفحه یک خلاصه حرفه‌ای از فرآیند طراحی است. نقشه‌ها، نام کارفرما، مختصات سایت، محاسبات تفصیلی و داده‌های اختصاصی پروژه عمداً منتشر نشده‌اند.</span>
+    </div>
+
+    <section class="case-cta reveal">
+      <div><p class="eyebrow" data-fa="همکاری فنی" data-en="Technical collaboration">همکاری فنی</p><h2 data-fa="برای بررسی پروژه‌های حفاظت حریق و محاسبات هیدرولیکی آماده همکاری هستم." data-en="Available for fire protection design and hydraulic assessment projects.">برای بررسی پروژه‌های حفاظت حریق و محاسبات هیدرولیکی آماده همکاری هستم.</h2></div>
+      <div><a class="btn primary" href="mailto:amir.a.mosaferi@gmail.com" data-fa="ارسال ایمیل" data-en="Send email">ارسال ایمیل</a><a class="btn secondary" href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+    </section>
+  </article>
+</main>
+
 <footer class="site-footer">
   <div class="container footer-grid">
     <div><a class="footer-brand" href="../index.html">AM</a><p data-fa="مهندسی دقیق برای مسائل پیچیده." data-en="Precision engineering for complex problems.">مهندسی دقیق برای مسائل پیچیده.</p></div>
     <div class="footer-links">
       <a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
     </div>
     <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
   </div>
 </footer>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="../assets/app.js"></script>
-</body></html>
+</body>
+</html>
