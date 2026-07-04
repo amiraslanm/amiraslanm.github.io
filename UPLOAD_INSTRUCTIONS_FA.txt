@@ -1,19 +1,13 @@
-بسته آپدیت دوره پوشش‌های مقاوم حریق
+آپدیت Dual-Track Portfolio
 
-1) فایل ZIP را Extract کنید.
-2) در GitHub Repository سایت، Add file > Upload files را انتخاب کنید.
-3) همه فایل‌ها و پوشه‌های داخل بسته را آپلود کنید.
-4) مسیرهای مهم:
-   fire-resistant-coatings.html
-   education.html
-   index.html
-   assets/education.css
-   assets/education.js
-   sitemap.xml
-5) Commit message:
-   Add fire-resistant coatings education course
-6) Commit directly to main
-7) چند دقیقه بعد سایت را با Ctrl + Shift + R بازخوانی کنید.
+1) ZIP را Extract کن.
+2) در GitHub Repository سایت روی Add file > Upload files بزن.
+3) تمام فایل‌های داخل پوشه Extract شده را آپلود کن.
+4) Commit message:
+   Convert portfolio to professional and academic tracks
+5) Commit directly to main
+6) بعد از چند دقیقه Ctrl + Shift + R بزن.
 
-آدرس صفحه:
-https://amiraslanm.github.io/fire-resistant-coatings.html
+آدرس‌های جدید:
+https://amiraslanm.github.io/professional.html
+https://amiraslanm.github.io/research.html
