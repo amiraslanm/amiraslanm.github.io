@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CFD Cheat Sheet | چیت‌شیت CFD</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+<nav class="topnav"><div class="container nav-inner"><a class="logo" href="../index.html">← بازگشت به دوره</a><div class="nav-links"><a href="#print" onclick="window.print()">پرینت / PDF</a></div></div></nav>
+<header class="hero"><div class="container"><span class="badge">Printable CFD Cheat Sheet</span><h1>چیت‌شیت سریع CFD</h1><p>یک صفحه مروری برای فرمول‌ها، مفاهیم کلیدی و خطاهای رایج در دینامیک سیالات محاسباتی.</p></div></header>
+<main class="container">
+<section>
+  <div class="cards">
+    <article class="card"><h3>معادلات حاکم</h3><div class="formula">Continuity: ∂ρ/∂t + ∇·(ρu)=0
+Incompressible: ∇·u=0
+Momentum: ρ(∂u/∂t + u·∇u)=−∇p+μ∇²u+ρg
+Energy: ρCp(∂T/∂t+u·∇T)=k∇²T+S</div></article>
+    <article class="card"><h3>طبقه‌بندی PDE</h3><div class="formula">Aφxx + Bφxy + Cφyy + ... = 0
+D = B² − 4AC
+D&lt;0 Elliptic
+D=0 Parabolic
+D&gt;0 Hyperbolic</div></article>
+    <article class="card"><h3>تفاضل محدود</h3><div class="formula">Forward:  (f[i+1]-f[i])/Δx → O(Δx)
+Backward: (f[i]-f[i-1])/Δx → O(Δx)
+Central:  (f[i+1]-f[i-1])/(2Δx) → O(Δx²)
+Second:   (f[i+1]-2f[i]+f[i-1])/(Δx²)</div></article>
+    <article class="card"><h3>معادله گرما صریح</h3><div class="formula">∂u/∂t = α∂²u/∂x²
+uᵢⁿ⁺¹ = uᵢⁿ + r(uᵢ₊₁ⁿ - 2uᵢⁿ + uᵢ₋₁ⁿ)
+r = αΔt/(Δx)²
+Stable if r ≤ 1/2</div></article>
+    <article class="card"><h3>FVM</h3><div class="formula">∫V ∇·F dV = ∮S F·n dA
+cell balance:
+Σ flux_out − Σ flux_in = sources + accumulation</div><p class="note">مزیت اصلی: conservative بودن شارها و سازگاری با مش پیچیده.</p></article>
+    <article class="card"><h3>Boundary Conditions</h3><ul><li>Velocity inlet: سرعت/دبی معلوم</li><li>Pressure outlet: فشار خروجی معلوم</li><li>No-slip wall: سرعت روی دیواره = سرعت دیواره</li><li>Symmetry: سرعت نرمال صفر و گرادیان نرمال صفر</li></ul></article>
+    <article class="card"><h3>Mesh Quality</h3><ul><li>Aspect ratio را کنترل کن.</li><li>Skewness بالا = خطای گرادیان و شار.</li><li>Non-orthogonality بالا = نیاز به correction و خطر همگرایی.</li><li>در لایه مرزی، رشد سلول‌ها آرام باشد.</li></ul></article>
+    <article class="card"><h3>Convergence</h3><ul><li>Residual افت کند و flatten شود.</li><li>مانیتورهای فیزیکی ثابت شوند.</li><li>بالانس جرم/انرژی چک شود.</li><li>Grid independence انجام شود.</li></ul></article>
+    <article class="card"><h3>Vorticity–Streamfunction</h3><div class="formula">u = ∂ψ/∂y
+v = −∂ψ/∂x
+ω = ∂v/∂x − ∂u/∂y
+∇²ψ = −ω</div></article>
+  </div>
+</section>
+<section>
+  <div class="callout"><b>قانون طلایی CFD:</b> اگر نتیجه خیلی زیبا ولی بدون اعتبارسنجی باشد، هنوز نتیجه مهندسی نیست.</div>
+</section>
+</main>
+<footer class="footer"><div class="container">CFD Starter Lab • Printable Cheat Sheet</div></footer>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="آموزش مقدماتی CFD برای GitHub Pages - Computational Fluid Dynamics mini course" />
+  <title>CFD Starter Lab | آموزش مقدماتی دینامیک سیالات محاسباتی</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">🌊 CFD Starter Lab</a>
+      <div class="nav-links">
+        <a href="#modules">ماژول‌ها</a>
+        <a href="#roadmap">مسیر یادگیری</a>
+        <a href="#quiz">کوئیز</a>
+        <a href="cheatsheets/cfd-cheatsheet.html">چیت‌شیت</a>
+        <a href="README.md">README</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">🚀 GitHub Pages Ready • RTL/LTR • Interactive Quiz</span>
+        <h1>آموزش مقدماتی CFD؛ از معادله تا شبیه‌سازی</h1>
+        <p>
+          این صفحه یک مینی‌کورس جذاب و وب‌سایتی برای ورود به دنیای <b>Computational Fluid Dynamics</b> است؛
+          مناسب برای ارائه در GitHub، رزومه پژوهشی، پورتفولیو و مرور سریع مفاهیم پایه. محتوا بر اساس جزوه‌های CFD و
+          با بیان آموزشی و قابل‌فهم بازنویسی شده است.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#modules">شروع یادگیری</a>
+          <a class="btn" href="cheatsheets/cfd-cheatsheet.html">دانلود/پرینت چیت‌شیت</a>
+          <button class="btn" onclick="resetProgress()">Reset Progress</button>
+        </div>
+        <div style="margin-top:24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <span class="badge">پیشرفت دوره: <b id="progressText">0%</b></span>
+          <div class="progress-shell"><div id="progressBar" class="progress-bar"></div></div>
+        </div>
+      </div>
+      <div class="panel flow-card">
+        <img src="assets/svg/cfd-pipeline.svg" alt="CFD workflow pipeline" />
+        <div class="stat-row">
+          <div class="stat"><b>10</b><br><span class="note">ماژول</span></div>
+          <div class="stat"><b>8</b><br><span class="note">سؤال</span></div>
+          <div class="stat"><b>1</b><br><span class="note">چیت‌شیت</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" id="overview">
+      <div class="section-head">
+        <div>
+          <h2>CFD دقیقاً چیست؟</h2>
+          <p>CFD یعنی تبدیل فیزیک جریان سیال به معادلات، تبدیل معادلات به معادلات جبری، و حل آن‌ها با کامپیوتر.</p>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>1) فیزیک</h3>
+          <p>قوانین بقای جرم، مومنتوم و انرژی پایه‌ی مدل‌سازی هستند. بدون فهم فیزیک، رنگ‌های کانتور فقط تصویرند.</p>
+        </article>
+        <article class="card">
+          <h3>2) عددی‌سازی</h3>
+          <p>دامنه به سلول تقسیم می‌شود؛ مشتق‌ها و شارها به روابط جبری تبدیل می‌شوند؛ سپس حلگر سیستم را حل می‌کند.</p>
+        </article>
+        <article class="card">
+          <h3>3) اعتبارسنجی</h3>
+          <p>جواب CFD فقط وقتی قابل اعتماد است که همگرا، مستقل از شبکه و قابل مقایسه با داده‌ی تحلیلی/تجربی باشد.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="modules">
+      <div class="section-head">
+        <div>
+          <h2>ماژول‌های آموزشی</h2>
+          <p>هر ماژول را بخوان، تمرینش را انجام بده و بعد تیک «انجام شد» را بزن تا پیشرفتت ذخیره شود.</p>
+        </div>
+      </div>
+
+      <article class="module" id="m1">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 1 — Mindset و مسیر حل CFD</h3>
+            <p class="note">از مسئله فیزیکی تا گزارش مهندسی: Geometry → Mesh → Solver → Post-processing.</p>
+          </div>
+          <div class="meta"><span class="badge">Beginner</span><button class="btn" onclick="toggleModule('m1')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              در CFD اول باید بدانیم «چه چیزی را می‌خواهیم پیش‌بینی کنیم؟» سرعت، فشار، دما، نیروی درگ، افت فشار یا الگوی گردابه؟
+              بعد یک مدل فیزیکی انتخاب می‌کنیم: جریان پایا یا ناپایا، تراکم‌پذیر یا تراکم‌ناپذیر، آرام یا آشفته، انتقال حرارت یا ایزوترمال.
+            </p>
+            <p>
+              نکته طلایی: CFD یک ماشین تولید کانتور نیست؛ یک فرآیند مهندسی است. هر رنگی که در Post-processing می‌بینی، پشتش
+              فرضیات، شرایط مرزی، مش، مدل آشفتگی و معیار همگرایی قرار دارد.
+            </p>
+            <div class="callout">🎯 خروجی درست CFD یعنی: فیزیک درست + مش مناسب + حل پایدار + اعتبارسنجی.</div>
+          </div>
+          <div class="diagram"><img src="assets/svg/cfd-pipeline.svg" alt="CFD workflow"></div>
+        </div>
+      </article>
+
+      <article class="module" id="m2">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 2 — معادلات حاکم و نوع PDE</h3>
+            <p class="note">Elliptic، Parabolic و Hyperbolic را با مفهوم انتشار اطلاعات یاد بگیر.</p>
+          </div>
+          <div class="meta"><span class="badge">PDE</span><button class="btn" onclick="toggleModule('m2')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              معادلات CFD معمولاً از نوع PDE هستند؛ چون مجهول‌ها مثل سرعت و فشار تابع مکان و زمان‌اند. معادله‌ی کلی مرتبه دوم را
+              می‌توان با ضرایب A، B و C طبقه‌بندی کرد. علامت <span class="kbd">B² − 4AC</span> تعیین می‌کند اطلاعات چگونه در میدان پخش می‌شود.
+            </p>
+            <div class="formula">Elliptic: B² − 4AC &lt; 0
+Parabolic: B² − 4AC = 0
+Hyperbolic: B² − 4AC &gt; 0</div>
+            <p>
+              معادله لاپلاس/پواسون بیضوی است و به شرایط مرزی دور تا دور دامنه نیاز دارد. معادله گرما سهموی است و با شرط اولیه در زمان
+              جلو می‌رود. معادله موج هذلولوی است و مفهوم مشخصه‌ها در آن مهم می‌شود.
+            </p>
+          </div>
+          <div class="diagram"><img src="assets/svg/pde-classification.svg" alt="PDE classification"></div>
+        </div>
+      </article>
+
+      <article class="module" id="m3">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 3 — شبکه و تفاضل محدود FDM</h3>
+            <p class="note">بسط تیلور، مشتق پیشرو/پسرو/مرکزی و خطای گسسته‌سازی.</p>
+          </div>
+          <div class="meta"><span class="badge">Numerics</span><button class="btn" onclick="toggleModule('m3')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              در روش تفاضل محدود، تابع پیوسته را فقط روی نقاط شبکه می‌شناسیم. مشتق‌ها با اختلاف مقدار تابع در نقاط مجاور تقریب زده می‌شوند.
+              تفاضل مرکزی معمولاً دقت بیشتری از پیشرو/پسرو دارد، چون خطای مرتبه اول در بسط تیلور حذف می‌شود.
+            </p>
+            <div class="formula">Forward:  ∂f/∂x ≈ (f[i+1] − f[i]) / Δx      → O(Δx)
+Backward: ∂f/∂x ≈ (f[i] − f[i−1]) / Δx      → O(Δx)
+Central:  ∂f/∂x ≈ (f[i+1] − f[i−1]) / 2Δx  → O(Δx²)</div>
+            <p>
+              برای مشتق دوم، فرمول مرکزی سه‌نقطه‌ای از پایه‌ای‌ترین روابط CFD است و در معادلات پخش، لاپلاس و پواسون زیاد دیده می‌شود.</p>
+          </div>
+          <div class="card">
+            <h3>تمرین کوتاه</h3>
+            <p>تابع <span class="ltr">f(x)=x³+3x²−9x</span> را در x=1 با h=0.2 مشتق بگیر و خطای Forward، Backward و Central را مقایسه کن.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="module" id="m4">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 4 — حجم محدود FVM</h3>
+            <p class="note">زبان اصلی Fluent و OpenFOAM: شار ورودی/خروجی روی حجم کنترل.</p>
+          </div>
+          <div class="meta"><span class="badge">FVM</span><button class="btn" onclick="toggleModule('m4')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              در FVM به‌جای نگاه نقطه‌ای، یک سلول یا Control Volume داریم. قانون بقا روی هر حجم کنترل انتگرال گرفته می‌شود و با قضیه گاوس،
+              انتگرال حجمی دیورژانس به شار سطحی روی وجوه سلول تبدیل می‌شود. به همین دلیل FVM ذاتاً conservative است.
+            </p>
+            <div class="formula">∫_V ∇·F dV = ∮_S F·n dA
+
+For each cell:
+Σ(face fluxes) + sources = accumulation</div>
+            <p>اگر شار خروجی از یک سلول دقیقاً شار ورودی سلول مجاور باشد، جرم/مومنتوم/انرژی در سطح شبکه حفظ می‌شود. همین ویژگی برای CFD صنعتی بسیار مهم است.</p>
+          </div>
+          <div class="card">
+            <h3>ایده بصری</h3>
+            <p>در سایت می‌توان برای هر سلول فلش‌های شار ورودی/خروجی گذاشت و با hover نشان داد کدام وجه، کدام شار را حمل می‌کند.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="module" id="m5">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 5 — کیفیت شبکه Mesh Quality</h3>
+            <p class="note">Aspect Ratio، Skewness، Orthogonality و اثرشان روی همگرایی.</p>
+          </div>
+          <div class="meta"><span class="badge">Mesh</span><button class="btn" onclick="toggleModule('m5')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              مش خوب یعنی سلول‌ها آن‌قدر منظم و کافی باشند که گرادیان‌های جریان را ببینند، بدون اینکه حلگر را ناپایدار کنند. سلول بد مثل
+              یک سنسور خراب است: داده می‌دهد، ولی اعتمادپذیر نیست.
+            </p>
+            <ul>
+              <li><b>Aspect Ratio:</b> کشیدگی سلول. در لایه مرزی کنترل‌شده قابل قبول است، ولی در ناحیه گردابه خطرناک می‌شود.</li>
+              <li><b>Skewness:</b> انحراف هندسی سلول از حالت ایده‌آل؛ مقدار زیاد باعث خطای شار و گرادیان می‌شود.</li>
+              <li><b>Non-orthogonality:</b> زاویه نامطلوب بین خط مرکز سلول‌ها و نرمال وجه.</li>
+            </ul>
+          </div>
+          <div class="diagram"><img src="assets/svg/mesh-quality.svg" alt="Mesh quality metrics"></div>
+        </div>
+      </article>
+
+      <article class="module" id="m6">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 6 — روش‌های زمانی صریح و ضمنی</h3>
+            <p class="note">FTCS، Laasonen، Crank–Nicolson و شرط پایداری.</p>
+          </div>
+          <div class="meta"><span class="badge">Transient</span><button class="btn" onclick="toggleModule('m6')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              در روش صریح، مقدار زمان جدید از مقادیر زمان قبلی به‌طور مستقیم محاسبه می‌شود؛ سریع و ساده است اما به شرط پایداری حساس است.
+              در روش ضمنی، مجهولات زمان جدید با هم حل می‌شوند؛ هزینه بیشتر دارد ولی معمولاً پایدارتر است.
+            </p>
+            <div class="formula">Heat equation: ∂u/∂t = α ∂²u/∂x²
+FTCS: uᵢⁿ⁺¹ = uᵢⁿ + r(uᵢ₊₁ⁿ − 2uᵢⁿ + uᵢ₋₁ⁿ)
+r = αΔt/(Δx)² ≤ 1/2</div>
+            <p>Crank–Nicolson از میانگین زمانی بین n و n+1 استفاده می‌کند و برای معادلات پخش، دقت زمانی خوبی دارد.</p>
+          </div>
+          <div class="card">
+            <h3>حس فیزیکی</h3>
+            <p>اگر Δt خیلی بزرگ شود، حلگر در زمان «پرش» می‌کند و اطلاعات عددی فرصت انتشار درست در شبکه را پیدا نمی‌کند؛ نتیجه می‌تواند نوسان یا واگرایی باشد.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="module" id="m7">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 7 — همسازی، پایداری و همگرایی</h3>
+            <p class="note">سه ستون اعتماد عددی: Consistency + Stability ⇒ Convergence.</p>
+          </div>
+          <div class="meta"><span class="badge">Core CFD</span><button class="btn" onclick="toggleModule('m7')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              یک روش عددی وقتی <b>همساز</b> است که با کوچک‌شدن Δx و Δt، معادله گسسته به معادله اصلی نزدیک شود. وقتی <b>پایدار</b> است که
+              خطاهای کوچک در زمان رشد نکنند. وقتی <b>همگرا</b> است که جواب عددی با ریزکردن شبکه به جواب واقعی نزدیک شود.
+            </p>
+            <div class="formula">Consistency + Stability ⇒ Convergence
+
+For explicit heat equation:
+r = αΔt/(Δx)²
+Stable if: 0 &lt; r ≤ 1/2</div>
+            <p>در تحلیل Von Neumann، خطا به موج‌های فوریه شکسته می‌شود و بررسی می‌کنیم آیا دامنه هر موج با زمان رشد می‌کند یا نه.</p>
+          </div>
+          <div class="card">
+            <h3>اشتباه رایج</h3>
+            <p>Residual پایین به تنهایی کافی نیست. باید مانیتورهای فیزیکی، بالانس جرم و استقلال از شبکه هم بررسی شود.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="module" id="m8">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 8 — شرایط مرزی Boundary Conditions</h3>
+            <p class="note">ورودی، خروجی، دیواره، تقارن و شرط اولیه.</p>
+          </div>
+          <div class="meta"><span class="badge">BC</span><button class="btn" onclick="toggleModule('m8')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              شرایط مرزی تعیین می‌کنند سیال چگونه وارد، خارج یا با دیواره تعامل کند. انتخاب اشتباه BC می‌تواند جواب را کاملاً غیرواقعی کند، حتی اگر مش و حلگر خوب باشند.
+            </p>
+            <ul>
+              <li><b>Velocity Inlet:</b> وقتی سرعت یا دبی ورودی معلوم است.</li>
+              <li><b>Pressure Outlet:</b> وقتی خروجی به فشار مرجع یا اتمسفر وصل است.</li>
+              <li><b>No-slip Wall:</b> سرعت سیال روی دیواره برابر سرعت دیواره است؛ برای دیواره ثابت، سرعت صفر.</li>
+              <li><b>Symmetry:</b> وقتی هندسه و جریان دو طرف مرز مشابه‌اند.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>قانون طلایی</h3>
+            <p>در هر مرز بپرس: «در دنیای واقعی اینجا چه چیزی معلوم است؟ سرعت؟ فشار؟ شار حرارتی؟ یا تقارن؟»</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="module" id="m9">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 9 — توربولانس RANS/LES/DNS</h3>
+            <p class="note">انتخاب مدل آشفتگی یعنی توازن بین هزینه و دقت.</p>
+          </div>
+          <div class="meta"><span class="badge">Turbulence</span><button class="btn" onclick="toggleModule('m9')">انجام شد</button></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>مدل</th><th>هزینه</th><th>دقت</th><th>کاربرد معمول</th><th>نکته wall treatment</th></tr></thead>
+            <tbody>
+              <tr><td>RANS</td><td>کم</td><td>میانگین جریان</td><td>طراحی مهندسی، HVAC، پمپ، لوله</td><td>با wall function معمولاً y+ بزرگ‌تر</td></tr>
+              <tr><td>URANS</td><td>متوسط</td><td>نوسان‌های بزرگ مقیاس</td><td>vortex shedding، جریان ضربانی</td><td>مشابه RANS</td></tr>
+              <tr><td>LES</td><td>زیاد</td><td>گردابه‌های بزرگ حل می‌شوند</td><td>جت، wake، mixing، aeroacoustics</td><td>نیازمند مش دیواره دقیق‌تر</td></tr>
+              <tr><td>DNS</td><td>بسیار زیاد</td><td>بدون مدل توربولانس</td><td>تحقیق بنیادی در Re پایین</td><td>همه مقیاس‌ها باید حل شوند</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="module" id="m10">
+        <div class="module-head">
+          <div>
+            <h3>ماژول 10 — فرم تاوایی–خط جریان</h3>
+            <p class="note">Vorticity–Streamfunction برای جریان دوبعدی تراکم‌ناپذیر.</p>
+          </div>
+          <div class="meta"><span class="badge">Research</span><button class="btn" onclick="toggleModule('m10')">انجام شد</button></div>
+        </div>
+        <div class="module-grid">
+          <div>
+            <p>
+              برای جریان دوبعدی تراکم‌ناپذیر می‌توان به جای حل مستقیم فشار، از تابع جریان ψ و تاوایی ω استفاده کرد. تابع جریان شرط پیوستگی
+              را خودکار برقرار می‌کند و تاوایی چرخش محلی جریان را نشان می‌دهد.
+            </p>
+            <div class="formula">u = ∂ψ/∂y,   v = −∂ψ/∂x
+ω = ∂v/∂x − ∂u/∂y
+∇²ψ = −ω</div>
+            <p>این فرم برای مسئله‌ی کلاسیک lid-driven cavity بسیار آموزشی است: دیواره بالایی حرکت می‌کند، گردابه اصلی تشکیل می‌شود و حلگر باید معادله پواسون ψ را در هر گام حل کند.</p>
+          </div>
+          <div class="diagram"><img src="assets/svg/vorticity.svg" alt="vorticity streamfunction"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="container" id="roadmap">
+      <div class="section-head">
+        <div>
+          <h2>مسیر پیشنهادی از Beginner تا Research</h2>
+          <p>این مسیر برای کسی طراحی شده که می‌خواهد از مفاهیم پایه به Fluent/OpenFOAM و پروژه پژوهشی برسد.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><time>Step 01</time><div><b>Fundamentals:</b> PDE، ناویر–استوکس، معادله گرما، لاپلاس/پواسون.</div></div>
+        <div class="timeline-item"><time>Step 02</time><div><b>Numerics:</b> FDM، FVM، خطای برش، همسازی، پایداری و همگرایی.</div></div>
+        <div class="timeline-item"><time>Step 03</time><div><b>Software:</b> حل 3 کیس پایه در Fluent یا OpenFOAM: pipe flow، cavity، cylinder.</div></div>
+        <div class="timeline-item"><time>Step 04</time><div><b>Verification:</b> مقایسه با حل تحلیلی و grid independence.</div></div>
+        <div class="timeline-item"><time>Step 05</time><div><b>Research:</b> تعریف Case پژوهشی: FSI، VIV، heat transfer، MHD یا turbulence control.</div></div>
+      </div>
+    </section>
+
+    <section class="container" id="quiz">
+      <div class="section-head">
+        <div>
+          <h2>کوئیز تعاملی CFD</h2>
+          <p>بعد از خواندن ماژول‌ها، این 8 سؤال را جواب بده. نتیجه در مرورگر ذخیره نمی‌شود مگر پیشرفت ماژول‌ها.</p>
+        </div>
+      </div>
+      <div class="quiz">
+        <div class="question"><h4>1) CFD در ساده‌ترین تعریف چیست؟</h4><div class="options"><label><input type="radio" name="q1" value="a"> فقط رسم کانتورهای رنگی</label><label><input type="radio" name="q1" value="b"> حل عددی معادلات جریان سیال روی دامنه گسسته</label><label><input type="radio" name="q1" value="c"> فقط ساخت هندسه سه‌بعدی</label></div><div class="feedback" data-feedback="q1"></div></div>
+        <div class="question"><h4>2) برای معادله بیضوی مثل لاپلاس چه چیزی مهم‌تر است؟</h4><div class="options"><label><input type="radio" name="q2" value="a"> فقط شرط اولیه</label><label><input type="radio" name="q2" value="b"> فقط سرعت ورودی</label><label><input type="radio" name="q2" value="c"> شرایط مرزی در اطراف دامنه</label></div><div class="feedback" data-feedback="q2"></div></div>
+        <div class="question"><h4>3) شرط پایداری FTCS برای معادله گرما چیست؟</h4><div class="options"><label><input type="radio" name="q3" value="a"> r = αΔt/Δx² ≤ 1/2</label><label><input type="radio" name="q3" value="b"> r ≥ 10</label><label><input type="radio" name="q3" value="c"> هیچ شرطی ندارد</label></div><div class="feedback" data-feedback="q3"></div></div>
+        <div class="question"><h4>4) مزیت اصلی FVM چیست؟</h4><div class="options"><label><input type="radio" name="q4" value="a"> حذف کامل نیاز به مش</label><label><input type="radio" name="q4" value="b"> محافظه‌کار بودن شارها روی حجم کنترل</label><label><input type="radio" name="q4" value="c"> حل بدون شرایط مرزی</label></div><div class="feedback" data-feedback="q4"></div></div>
+        <div class="question"><h4>5) RANS نسبت به LES معمولاً...</h4><div class="options"><label><input type="radio" name="q5" value="a"> دقیق‌تر و گران‌تر است</label><label><input type="radio" name="q5" value="b"> بدون مدل توربولانس است</label><label><input type="radio" name="q5" value="c"> ارزان‌تر است و میدان میانگین را حل می‌کند</label></div><div class="feedback" data-feedback="q5"></div></div>
+        <div class="question"><h4>6) در دیواره ثابت برای جریان چسبناک، شرط no-slip یعنی...</h4><div class="options"><label><input type="radio" name="q6" value="a"> سرعت سیال روی دیواره صفر است</label><label><input type="radio" name="q6" value="b"> فشار روی دیواره صفر است</label><label><input type="radio" name="q6" value="c"> دما روی دیواره همیشه صفر است</label></div><div class="feedback" data-feedback="q6"></div></div>
+        <div class="question"><h4>7) همگرایی قابل اعتماد فقط با کدام مورد کافی نیست؟</h4><div class="options"><label><input type="radio" name="q7" value="a"> استقلال از شبکه</label><label><input type="radio" name="q7" value="b"> فقط پایین بودن residual</label><label><input type="radio" name="q7" value="c"> بالانس جرم</label></div><div class="feedback" data-feedback="q7"></div></div>
+        <div class="question"><h4>8) در فرم تاوایی–خط جریان، رابطه پواسون کدام است؟</h4><div class="options"><label><input type="radio" name="q8" value="a"> p = ρRT</label><label><input type="radio" name="q8" value="b"> ∇·u = 1</label><label><input type="radio" name="q8" value="c"> ∇²ψ = −ω</label></div><div class="feedback" data-feedback="q8"></div></div>
+        <button class="btn primary" onclick="checkQuiz()">بررسی جواب‌ها</button>
+        <div id="quizResult" class="callout"></div>
+      </div>
+    </section>
+
+    <section class="container" id="references">
+      <div class="section-head"><div><h2>منابع پیشنهادی برای ادامه</h2><p>برای نسخه GitHub می‌توان این‌ها را در README هم نگه داشت.</p></div></div>
+      <ul class="ref-list">
+        <li>Anderson, J. D. — Computational Fluid Dynamics: The Basics with Applications.</li>
+        <li>Versteeg & Malalasekera — An Introduction to Computational Fluid Dynamics: The Finite Volume Method.</li>
+        <li>Ferziger, Perić & Street — Computational Methods for Fluid Dynamics.</li>
+        <li>OpenFOAM User Guide — tutorials: cavity, pitzDaily, motorBike.</li>
+        <li>ANSYS Fluent Theory Guide — discretization, turbulence models, pressure-velocity coupling.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>ساخته شده برای GitHub Pages • CFD Starter Lab • نسخه آموزشی فارسی/انگلیسی</p>
+      <p class="en">Made for portfolio, research profile, and beginner CFD learning.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
