@@ -1,32 +1,18 @@
-آپدیت تفکیک آموزش‌های کاری و پژوهشی
-
-این بسته:
-- صفحه education.html را به Learning Hub دوشاخه تبدیل می‌کند.
-- آموزش‌های کاری را در Professional Learning قرار می‌دهد.
-- آموزش‌های پژوهشی و CFD را در Academic Learning قرار می‌دهد.
-- داخل research.html دکمه مستقیم به /cfd-learning/ اضافه می‌کند.
-- داخل professional.html دکمه دسترسی به آموزش‌های کاری اضافه می‌کند.
-
-مسیرهای مهم:
-- education.html
-- research.html
-- professional.html
-- index.html
-- cfd-learning.html
-- assets/learning-split.css
-- sitemap.xml
+آپدیت فارسی/انگلیسی کامل صفحه اصلی
 
 روش آپلود:
 1) ZIP را Extract کن.
-2) در GitHub Repository روی Add file > Upload files بزن.
-3) همه فایل‌های داخل پوشه را آپلود کن.
-4) Commit message:
-   Split learning hub into professional and academic tracks
-5) Commit directly to main
-6) بعد از چند دقیقه Ctrl + Shift + R بزن.
+2) در Repository سایت روی Add file > Upload files بزن.
+3) فایل‌های داخل پوشه را آپلود کن.
+4) مسیرهای مهم:
+   index.html
+   assets/app.js
+   README_HOME_BILINGUAL_FA.md
+5) Commit message:
+   Make homepage fully bilingual
+6) Commit directly to main
+7) بعد از چند دقیقه Ctrl + Shift + R بزن.
 
-آدرس‌ها:
-https://amiraslanm.github.io/education.html
-https://amiraslanm.github.io/education.html#professional-learning
-https://amiraslanm.github.io/education.html#academic-learning
-https://amiraslanm.github.io/cfd-learning/
+نتیجه:
+صفحه اصلی به صورت پیش‌فرض فارسی است.
+با دکمه EN، همه متن‌های اصلی صفحه انگلیسی می‌شوند.
