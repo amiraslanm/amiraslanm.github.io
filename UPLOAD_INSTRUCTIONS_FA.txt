@@ -1,13 +1,22 @@
-آپدیت Dual-Track Portfolio
+آپدیت آموزش CFD برای مسیر پژوهشی
 
+فایل‌های مهم:
+- cfd-learning.html
+- assets/cfd-education.css
+- assets/cfd-education.js
+- research.html
+- index.html
+- education.html
+- sitemap.xml
+
+روش آپلود:
 1) ZIP را Extract کن.
-2) در GitHub Repository سایت روی Add file > Upload files بزن.
-3) تمام فایل‌های داخل پوشه Extract شده را آپلود کن.
+2) در Repository سایت روی Add file > Upload files بزن.
+3) همه فایل‌ها و پوشه‌های داخل بسته را آپلود کن.
 4) Commit message:
-   Convert portfolio to professional and academic tracks
+   Add CFD learning path to academic research track
 5) Commit directly to main
 6) بعد از چند دقیقه Ctrl + Shift + R بزن.
 
-آدرس‌های جدید:
-https://amiraslanm.github.io/professional.html
-https://amiraslanm.github.io/research.html
+آدرس صفحه:
+https://amiraslanm.github.io/cfd-learning.html
