@@ -1,268 +1,251 @@
-<!doctype html>
-<html lang="en" dir="ltr" data-theme="dark">
+<!DOCTYPE html>
+
+<html data-theme="dark" dir="ltr" lang="en">
 <head>
 <title>CFD Learning Path | Amir Aslan Mosaferi</title>
-<meta name="description" content="A structured CFD learning path for research: governing equations, finite volume method, mesh quality, boundary conditions, turbulence, convergence, validation and OpenFOAM workflow.">
-<link rel="canonical" href="https://amiraslanm.github.io/cfd-learning.html">
-<meta property="og:title" content="CFD Learning Path — Amir Aslan Mosaferi">
-<meta property="og:description" content="Structured CFD education for academic research and PhD preparation.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://amiraslanm.github.io/cfd-learning.html">
-<meta property="og:image" content="https://amiraslanm.github.io/assets/og-image.png">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Amir Aslan Mosaferi"><meta name="theme-color" content="#08111f">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=5.1">
-<link rel="stylesheet" href="assets/dual-track.css?v=1.0">
-<link rel="stylesheet" href="assets/cfd-education.css?v=1.0">
+<meta content="A structured CFD learning path for research: governing equations, finite volume method, mesh quality, boundary conditions, turbulence, convergence, validation and OpenFOAM workflow." name="description"/>
+<link href="https://amiraslanm.github.io/cfd-learning.html" rel="canonical"/>
+<meta content="CFD Learning Path — Amir Aslan Mosaferi" property="og:title"/>
+<meta content="Structured CFD education for academic research and PhD preparation." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://amiraslanm.github.io/cfd-learning.html" property="og:url"/>
+<meta content="https://amiraslanm.github.io/assets/og-image.png" property="og:image"/>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Amir Aslan Mosaferi" name="author"/><meta content="#08111f" name="theme-color"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><link href="site.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css?v=5.1" rel="stylesheet"/>
+<link href="assets/dual-track.css?v=1.0" rel="stylesheet"/>
+<link href="assets/cfd-education.css?v=1.0" rel="stylesheet"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"CFD Learning Path for Academic Research","description":"A structured CFD course covering governing equations, discretization, meshing, boundary conditions, turbulence, convergence, validation and OpenFOAM workflow.","provider":{"@type":"Person","name":"Amir Aslan Mosaferi"},"url":"https://amiraslanm.github.io/cfd-learning.html"}</script>
-</head>
-
+<meta content="en" name="default-language"/></head>
 <body class="cfd-course-page" data-course-key="cfdCourseProgressV1">
 <div class="scroll-progress" id="scrollProgress"></div>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="cursor-glow" id="cursorGlow"></div>
-
 <header class="site-header dual-header">
-  <div class="container nav-shell">
-    <a class="brand" href="index.html"><span class="brand-mark">AM</span><span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small>Mechanical & Fire Protection Engineer · CFD Researcher</small></span></a>
-    <nav class="desktop-nav">
-      <a href="professional.html">Professional</a>
-      <a href="research.html">Research</a>
-      <a href="cfd-learning.html">CFD Learning</a>
-      <a href="education.html">Learning</a>
-      <a href="cv.html">CV</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    <div class="nav-actions"><button class="icon-btn" id="langToggle" type="button">EN</button><button class="icon-btn" id="themeToggle" type="button"><span class="theme-icon">◐</span></button><button class="menu-btn" id="menuToggle" type="button"><span></span><span></span></button></div>
-  </div>
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="professional.html">Professional</a><a href="research.html">Research</a><a href="cfd-learning.html">CFD Learning</a><a href="education.html">Learning</a><a href="cv.html">CV</a>
-  </nav>
+<div class="container nav-shell">
+<a class="brand" href="index.html"><span class="brand-mark">AM</span><span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small>Mechanical &amp; Fire Protection Engineer · CFD Researcher</small></span></a>
+<nav class="desktop-nav">
+<a href="professional.html">Professional</a>
+<a href="research.html">Research</a>
+<a href="cfd-learning.html">CFD Learning</a>
+<a href="education.html">Learning</a>
+<a href="cv.html">CV</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+<div class="nav-actions"><button class="icon-btn" id="langToggle" type="button">فا</button><button class="icon-btn" id="themeToggle" type="button"><span class="theme-icon">◐</span></button><button class="menu-btn" id="menuToggle" type="button"><span></span><span></span></button></div>
+</div>
+<nav class="mobile-nav" id="mobileNav">
+<a href="professional.html">Professional</a><a href="research.html">Research</a><a href="cfd-learning.html">CFD Learning</a><a href="education.html">Learning</a><a href="cv.html">CV</a>
+</nav>
 </header>
-
 <main>
 <section class="cfd-hero">
-  <div class="container cfd-hero-grid">
-    <div class="reveal">
-      <a class="back-link" href="research.html">← Back to Academic Research</a>
-      <p class="eyebrow">CFD EDUCATION · NUMERICAL RESEARCH PATH</p>
-      <h1 data-fa="مسیر آموزشی CFD برای پژوهش و اپلای PhD" data-en="CFD learning path for research and PhD applications">CFD learning path for research and PhD applications</h1>
-      <p class="cfd-lead" data-fa="یک مسیر منظم برای یادگیری CFD از دید پژوهشی: معادلات حاکم، روش حجم محدود، مش، شرایط مرزی، توربولانس، همگرایی، اعتبارسنجی و جریان کار OpenFOAM." data-en="A structured research-oriented pathway for learning CFD: governing equations, finite volume method, mesh quality, boundary conditions, turbulence modelling, convergence, validation and OpenFOAM workflow.">A structured research-oriented pathway for learning CFD: governing equations, finite volume method, mesh quality, boundary conditions, turbulence modelling, convergence, validation and OpenFOAM workflow.</p>
-      <div class="cfd-actions"><a class="btn primary" href="#module-1">Start learning</a><a class="btn secondary" href="research.html">Research profile</a><a class="btn secondary" href="cfd-learning/">Open full CFD Starter Lab</a></div>
-      <div class="cfd-mini-links"><a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID ↗</a><a href="mailto:amir.a.mosaferi@gmail.com">Contact</a></div>
-    </div>
-    <div class="cfd-visual reveal" aria-hidden="true">
-      <svg viewBox="0 0 680 520">
-        <defs>
-          <linearGradient id="cfdGrad" x1="0" x2="1"><stop stop-color="#56d7ff"/><stop offset="1" stop-color="#8b6dff"/></linearGradient>
-          <linearGradient id="hotGrad" x1="0" x2="1"><stop stop-color="#ffb86b"/><stop offset="1" stop-color="#ff5d6c"/></linearGradient>
-        </defs>
-        <rect class="domain" x="70" y="95" width="540" height="330" rx="32"/>
-        <path class="stream s1" d="M95 170 C190 120 265 222 345 170 S515 95 595 160"/>
-        <path class="stream s2" d="M95 225 C190 178 265 280 345 222 S510 150 595 215"/>
-        <path class="stream s3" d="M95 285 C190 235 265 338 345 282 S515 210 595 275"/>
-        <path class="stream s4" d="M95 345 C190 302 265 395 345 340 S510 280 595 335"/>
-        <circle class="cylinder" cx="310" cy="260" r="55"/>
-        <path class="vortex v1" d="M385 222 C465 180 510 260 440 285 C380 308 430 350 510 330"/>
-        <path class="vortex v2" d="M390 300 C470 350 515 270 443 245 C380 223 432 178 510 194"/>
-        <g class="mesh-lines">
-          <path d="M130 110V410M190 105V415M250 102V418M370 102V418M430 105V415M490 110V410M550 122V398"/>
-          <path d="M90 150H590M84 205H596M82 260H598M84 315H596M90 370H590"/>
-        </g>
-        <g class="cfd-labels">
-          <text x="112" y="87">INLET</text><text x="548" y="87">OUTLET</text><text x="310" y="455">MESH · FLOW · VORTEX</text>
-        </g>
-      </svg>
-      <div class="cfd-visual-caption"><span>From equations to validation</span><strong>8 Modules</strong></div>
-    </div>
-  </div>
+<div class="container cfd-hero-grid">
+<div class="reveal">
+<a class="back-link" href="research.html">← Back to Academic Research</a>
+<p class="eyebrow">CFD EDUCATION · NUMERICAL RESEARCH PATH</p>
+<h1 data-en="CFD learning path for research and PhD applications" data-fa="مسیر آموزشی CFD برای پژوهش و اپلای PhD">CFD learning path for research and PhD applications</h1>
+<p class="cfd-lead" data-en="A structured research-oriented pathway for learning CFD: governing equations, finite volume method, mesh quality, boundary conditions, turbulence modelling, convergence, validation and OpenFOAM workflow." data-fa="یک مسیر منظم برای یادگیری CFD از دید پژوهشی: معادلات حاکم، روش حجم محدود، مش، شرایط مرزی، توربولانس، همگرایی، اعتبارسنجی و جریان کار OpenFOAM.">A structured research-oriented pathway for learning CFD: governing equations, finite volume method, mesh quality, boundary conditions, turbulence modelling, convergence, validation and OpenFOAM workflow.</p>
+<div class="cfd-actions"><a class="btn primary" href="#module-1">Start learning</a><a class="btn secondary" href="research.html">Research profile</a><a class="btn secondary" href="cfd-learning/">Open full CFD Starter Lab</a></div>
+<div class="cfd-mini-links"><a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" rel="noopener" target="_blank">Google Scholar ↗</a><a href="https://orcid.org/0000-0001-9829-2598" rel="noopener" target="_blank">ORCID ↗</a><a href="mailto:amir.a.mosaferi@gmail.com">Contact</a></div>
+</div>
+<div aria-hidden="true" class="cfd-visual reveal">
+<svg viewbox="0 0 680 520">
+<defs>
+<lineargradient id="cfdGrad" x1="0" x2="1"><stop stop-color="#56d7ff"></stop><stop offset="1" stop-color="#8b6dff"></stop></lineargradient>
+<lineargradient id="hotGrad" x1="0" x2="1"><stop stop-color="#ffb86b"></stop><stop offset="1" stop-color="#ff5d6c"></stop></lineargradient>
+</defs>
+<rect class="domain" height="330" rx="32" width="540" x="70" y="95"></rect>
+<path class="stream s1" d="M95 170 C190 120 265 222 345 170 S515 95 595 160"></path>
+<path class="stream s2" d="M95 225 C190 178 265 280 345 222 S510 150 595 215"></path>
+<path class="stream s3" d="M95 285 C190 235 265 338 345 282 S515 210 595 275"></path>
+<path class="stream s4" d="M95 345 C190 302 265 395 345 340 S510 280 595 335"></path>
+<circle class="cylinder" cx="310" cy="260" r="55"></circle>
+<path class="vortex v1" d="M385 222 C465 180 510 260 440 285 C380 308 430 350 510 330"></path>
+<path class="vortex v2" d="M390 300 C470 350 515 270 443 245 C380 223 432 178 510 194"></path>
+<g class="mesh-lines">
+<path d="M130 110V410M190 105V415M250 102V418M370 102V418M430 105V415M490 110V410M550 122V398"></path>
+<path d="M90 150H590M84 205H596M82 260H598M84 315H596M90 370H590"></path>
+</g>
+<g class="cfd-labels">
+<text x="112" y="87">INLET</text><text x="548" y="87">OUTLET</text><text x="310" y="455">MESH · FLOW · VORTEX</text>
+</g>
+</svg>
+<div class="cfd-visual-caption"><span>From equations to validation</span><strong>8 Modules</strong></div>
+</div>
+</div>
 </section>
-
 <section class="cfd-progress-wrap">
-  <div class="container cfd-progress">
-    <div><small>Course progress</small><strong id="cfdProgressValue">0%</strong></div>
-    <div class="progress-track"><i id="cfdProgressBar"></i></div>
-    <p data-fa="بعد از مطالعه هر ماژول، دکمه Mark complete را بزن." data-en="Mark each module complete after studying it.">Mark each module complete after studying it.</p>
-  </div>
+<div class="container cfd-progress">
+<div><small>Course progress</small><strong id="cfdProgressValue">0%</strong></div>
+<div class="progress-track"><i id="cfdProgressBar"></i></div>
+<p data-en="Mark each module complete after studying it." data-fa="بعد از مطالعه هر ماژول، دکمه Mark complete را بزن.">Mark each module complete after studying it.</p>
+</div>
 </section>
-
 <div class="container cfd-layout">
 <aside class="cfd-sidebar">
-  <nav>
-    <strong>CFD Modules</strong>
-    <a href="#module-1">01 <span>CFD mindset</span></a>
-    <a href="#module-2">02 <span>Governing equations</span></a>
-    <a href="#module-3">03 <span>Discretization</span></a>
-    <a href="#module-4">04 <span>Mesh quality</span></a>
-    <a href="#module-5">05 <span>Boundary conditions</span></a>
-    <a href="#module-6">06 <span>Turbulence</span></a>
-    <a href="#module-7">07 <span>Convergence</span></a>
-    <a href="#module-8">08 <span>Validation + reporting</span></a>
-  </nav>
+<nav>
+<strong>CFD Modules</strong>
+<a href="#module-1">01 <span>CFD mindset</span></a>
+<a href="#module-2">02 <span>Governing equations</span></a>
+<a href="#module-3">03 <span>Discretization</span></a>
+<a href="#module-4">04 <span>Mesh quality</span></a>
+<a href="#module-5">05 <span>Boundary conditions</span></a>
+<a href="#module-6">06 <span>Turbulence</span></a>
+<a href="#module-7">07 <span>Convergence</span></a>
+<a href="#module-8">08 <span>Validation + reporting</span></a>
+</nav>
 </aside>
-
 <article class="cfd-content">
-
-<section class="cfd-module reveal" id="module-1" data-module="1">
-<header><span>01</span><div><p class="eyebrow">CFD MINDSET</p><h2 data-fa="CFD فقط اجرای نرم‌افزار نیست" data-en="CFD is not just running software">CFD is not just running software</h2></div></header>
-<p class="intro" data-fa="CFD یعنی تبدیل یک مسئله فیزیکی به مدل ریاضی، سپس مدل عددی و در نهایت نتیجه قابل دفاع. خروجی رنگی بدون کنترل فیزیک، مش، شرایط مرزی و اعتبارسنجی، ارزش پژوهشی ندارد." data-en="CFD means converting a physical problem into a mathematical model, then a numerical model, and finally a defensible result. Colourful contours without checks on physics, mesh, boundary conditions and validation have little research value.">CFD means converting a physical problem into a mathematical model, then a numerical model, and finally a defensible result. Colourful contours without checks on physics, mesh, boundary conditions and validation have little research value.</p>
+<section class="cfd-module reveal" data-module="1" id="module-1">
+<header><span>01</span><div><p class="eyebrow">CFD MINDSET</p><h2 data-en="CFD is not just running software" data-fa="CFD فقط اجرای نرم‌افزار نیست">CFD is not just running software</h2></div></header>
+<p class="intro" data-en="CFD means converting a physical problem into a mathematical model, then a numerical model, and finally a defensible result. Colourful contours without checks on physics, mesh, boundary conditions and validation have little research value." data-fa="CFD یعنی تبدیل یک مسئله فیزیکی به مدل ریاضی، سپس مدل عددی و در نهایت نتیجه قابل دفاع. خروجی رنگی بدون کنترل فیزیک، مش، شرایط مرزی و اعتبارسنجی، ارزش پژوهشی ندارد.">CFD means converting a physical problem into a mathematical model, then a numerical model, and finally a defensible result. Colourful contours without checks on physics, mesh, boundary conditions and validation have little research value.</p>
 <div class="workflow-strip">
-  <div><span>01</span><b>Physics</b></div><i>→</i><div><span>02</span><b>Assumptions</b></div><i>→</i><div><span>03</span><b>Geometry</b></div><i>→</i><div><span>04</span><b>Mesh</b></div><i>→</i><div><span>05</span><b>Solver</b></div><i>→</i><div><span>06</span><b>Validation</b></div>
+<div><span>01</span><b>Physics</b></div><i>→</i><div><span>02</span><b>Assumptions</b></div><i>→</i><div><span>03</span><b>Geometry</b></div><i>→</i><div><span>04</span><b>Mesh</b></div><i>→</i><div><span>05</span><b>Solver</b></div><i>→</i><div><span>06</span><b>Validation</b></div>
 </div>
 <div class="cfd-note"><strong>Research rule</strong><p>A good CFD project must explain what was simplified, why it was acceptable, and how the numerical result was verified against physics, literature or experiment.</p></div>
 <button class="cfd-complete" data-module="1" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-2" data-module="2">
-<header><span>02</span><div><p class="eyebrow">GOVERNING EQUATIONS</p><h2 data-fa="سه اصل اصلی: جرم، مومنتوم و انرژی" data-en="Three core principles: mass, momentum and energy">Three core principles: mass, momentum and energy</h2></div></header>
+<section class="cfd-module reveal" data-module="2" id="module-2">
+<header><span>02</span><div><p class="eyebrow">GOVERNING EQUATIONS</p><h2 data-en="Three core principles: mass, momentum and energy" data-fa="سه اصل اصلی: جرم، مومنتوم و انرژی">Three core principles: mass, momentum and energy</h2></div></header>
 <div class="equation-board">
-  <article><small>Continuity</small><strong>∂ρ/∂t + ∇·(ρu) = 0</strong><p>Conservation of mass in the flow domain.</p></article>
-  <article><small>Momentum</small><strong>ρ Du/Dt = −∇p + μ∇²u + S</strong><p>Newton’s second law applied to a fluid element.</p></article>
-  <article><small>Energy</small><strong>ρc<sub>p</sub> DT/Dt = k∇²T + Φ</strong><p>Thermal transport through convection, diffusion and source terms.</p></article>
+<article><small>Continuity</small><strong>∂ρ/∂t + ∇·(ρu) = 0</strong><p>Conservation of mass in the flow domain.</p></article>
+<article><small>Momentum</small><strong>ρ Du/Dt = −∇p + μ∇²u + S</strong><p>Newton’s second law applied to a fluid element.</p></article>
+<article><small>Energy</small><strong>ρc<sub>p</sub> DT/Dt = k∇²T + Φ</strong><p>Thermal transport through convection, diffusion and source terms.</p></article>
 </div>
 <div class="concept-grid-cfd">
-  <article><b>Incompressible</b><p>Density is treated as constant; common for low-speed liquid flows.</p></article>
-  <article><b>Compressible</b><p>Density changes become important; pressure waves and Mach number matter.</p></article>
-  <article><b>Steady</b><p>Mean solution does not change with time.</p></article>
-  <article><b>Transient</b><p>Time history is required; essential for vortex shedding and VIV.</p></article>
+<article><b>Incompressible</b><p>Density is treated as constant; common for low-speed liquid flows.</p></article>
+<article><b>Compressible</b><p>Density changes become important; pressure waves and Mach number matter.</p></article>
+<article><b>Steady</b><p>Mean solution does not change with time.</p></article>
+<article><b>Transient</b><p>Time history is required; essential for vortex shedding and VIV.</p></article>
 </div>
 <button class="cfd-complete" data-module="2" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-3" data-module="3">
-<header><span>03</span><div><p class="eyebrow">DISCRETIZATION</p><h2 data-fa="روش حجم محدود؛ از دامنه پیوسته تا سلول محاسباتی" data-en="Finite Volume Method: from continuum domain to control volumes">Finite Volume Method: from continuum domain to control volumes</h2></div></header>
+<section class="cfd-module reveal" data-module="3" id="module-3">
+<header><span>03</span><div><p class="eyebrow">DISCRETIZATION</p><h2 data-en="Finite Volume Method: from continuum domain to control volumes" data-fa="روش حجم محدود؛ از دامنه پیوسته تا سلول محاسباتی">Finite Volume Method: from continuum domain to control volumes</h2></div></header>
 <p class="intro">In the finite volume method, the domain is divided into small control volumes. The integral form of conservation laws is applied to each cell, and fluxes are balanced across cell faces.</p>
 <div class="fvm-visual">
-  <div class="cell-grid">
-    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-  </div>
-  <div class="cell-equation"><span>Flux in</span><b>−</b><span>Flux out</span><b>+</b><span>Source</span><b>=</b><span>Accumulation</span></div>
+<div class="cell-grid">
+<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+<div class="cell-equation"><span>Flux in</span><b>−</b><span>Flux out</span><b>+</b><span>Source</span><b>=</b><span>Accumulation</span></div>
 </div>
 <div class="feature-list-cfd">
-  <article><span>01</span><h3>Conservation</h3><p>FVM is strong for conservation of mass, momentum and energy.</p></article>
-  <article><span>02</span><h3>Schemes</h3><p>Upwind, central and higher-order schemes change numerical diffusion and stability.</p></article>
-  <article><span>03</span><h3>Pressure–velocity coupling</h3><p>Algorithms such as SIMPLE and PISO coordinate pressure and velocity fields.</p></article>
+<article><span>01</span><h3>Conservation</h3><p>FVM is strong for conservation of mass, momentum and energy.</p></article>
+<article><span>02</span><h3>Schemes</h3><p>Upwind, central and higher-order schemes change numerical diffusion and stability.</p></article>
+<article><span>03</span><h3>Pressure–velocity coupling</h3><p>Algorithms such as SIMPLE and PISO coordinate pressure and velocity fields.</p></article>
 </div>
 <button class="cfd-complete" data-module="3" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-4" data-module="4">
-<header><span>04</span><div><p class="eyebrow">MESH QUALITY</p><h2 data-fa="مش خوب، پایه نتیجه قابل اعتماد است" data-en="A good mesh is the foundation of a reliable result">A good mesh is the foundation of a reliable result</h2></div></header>
+<section class="cfd-module reveal" data-module="4" id="module-4">
+<header><span>04</span><div><p class="eyebrow">MESH QUALITY</p><h2 data-en="A good mesh is the foundation of a reliable result" data-fa="مش خوب، پایه نتیجه قابل اعتماد است">A good mesh is the foundation of a reliable result</h2></div></header>
 <div class="mesh-quality-grid">
-  <article><strong>Skewness</strong><p>High skewness can destabilize the solution and reduce accuracy.</p></article>
-  <article><strong>Orthogonality</strong><p>Non-orthogonal cells increase discretization error and correction cost.</p></article>
-  <article><strong>Aspect Ratio</strong><p>Large aspect ratios may be acceptable in boundary layers but must be controlled.</p></article>
-  <article><strong>y+</strong><p>Near-wall resolution must match the turbulence model and wall treatment.</p></article>
+<article><strong>Skewness</strong><p>High skewness can destabilize the solution and reduce accuracy.</p></article>
+<article><strong>Orthogonality</strong><p>Non-orthogonal cells increase discretization error and correction cost.</p></article>
+<article><strong>Aspect Ratio</strong><p>Large aspect ratios may be acceptable in boundary layers but must be controlled.</p></article>
+<article><strong>y+</strong><p>Near-wall resolution must match the turbulence model and wall treatment.</p></article>
 </div>
 <div class="mesh-study">
-  <h3>Mesh independence logic</h3>
-  <div><span>Coarse</span><i></i><span>Medium</span><i></i><span>Fine</span><b>Result change becomes small</b></div>
-  <p>Do not claim a CFD result is reliable before checking whether the main outputs change significantly with mesh refinement.</p>
+<h3>Mesh independence logic</h3>
+<div><span>Coarse</span><i></i><span>Medium</span><i></i><span>Fine</span><b>Result change becomes small</b></div>
+<p>Do not claim a CFD result is reliable before checking whether the main outputs change significantly with mesh refinement.</p>
 </div>
 <button class="cfd-complete" data-module="4" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-5" data-module="5">
-<header><span>05</span><div><p class="eyebrow">BOUNDARY CONDITIONS</p><h2 data-fa="شرایط مرزی باید فیزیک مسئله را نمایندگی کنند" data-en="Boundary conditions must represent the physics">Boundary conditions must represent the physics</h2></div></header>
+<section class="cfd-module reveal" data-module="5" id="module-5">
+<header><span>05</span><div><p class="eyebrow">BOUNDARY CONDITIONS</p><h2 data-en="Boundary conditions must represent the physics" data-fa="شرایط مرزی باید فیزیک مسئله را نمایندگی کنند">Boundary conditions must represent the physics</h2></div></header>
 <div class="bc-domain">
-  <div class="bc inlet">Velocity Inlet</div>
-  <div class="bc outlet">Pressure Outlet</div>
-  <div class="bc wall">No-Slip Wall</div>
-  <div class="bc symmetry">Symmetry / Far-field</div>
-  <div class="bc object">Body / Cylinder</div>
+<div class="bc inlet">Velocity Inlet</div>
+<div class="bc outlet">Pressure Outlet</div>
+<div class="bc wall">No-Slip Wall</div>
+<div class="bc symmetry">Symmetry / Far-field</div>
+<div class="bc object">Body / Cylinder</div>
 </div>
 <div class="bc-table">
-  <article><b>Velocity inlet</b><p>Use when incoming velocity or mass flow is known.</p></article>
-  <article><b>Pressure outlet</b><p>Use when downstream static pressure is known or assumed.</p></article>
-  <article><b>No-slip wall</b><p>Velocity at solid wall equals wall velocity; thermal condition must also be defined.</p></article>
-  <article><b>Symmetry / far-field</b><p>Useful only when the domain and physics justify it.</p></article>
+<article><b>Velocity inlet</b><p>Use when incoming velocity or mass flow is known.</p></article>
+<article><b>Pressure outlet</b><p>Use when downstream static pressure is known or assumed.</p></article>
+<article><b>No-slip wall</b><p>Velocity at solid wall equals wall velocity; thermal condition must also be defined.</p></article>
+<article><b>Symmetry / far-field</b><p>Useful only when the domain and physics justify it.</p></article>
 </div>
 <div class="cfd-note warning"><strong>Common mistake</strong><p>Changing boundary conditions until the solution “looks good” is not CFD. Every boundary condition must have a physical justification.</p></div>
 <button class="cfd-complete" data-module="5" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-6" data-module="6">
-<header><span>06</span><div><p class="eyebrow">TURBULENCE</p><h2 data-fa="انتخاب مدل توربولانس، یک تصمیم پژوهشی است" data-en="Turbulence model selection is a research decision">Turbulence model selection is a research decision</h2></div></header>
+<section class="cfd-module reveal" data-module="6" id="module-6">
+<header><span>06</span><div><p class="eyebrow">TURBULENCE</p><h2 data-en="Turbulence model selection is a research decision" data-fa="انتخاب مدل توربولانس، یک تصمیم پژوهشی است">Turbulence model selection is a research decision</h2></div></header>
 <div class="turbulence-ladder">
-  <article><span>RANS</span><h3>Practical engineering average</h3><p>Cost-effective for many industrial flows; model choice matters.</p></article>
-  <article><span>URANS</span><h3>Unsteady averaged flow</h3><p>Useful for periodic or transient mean-flow behaviour.</p></article>
-  <article><span>LES</span><h3>Large eddy simulation</h3><p>Resolves large turbulent structures; much more expensive.</p></article>
-  <article><span>DNS</span><h3>Direct simulation</h3><p>Solves all scales; mainly research-level and extremely expensive.</p></article>
+<article><span>RANS</span><h3>Practical engineering average</h3><p>Cost-effective for many industrial flows; model choice matters.</p></article>
+<article><span>URANS</span><h3>Unsteady averaged flow</h3><p>Useful for periodic or transient mean-flow behaviour.</p></article>
+<article><span>LES</span><h3>Large eddy simulation</h3><p>Resolves large turbulent structures; much more expensive.</p></article>
+<article><span>DNS</span><h3>Direct simulation</h3><p>Solves all scales; mainly research-level and extremely expensive.</p></article>
 </div>
 <div class="model-choice">
-  <h3>Typical model questions</h3>
-  <ul>
-    <li>Is the flow attached or separated?</li>
-    <li>Is near-wall behaviour important?</li>
-    <li>Is the problem steady or inherently unsteady?</li>
-    <li>Is the computational budget compatible with the chosen model?</li>
-  </ul>
+<h3>Typical model questions</h3>
+<ul>
+<li>Is the flow attached or separated?</li>
+<li>Is near-wall behaviour important?</li>
+<li>Is the problem steady or inherently unsteady?</li>
+<li>Is the computational budget compatible with the chosen model?</li>
+</ul>
 </div>
 <button class="cfd-complete" data-module="6" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-7" data-module="7">
-<header><span>07</span><div><p class="eyebrow">CONVERGENCE</p><h2 data-fa="همگرایی فقط Residual پایین نیست" data-en="Convergence is not only low residuals">Convergence is not only low residuals</h2></div></header>
+<section class="cfd-module reveal" data-module="7" id="module-7">
+<header><span>07</span><div><p class="eyebrow">CONVERGENCE</p><h2 data-en="Convergence is not only low residuals" data-fa="همگرایی فقط Residual پایین نیست">Convergence is not only low residuals</h2></div></header>
 <div class="convergence-grid">
-  <article><span>Residuals</span><p>Residuals should decrease and stabilize at an acceptable level.</p></article>
-  <article><span>Mass balance</span><p>Inlet and outlet mass flow must be physically consistent.</p></article>
-  <article><span>Monitor values</span><p>Forces, pressure drop, heat transfer or other key outputs should stabilize.</p></article>
-  <article><span>Physics check</span><p>Contours, vectors and integral values must make physical sense.</p></article>
+<article><span>Residuals</span><p>Residuals should decrease and stabilize at an acceptable level.</p></article>
+<article><span>Mass balance</span><p>Inlet and outlet mass flow must be physically consistent.</p></article>
+<article><span>Monitor values</span><p>Forces, pressure drop, heat transfer or other key outputs should stabilize.</p></article>
+<article><span>Physics check</span><p>Contours, vectors and integral values must make physical sense.</p></article>
 </div>
-<div class="residual-chart" aria-hidden="true">
-  <svg viewBox="0 0 700 260">
-    <path class="axis" d="M55 30V220H660"/>
-    <path class="res r1" d="M60 45C150 80 180 115 230 145S360 183 650 205"/>
-    <path class="res r2" d="M60 75C130 105 180 140 260 160S430 190 650 200"/>
-    <path class="res r3" d="M60 120C160 150 220 168 300 178S470 194 650 199"/>
-    <text x="70" y="245">Iterations</text><text x="8" y="38">Residual</text>
-  </svg>
+<div aria-hidden="true" class="residual-chart">
+<svg viewbox="0 0 700 260">
+<path class="axis" d="M55 30V220H660"></path>
+<path class="res r1" d="M60 45C150 80 180 115 230 145S360 183 650 205"></path>
+<path class="res r2" d="M60 75C130 105 180 140 260 160S430 190 650 200"></path>
+<path class="res r3" d="M60 120C160 150 220 168 300 178S470 194 650 199"></path>
+<text x="70" y="245">Iterations</text><text x="8" y="38">Residual</text>
+</svg>
 </div>
 <button class="cfd-complete" data-module="7" type="button">Mark complete</button>
 </section>
-
-<section class="cfd-module reveal" id="module-8" data-module="8">
-<header><span>08</span><div><p class="eyebrow">VALIDATION + REPORTING</p><h2 data-fa="از خروجی نرم‌افزار تا نتیجه قابل چاپ" data-en="From software output to publishable result">From software output to publishable result</h2></div></header>
+<section class="cfd-module reveal" data-module="8" id="module-8">
+<header><span>08</span><div><p class="eyebrow">VALIDATION + REPORTING</p><h2 data-en="From software output to publishable result" data-fa="از خروجی نرم‌افزار تا نتیجه قابل چاپ">From software output to publishable result</h2></div></header>
 <div class="validation-grid">
-  <article><b>Verification</b><p>Did you solve the equations correctly? Check mesh, timestep, residuals and numerical settings.</p></article>
-  <article><b>Validation</b><p>Did you solve the right physical problem? Compare with experiment, benchmark or reliable literature.</p></article>
-  <article><b>Uncertainty</b><p>Report assumptions, sensitivity, mesh dependence and limitations.</p></article>
-  <article><b>Reproducibility</b><p>Document geometry, mesh, boundary conditions, solver settings and post-processing method.</p></article>
+<article><b>Verification</b><p>Did you solve the equations correctly? Check mesh, timestep, residuals and numerical settings.</p></article>
+<article><b>Validation</b><p>Did you solve the right physical problem? Compare with experiment, benchmark or reliable literature.</p></article>
+<article><b>Uncertainty</b><p>Report assumptions, sensitivity, mesh dependence and limitations.</p></article>
+<article><b>Reproducibility</b><p>Document geometry, mesh, boundary conditions, solver settings and post-processing method.</p></article>
 </div>
 <div class="openfoam-card">
-  <div><p class="eyebrow">OPENFOAM MINI WORKFLOW</p><h3>case → constant → system → solver → postProcess</h3><p>For an academic portfolio, a small validated OpenFOAM case is stronger than only listing OpenFOAM as a skill.</p></div>
-  <a class="btn secondary" href="research.html">Back to research track</a>
+<div><p class="eyebrow">OPENFOAM MINI WORKFLOW</p><h3>case → constant → system → solver → postProcess</h3><p>For an academic portfolio, a small validated OpenFOAM case is stronger than only listing OpenFOAM as a skill.</p></div>
+<a class="btn secondary" href="research.html">Back to research track</a>
 </div>
-
 <div class="quiz-card-cfd" id="cfdQuiz">
-  <div class="quiz-head"><h3>CFD knowledge check</h3><strong id="cfdQuizScore">0 / 5</strong></div>
-  <div class="q" data-answer="b"><p>1. What makes a CFD result research-grade?</p><label><input type="radio" name="q1" value="a"> Nice contours only</label><label><input type="radio" name="q1" value="b"> Physics, mesh, convergence and validation checks</label></div>
-  <div class="q" data-answer="c"><p>2. What does FVM balance across control-volume faces?</p><label><input type="radio" name="q2" value="a"> Only temperature</label><label><input type="radio" name="q2" value="b"> Only pressure</label><label><input type="radio" name="q2" value="c"> Conserved fluxes and sources</label></div>
-  <div class="q" data-answer="a"><p>3. What does y+ mainly relate to?</p><label><input type="radio" name="q3" value="a"> Near-wall mesh resolution</label><label><input type="radio" name="q3" value="b"> Outlet pressure</label></div>
-  <div class="q" data-answer="c"><p>4. Which item is not enough alone to prove convergence?</p><label><input type="radio" name="q4" value="a"> Stable force monitor</label><label><input type="radio" name="q4" value="b"> Mass balance</label><label><input type="radio" name="q4" value="c"> Residuals only</label></div>
-  <div class="q" data-answer="b"><p>5. Validation means:</p><label><input type="radio" name="q5" value="a"> The mesh file opens correctly</label><label><input type="radio" name="q5" value="b"> The model is compared with physical/benchmark data</label></div>
-  <button class="btn primary" id="cfdCheckQuiz" type="button">Check answers</button><p id="cfdQuizResult"></p>
+<div class="quiz-head"><h3>CFD knowledge check</h3><strong id="cfdQuizScore">0 / 5</strong></div>
+<div class="q" data-answer="b"><p>1. What makes a CFD result research-grade?</p><label><input name="q1" type="radio" value="a"/> Nice contours only</label><label><input name="q1" type="radio" value="b"/> Physics, mesh, convergence and validation checks</label></div>
+<div class="q" data-answer="c"><p>2. What does FVM balance across control-volume faces?</p><label><input name="q2" type="radio" value="a"/> Only temperature</label><label><input name="q2" type="radio" value="b"/> Only pressure</label><label><input name="q2" type="radio" value="c"/> Conserved fluxes and sources</label></div>
+<div class="q" data-answer="a"><p>3. What does y+ mainly relate to?</p><label><input name="q3" type="radio" value="a"/> Near-wall mesh resolution</label><label><input name="q3" type="radio" value="b"/> Outlet pressure</label></div>
+<div class="q" data-answer="c"><p>4. Which item is not enough alone to prove convergence?</p><label><input name="q4" type="radio" value="a"/> Stable force monitor</label><label><input name="q4" type="radio" value="b"/> Mass balance</label><label><input name="q4" type="radio" value="c"/> Residuals only</label></div>
+<div class="q" data-answer="b"><p>5. Validation means:</p><label><input name="q5" type="radio" value="a"/> The mesh file opens correctly</label><label><input name="q5" type="radio" value="b"/> The model is compared with physical/benchmark data</label></div>
+<button class="btn primary" id="cfdCheckQuiz" type="button">Check answers</button><p id="cfdQuizResult"></p>
 </div>
 <button class="cfd-complete" data-module="8" type="button">Complete course</button>
 </section>
-
 <section class="cfd-sources">
 <h2>How this learning page supports my research profile</h2>
 <p>This CFD education section is designed to show not only that I use CFD software, but that I understand the numerical workflow behind publishable CFD research: modelling assumptions, discretization, mesh control, convergence, validation and reproducible reporting.</p>
 </section>
-
 </article>
 </div>
 </main>
-
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div><a class="footer-brand" href="index.html">AM</a><p>Professional engineering and academic research portfolio.</p></div>
-    <div class="footer-links"><a href="mailto:amir.a.mosaferi@gmail.com">Email</a><a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" target="_blank" rel="noopener">LinkedIn</a><a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a><a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a></div>
-    <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
-  </div>
+<div class="container footer-grid">
+<div><a class="footer-brand" href="index.html">AM</a><p>Professional engineering and academic research portfolio.</p></div>
+<div class="footer-links"><a href="mailto:amir.a.mosaferi@gmail.com">Email</a><a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" rel="noopener" target="_blank">LinkedIn</a><a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" rel="noopener" target="_blank">Google Scholar</a><a href="https://orcid.org/0000-0001-9829-2598" rel="noopener" target="_blank">ORCID</a></div>
+<p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
+</div>
 </footer>
 <div class="toast" id="toast"></div>
 <script src="assets/app.js"></script>

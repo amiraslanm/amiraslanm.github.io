@@ -1,58 +1,59 @@
-<!doctype html><html lang="fa" dir="rtl" data-theme="dark"><head><title>CFD Validation Checklist | Amir Aslan Mosaferi</title><meta name="description" content="A practical checklist for CFD verification and validation.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Amir Aslan Mosaferi">
-  <meta name="theme-color" content="#08111f">
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css">
-</head><body><div class="scroll-progress" id="scrollProgress"></div>
+<!DOCTYPE html>
+<html data-theme="dark" dir="ltr" lang="en"><head><title>CFD Validation Checklist | Amir Aslan Mosaferi</title><meta content="A practical checklist for CFD verification and validation." name="description"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Amir Aslan Mosaferi" name="author"/>
+<meta content="#08111f" name="theme-color"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../site.webmanifest" rel="manifest"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/style.css" rel="stylesheet"/>
+<meta content="en" name="default-language"/></head><body><div class="scroll-progress" id="scrollProgress"></div>
 <header class="site-header">
-  <div class="container nav-shell">
-    <a class="brand" href="../index.html#home" aria-label="Amir Aslan Mosaferi home">
-      <span class="brand-mark">AM</span>
-      <span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small data-fa="مهندس مکانیک و حفاظت حریق" data-en="Mechanical & Fire Protection Engineer">مهندس مکانیک و حفاظت حریق</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="../index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
-      <a href="../index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
-      <a href="../index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
-      <a href="../education.html" data-fa="آموزش" data-en="Learning">آموزش</a>
-      <a href="../index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
-      <a href="../blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
-      <a href="../index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="icon-btn" id="langToggle" type="button" aria-label="Change language">EN</button>
-      <button class="icon-btn" id="themeToggle" type="button" aria-label="Change theme"><span class="theme-icon">◐</span></button>
-      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </div>
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="../index.html#about" data-fa="درباره من" data-en="About">درباره من</a>
-    <a href="../index.html#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
-    <a href="../index.html#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a>
-    <a href="../index.html#experience" data-fa="تجربه" data-en="Experience">تجربه</a>
-    <a href="../blog.html" data-fa="یادداشت‌ها" data-en="Insights">یادداشت‌ها</a>
-    <a href="../index.html#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
-  </nav>
+<div class="container nav-shell">
+<a aria-label="Amir Aslan Mosaferi home" class="brand" href="../index.html#home">
+<span class="brand-mark">AM</span>
+<span class="brand-copy"><strong>Amir Aslan Mosaferi</strong><small data-en="Mechanical &amp; Fire Protection Engineer" data-fa="مهندس مکانیک و حفاظت حریق">Mechanical &amp; Fire Protection Engineer</small></span>
+</a>
+<nav aria-label="Main navigation" class="desktop-nav">
+<a data-en="About" data-fa="درباره من" href="../index.html#about">About</a>
+<a data-en="Expertise" data-fa="تخصص‌ها" href="../index.html#expertise">Expertise</a>
+<a data-en="Projects" data-fa="پروژه‌ها" href="../index.html#projects">Projects</a>
+<a data-en="Learning" data-fa="آموزش" href="../education.html">Learning</a>
+<a data-en="Experience" data-fa="تجربه" href="../index.html#experience">Experience</a>
+<a data-en="Insights" data-fa="یادداشت‌ها" href="../blog.html">Insights</a>
+<a data-en="Contact" data-fa="ارتباط" href="../index.html#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<button aria-label="Change language" class="icon-btn" id="langToggle" type="button">فا</button>
+<button aria-label="Change theme" class="icon-btn" id="themeToggle" type="button"><span class="theme-icon">◐</span></button>
+<button aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menuToggle" type="button"><span></span><span></span></button>
+</div>
+</div>
+<nav class="mobile-nav" id="mobileNav">
+<a data-en="About" data-fa="درباره من" href="../index.html#about">About</a>
+<a data-en="Expertise" data-fa="تخصص‌ها" href="../index.html#expertise">Expertise</a>
+<a data-en="Projects" data-fa="پروژه‌ها" href="../index.html#projects">Projects</a>
+<a data-en="Experience" data-fa="تجربه" href="../index.html#experience">Experience</a>
+<a data-en="Insights" data-fa="یادداشت‌ها" href="../blog.html">Insights</a>
+<a data-en="Contact" data-fa="ارتباط" href="../index.html#contact">Contact</a>
+</nav>
 </header>
-<main><article class="article"><header class="article-header container narrow reveal"><a class="back-link" href="../blog.html" data-fa="← بازگشت به یادداشت‌ها" data-en="← Back to insights">← بازگشت به یادداشت‌ها</a><p class="eyebrow">CFD · 9 MIN</p><h1 data-fa="چک‌لیست اعتبارسنجی یک مدل CFD قابل دفاع" data-en="A Defensible CFD Validation Checklist">چک‌لیست اعتبارسنجی یک مدل CFD قابل دفاع</h1><p class="article-lead" data-fa="چطور از یک مدل صرفاً همگرا عبور کنیم و به نتیجه‌ای قابل اعتماد و قابل گزارش برسیم." data-en="How to move beyond a merely converged model toward trustworthy, reportable results.">چطور از یک مدل صرفاً همگرا عبور کنیم و به نتیجه‌ای قابل اعتماد و قابل گزارش برسیم.</p><div class="article-meta">Amir Aslan Mosaferi · 2026</div></header><div class="article-body container narrow"><section class="reveal"><p data-fa="یک مدل CFD قابل دفاع با کانتورهای زیبا تعریف نمی‌شود. اعتماد به نتیجه از زنجیره‌ای از کنترل‌ها می‌آید: مسئله فیزیکی درست، شبکه مناسب، حل عددی پایدار، استقلال شبکه و زمان، و مقایسه با داده مرجع." data-en="A defensible CFD model is not defined by attractive contours. Confidence comes from a chain of checks: correct physical formulation, suitable mesh, stable numerical solution, mesh and time independence, and comparison with reference data.">یک مدل CFD قابل دفاع با کانتورهای زیبا تعریف نمی‌شود. اعتماد به نتیجه از زنجیره‌ای از کنترل‌ها می‌آید: مسئله فیزیکی درست، شبکه مناسب، حل عددی پایدار، استقلال شبکه و زمان، و مقایسه با داده مرجع.</p></section><section class="reveal"><h2 data-fa="۱. مسئله فیزیکی را قبل از نرم‌افزار تعریف کنید" data-en="1. Define the physics before the software">۱. مسئله فیزیکی را قبل از نرم‌افزار تعریف کنید</h2><p data-fa="رژیم جریان، خواص، شرایط مرزی، مدل آشفتگی و فرضیات چندفیزیکی باید پیش از ساخت مدل عددی مشخص شوند. بسیاری از خطاهای CFD از یک مدل ریاضی نامناسب شروع می‌شوند، نه از تنظیمات حل‌گر." data-en="Flow regime, properties, boundary conditions, turbulence model and multiphysics assumptions must be defined before building the numerical model. Many CFD errors start with an unsuitable mathematical model, not solver settings.">رژیم جریان، خواص، شرایط مرزی، مدل آشفتگی و فرضیات چندفیزیکی باید پیش از ساخت مدل عددی مشخص شوند. بسیاری از خطاهای CFD از یک مدل ریاضی نامناسب شروع می‌شوند، نه از تنظیمات حل‌گر.</p></section><section class="reveal"><h2 data-fa="۲. استقلال شبکه را با کمیت هدف بسنجید" data-en="2. Measure mesh independence using the target quantity">۲. استقلال شبکه را با کمیت هدف بسنجید</h2><p data-fa="سه سطح شبکه حداقل نقطه شروع است. معیار مقایسه باید همان خروجی تصمیم‌ساز باشد: افت فشار، ضریب نیرو، دامنه ارتعاش، عدد ناسلت یا نرخ انتقال حرارت—not فقط residual." data-en="At least three mesh levels are a useful starting point. Compare the decision-driving output—pressure drop, force coefficient, vibration amplitude, Nusselt number or heat-transfer rate—not residuals alone.">سه سطح شبکه حداقل نقطه شروع است. معیار مقایسه باید همان خروجی تصمیم‌ساز باشد: افت فشار، ضریب نیرو، دامنه ارتعاش، عدد ناسلت یا نرخ انتقال حرارت—not فقط residual.</p></section><section class="reveal"><h2 data-fa="۳. همگرایی را چندبعدی بررسی کنید" data-en="3. Assess convergence in multiple ways">۳. همگرایی را چندبعدی بررسی کنید</h2><ul><li data-fa="کاهش مناسب residualها" data-en="Adequate residual reduction">کاهش مناسب residualها</li><li data-fa="ثبات کمیت‌های مانیتورشده" data-en="Stability of monitored quantities">ثبات کمیت‌های مانیتورشده</li><li data-fa="بسته‌شدن موازنه جرم و انرژی" data-en="Closure of mass and energy balances">بسته‌شدن موازنه جرم و انرژی</li><li data-fa="رفتار فیزیکی معقول میدان جریان" data-en="Physically reasonable flow-field behaviour">رفتار فیزیکی معقول میدان جریان</li></ul></section><section class="reveal"><h2 data-fa="۴. اعتبارسنجی و Verification را جدا کنید" data-en="4. Separate verification from validation">۴. اعتبارسنجی و Verification را جدا کنید</h2><p data-fa="Verification می‌پرسد آیا معادلات را درست حل کرده‌ایم؛ Validation می‌پرسد آیا معادلات انتخاب‌شده واقعیت را درست بازنمایی می‌کنند. هر دو لازم‌اند و جای یکدیگر را نمی‌گیرند." data-en="Verification asks whether the equations were solved correctly; validation asks whether the selected equations represent reality adequately. Both are necessary and neither replaces the other.">Verification می‌پرسد آیا معادلات را درست حل کرده‌ایم؛ Validation می‌پرسد آیا معادلات انتخاب‌شده واقعیت را درست بازنمایی می‌کنند. هر دو لازم‌اند و جای یکدیگر را نمی‌گیرند.</p></section><aside class="article-note reveal"><b>Deliverable</b><p data-fa="یک گزارش CFD حرفه‌ای باید هندسه، شبکه، مدل‌ها، تنظیمات حل، کنترل همگرایی، مطالعات حساسیت، اعتبارسنجی و محدودیت‌های مدل را شفاف ثبت کند." data-en="A professional CFD report should document geometry, mesh, models, solver settings, convergence checks, sensitivity studies, validation and model limitations.">یک گزارش CFD حرفه‌ای باید هندسه، شبکه، مدل‌ها، تنظیمات حل، کنترل همگرایی، مطالعات حساسیت، اعتبارسنجی و محدودیت‌های مدل را شفاف ثبت کند.</p></aside></div></article></main>
+<main><article class="article"><header class="article-header container narrow reveal"><a class="back-link" data-en="← Back to insights" data-fa="← بازگشت به یادداشت‌ها" href="../blog.html">← Back to insights</a><p class="eyebrow">CFD · 9 MIN</p><h1 data-en="A Defensible CFD Validation Checklist" data-fa="چک‌لیست اعتبارسنجی یک مدل CFD قابل دفاع">A Defensible CFD Validation Checklist</h1><p class="article-lead" data-en="How to move beyond a merely converged model toward trustworthy, reportable results." data-fa="چطور از یک مدل صرفاً همگرا عبور کنیم و به نتیجه‌ای قابل اعتماد و قابل گزارش برسیم.">How to move beyond a merely converged model toward trustworthy, reportable results.</p><div class="article-meta">Amir Aslan Mosaferi · 2026</div></header><div class="article-body container narrow"><section class="reveal"><p data-en="A defensible CFD model is not defined by attractive contours. Confidence comes from a chain of checks: correct physical formulation, suitable mesh, stable numerical solution, mesh and time independence, and comparison with reference data." data-fa="یک مدل CFD قابل دفاع با کانتورهای زیبا تعریف نمی‌شود. اعتماد به نتیجه از زنجیره‌ای از کنترل‌ها می‌آید: مسئله فیزیکی درست، شبکه مناسب، حل عددی پایدار، استقلال شبکه و زمان، و مقایسه با داده مرجع.">A defensible CFD model is not defined by attractive contours. Confidence comes from a chain of checks: correct physical formulation, suitable mesh, stable numerical solution, mesh and time independence, and comparison with reference data.</p></section><section class="reveal"><h2 data-en="1. Define the physics before the software" data-fa="۱. مسئله فیزیکی را قبل از نرم‌افزار تعریف کنید">1. Define the physics before the software</h2><p data-en="Flow regime, properties, boundary conditions, turbulence model and multiphysics assumptions must be defined before building the numerical model. Many CFD errors start with an unsuitable mathematical model, not solver settings." data-fa="رژیم جریان، خواص، شرایط مرزی، مدل آشفتگی و فرضیات چندفیزیکی باید پیش از ساخت مدل عددی مشخص شوند. بسیاری از خطاهای CFD از یک مدل ریاضی نامناسب شروع می‌شوند، نه از تنظیمات حل‌گر.">Flow regime, properties, boundary conditions, turbulence model and multiphysics assumptions must be defined before building the numerical model. Many CFD errors start with an unsuitable mathematical model, not solver settings.</p></section><section class="reveal"><h2 data-en="2. Measure mesh independence using the target quantity" data-fa="۲. استقلال شبکه را با کمیت هدف بسنجید">2. Measure mesh independence using the target quantity</h2><p data-en="At least three mesh levels are a useful starting point. Compare the decision-driving output—pressure drop, force coefficient, vibration amplitude, Nusselt number or heat-transfer rate—not residuals alone." data-fa="سه سطح شبکه حداقل نقطه شروع است. معیار مقایسه باید همان خروجی تصمیم‌ساز باشد: افت فشار، ضریب نیرو، دامنه ارتعاش، عدد ناسلت یا نرخ انتقال حرارت—not فقط residual.">At least three mesh levels are a useful starting point. Compare the decision-driving output—pressure drop, force coefficient, vibration amplitude, Nusselt number or heat-transfer rate—not residuals alone.</p></section><section class="reveal"><h2 data-en="3. Assess convergence in multiple ways" data-fa="۳. همگرایی را چندبعدی بررسی کنید">3. Assess convergence in multiple ways</h2><ul><li data-en="Adequate residual reduction" data-fa="کاهش مناسب residualها">Adequate residual reduction</li><li data-en="Stability of monitored quantities" data-fa="ثبات کمیت‌های مانیتورشده">Stability of monitored quantities</li><li data-en="Closure of mass and energy balances" data-fa="بسته‌شدن موازنه جرم و انرژی">Closure of mass and energy balances</li><li data-en="Physically reasonable flow-field behaviour" data-fa="رفتار فیزیکی معقول میدان جریان">Physically reasonable flow-field behaviour</li></ul></section><section class="reveal"><h2 data-en="4. Separate verification from validation" data-fa="۴. اعتبارسنجی و Verification را جدا کنید">4. Separate verification from validation</h2><p data-en="Verification asks whether the equations were solved correctly; validation asks whether the selected equations represent reality adequately. Both are necessary and neither replaces the other." data-fa="Verification می‌پرسد آیا معادلات را درست حل کرده‌ایم؛ Validation می‌پرسد آیا معادلات انتخاب‌شده واقعیت را درست بازنمایی می‌کنند. هر دو لازم‌اند و جای یکدیگر را نمی‌گیرند.">Verification asks whether the equations were solved correctly; validation asks whether the selected equations represent reality adequately. Both are necessary and neither replaces the other.</p></section><aside class="article-note reveal"><b>Deliverable</b><p data-en="A professional CFD report should document geometry, mesh, models, solver settings, convergence checks, sensitivity studies, validation and model limitations." data-fa="یک گزارش CFD حرفه‌ای باید هندسه، شبکه، مدل‌ها، تنظیمات حل، کنترل همگرایی، مطالعات حساسیت، اعتبارسنجی و محدودیت‌های مدل را شفاف ثبت کند.">A professional CFD report should document geometry, mesh, models, solver settings, convergence checks, sensitivity studies, validation and model limitations.</p></aside></div></article></main>
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div><a class="footer-brand" href="../index.html">AM</a><p data-fa="مهندسی دقیق برای مسائل پیچیده." data-en="Precision engineering for complex problems.">مهندسی دقیق برای مسائل پیچیده.</p></div>
-    <div class="footer-links">
-      <a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
-    </div>
-    <p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
-  </div>
+<div class="container footer-grid">
+<div><a class="footer-brand" href="../index.html">AM</a><p data-en="Precision engineering for complex problems." data-fa="مهندسی دقیق برای مسائل پیچیده.">Precision engineering for complex problems.</p></div>
+<div class="footer-links">
+<a href="mailto:amir.a.mosaferi@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" rel="noopener" target="_blank">LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" rel="noopener" target="_blank">Google Scholar</a>
+<a href="https://orcid.org/0000-0001-9829-2598" rel="noopener" target="_blank">ORCID</a>
+</div>
+<p class="copyright">© <span id="year"></span> Amir Aslan Mosaferi</p>
+</div>
 </footer>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
 <script src="../assets/app.js"></script>
 </body></html>

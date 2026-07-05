@@ -3,7 +3,7 @@
  const root=document.documentElement, header=document.querySelector('.site-header');
  const langBtn=document.getElementById('langToggle'),themeBtn=document.getElementById('themeToggle'),menuBtn=document.getElementById('menuToggle'),mobileNav=document.getElementById('mobileNav');
  const applyLang=(lang)=>{root.lang=lang;root.dir=lang==='fa'?'rtl':'ltr';document.querySelectorAll('[data-fa][data-en]').forEach(el=>el.textContent=el.dataset[lang]);if(root.dataset['title'+(lang==='fa'?'Fa':'En')])document.title=root.dataset['title'+(lang==='fa'?'Fa':'En')];if(langBtn)langBtn.textContent=lang==='fa'?'EN':'فا';localStorage.setItem('lang',lang)};
- applyLang(localStorage.getItem('lang')||'fa');
+ applyLang(localStorage.getItem('lang')||'en');
  const savedTheme=localStorage.getItem('theme');if(savedTheme)root.dataset.theme=savedTheme;
  langBtn?.addEventListener('click',()=>applyLang(root.lang==='fa'?'en':'fa'));
  themeBtn?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('theme',root.dataset.theme)});

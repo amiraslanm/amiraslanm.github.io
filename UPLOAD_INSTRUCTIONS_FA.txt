@@ -1,30 +1,20 @@
-آپدیت OpenFOAM برای سایت GitHub
+آپدیت مبنای انگلیسی سایت
+
+این آپدیت باعث می‌شود سایت برای همه بازدیدکننده‌های جدید اول انگلیسی باز شود.
+فارسی فقط با دکمه «فا» فعال می‌شود.
 
 روش آپلود:
-1) فایل ZIP را Extract کن.
-2) داخل Repository سایت برو.
+1) ZIP را Extract کن.
+2) داخل Repository اصلی سایت برو:
+   amiraslanm/amiraslanm.github.io
 3) روی Add file > Upload files بزن.
 4) همه فایل‌ها و پوشه‌های داخل فولدر Extract شده را Drag & Drop کن.
-5) مطمئن شو این مسیرها دیده می‌شوند:
+5) Commit message:
+   Set English as default website language
+6) Commit directly to main
+7) بعد از Deploy سایت را با Ctrl + Shift + R رفرش کن.
 
-openfoam-training.html
-certifications.html
-education.html
-research.html
-cv.html
-index.html
-sitemap.xml
-assets/openfoam-training.css
-assets/certificates/basic-openfoam-certificate-privacy.webp
-assets/certificates/basic-openfoam-certificate-privacy.jpg
-README_OPENFOAM_TRAINING_FA.md
-
-6) Commit message:
-Add OpenFOAM training notes and certificate
-
-7) Commit directly to main
-8) بعد از چند دقیقه Ctrl + Shift + R بزن.
-
-آدرس‌های جدید:
-https://amiraslanm.github.io/openfoam-training.html
-https://amiraslanm.github.io/certifications.html
+نکته:
+اگر مرورگر خودت قبلاً فارسی را ذخیره کرده باشد، ممکن است برای خودت فارسی باز شود.
+برای تست مثل استادها، سایت را در Incognito باز کن:
+https://amiraslanm.github.io/
