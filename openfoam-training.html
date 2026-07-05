@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark" data-title-fa="آموزش OpenFOAM | امیر اصلان مسافری" data-title-en="OpenFOAM Training Notes | Amir Aslan Mosaferi">
+<head>
+<title>آموزش OpenFOAM | امیر اصلان مسافری</title>
+<meta name="description" content="خلاصه حرفه‌ای دوره Basic OpenFOAM شامل blockMesh، snappyHexMesh، codeStream، codedFixedValue، شرایط اولیه و برنامه‌نویسی سطح بالا در OpenFOAM.">
+<link rel="canonical" href="https://amiraslanm.github.io/openfoam-training.html">
+<meta property="og:title" content="OpenFOAM Training Notes | Amir Aslan Mosaferi">
+<meta property="og:description" content="خلاصه حرفه‌ای دوره Basic OpenFOAM شامل blockMesh، snappyHexMesh، codeStream، codedFixedValue، شرایط اولیه و برنامه‌نویسی سطح بالا در OpenFOAM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amiraslanm.github.io/openfoam-training.html">
+<meta property="og:image" content="https://amiraslanm.github.io/assets/og-image.png">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Amir Aslan Mosaferi"><meta name="theme-color" content="#08111f">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=5.3">
+<link rel="stylesheet" href="assets/dual-track.css?v=1.0">
+<link rel="stylesheet" href="assets/learning-split.css?v=1.0">
+<link rel="stylesheet" href="assets/openfoam-training.css?v=1.0">
+</head>
+<body class="openfoam-page">
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="cursor-glow" id="cursorGlow"></div>
+<header class="site-header dual-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AM</span>
+      <span class="brand-copy"><strong data-fa="امیر اصلان مسافری" data-en="Amir Aslan Mosaferi">امیر اصلان مسافری</strong><small data-fa="مهندس مکانیک و حفاظت حریق · پژوهشگر CFD" data-en="Mechanical & Fire Protection Engineer · CFD Researcher">مهندس مکانیک و حفاظت حریق · پژوهشگر CFD</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="professional.html" data-fa="مسیر کاری" data-en="Professional">مسیر کاری</a>
+      <a href="research.html" data-fa="مسیر پژوهشی" data-en="Research">مسیر پژوهشی</a>
+      <a href="education.html" data-fa="آموزش" data-en="Learning">آموزش</a>
+      <a href="certifications.html" data-fa="گواهی‌ها" data-en="Certificates">گواهی‌ها</a>
+      <a href="cv.html" data-fa="رزومه" data-en="CV">رزومه</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="langToggle" type="button">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button"><span class="theme-icon">◐</span></button>
+      <button class="menu-btn" id="menuToggle" type="button"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="professional.html" data-fa="مسیر کاری" data-en="Professional">مسیر کاری</a>
+    <a href="research.html" data-fa="مسیر پژوهشی" data-en="Research">مسیر پژوهشی</a>
+    <a href="education.html" data-fa="آموزش" data-en="Learning">آموزش</a>
+    <a href="certifications.html" data-fa="گواهی‌ها" data-en="Certificates">گواهی‌ها</a>
+    <a href="cv.html" data-fa="رزومه" data-en="CV">رزومه</a>
+  </nav>
+</header>
+
+<main>
+<section class="track-hero academic">
+  <div class="container track-hero-grid">
+    <div class="reveal">
+      <a class="back-link" href="education.html#academic-learning" data-fa="← بازگشت به آموزش‌های پژوهشی" data-en="← Back to academic learning">← بازگشت به آموزش‌های پژوهشی</a>
+      <p class="eyebrow" data-fa="OPENFOAM TRAINING · CFD RESEARCH TOOLKIT" data-en="OPENFOAM TRAINING · CFD RESEARCH TOOLKIT">OPENFOAM TRAINING · CFD RESEARCH TOOLKIT</p>
+      <h1 data-fa="خلاصه حرفه‌ای دوره Basic OpenFOAM" data-en="Professional summary of Basic OpenFOAM training">خلاصه حرفه‌ای دوره Basic OpenFOAM</h1>
+      <p class="track-lead" data-fa="این صفحه خلاصه‌ای تمیز و قابل ارائه از نکات دوره OpenFOAM است؛ تمرکز آن روی ساخت کیس، مش‌بندی، کنترل کیفیت مش، تعریف شرایط مرزی/اولیه و شروع برنامه‌نویسی در OpenFOAM است." data-en="This page presents a clean portfolio-ready summary of the OpenFOAM training, focused on case setup, meshing, mesh-quality control, boundary/initial conditions and introductory OpenFOAM programming.">این صفحه خلاصه‌ای تمیز و قابل ارائه از نکات دوره OpenFOAM است؛ تمرکز آن روی ساخت کیس، مش‌بندی، کنترل کیفیت مش، تعریف شرایط مرزی/اولیه و شروع برنامه‌نویسی در OpenFOAM است.</p>
+      <div class="dual-actions">
+        <a class="btn primary" href="#modules" data-fa="مشاهده نکات آموزشی" data-en="View training notes">مشاهده نکات آموزشی</a>
+        <a class="btn secondary" href="certifications.html" data-fa="مشاهده گواهی دوره" data-en="View certificate">مشاهده گواهی دوره</a>
+      </div>
+    </div>
+    <div class="openfoam-hero-card reveal">
+      <div class="openfoam-terminal">
+        <header><i></i><i></i><i></i></header>
+        <pre>foamCleanTutorials
+blockMesh
+checkMesh
+surfaceFeatureExtract
+snappyHexMesh -overwrite
+paraFoam</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="credential">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">01</span>
+        <p class="eyebrow" data-fa="CERTIFICATE" data-en="CERTIFICATE">CERTIFICATE</p>
+        <h2 data-fa="گواهی پایان دوره Basic OpenFOAM" data-en="Basic OpenFOAM completion certificate">گواهی پایان دوره Basic OpenFOAM</h2>
+      </div>
+      <p data-fa="برای حفظ حریم خصوصی، نسخه نمایش‌داده‌شده در سایت دارای محوسازی شماره شناسایی، QR و Serial است." data-en="For privacy protection, the website version blurs the ID number, QR code and serial number.">برای حفظ حریم خصوصی، نسخه نمایش‌داده‌شده در سایت دارای محوسازی شماره شناسایی، QR و Serial است.</p>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-image-wrap">
+        <img src="assets/certificates/basic-openfoam-certificate-privacy.webp" alt="Privacy-safe Basic OpenFOAM certificate">
+        <span class="privacy-badge" data-fa="Privacy-safe" data-en="Privacy-safe">Privacy-safe</span>
+      </div>
+      <div>
+        <p class="eyebrow" data-fa="PARS PAJOUHAN INSTITUTE" data-en="PARS PAJOUHAN INSTITUTE">PARS PAJOUHAN INSTITUTE</p>
+        <h3 data-fa="دوره تخصصی Basic OpenFOAM" data-en="Basic OpenFOAM Professional Training">دوره تخصصی Basic OpenFOAM</h3>
+        <p data-fa="این دوره برای تقویت مسیر پژوهشی من در CFD، ساختار کیس‌های OpenFOAM، مش‌بندی و شخصی‌سازی شرایط مرزی/اولیه استفاده شد." data-en="This training strengthened my CFD research workflow through OpenFOAM case structure, meshing utilities and customized boundary/initial-condition setup.">این دوره برای تقویت مسیر پژوهشی من در CFD، ساختار کیس‌های OpenFOAM، مش‌بندی و شخصی‌سازی شرایط مرزی/اولیه استفاده شد.</p>
+        <div class="cert-meta">
+          <div><small data-fa="عنوان دوره" data-en="Course">عنوان دوره</small><strong>Basic OpenFOAM</strong></div>
+          <div><small data-fa="تاریخ" data-en="Date">تاریخ</small><strong>Oct 3 – Nov 21, 2025</strong></div>
+          <div><small data-fa="حوزه" data-en="Area">حوزه</small><strong>CFD · Open-source simulation</strong></div>
+          <div><small data-fa="وضعیت" data-en="Status">وضعیت</small><strong data-fa="Completed" data-en="Completed">Completed</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="modules">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">02</span>
+        <p class="eyebrow" data-fa="WHAT I LEARNED" data-en="WHAT I LEARNED">WHAT I LEARNED</p>
+        <h2 data-fa="خلاصه نکات اصلی دوره برای پورتفولیو" data-en="Key training notes for my portfolio">خلاصه نکات اصلی دوره برای پورتفولیو</h2>
+      </div>
+    </div>
+
+    <div class="of-grid">
+      <article class="of-card reveal">
+        <div class="num">01</div>
+        <h3 data-fa="ساختار کیس OpenFOAM" data-en="OpenFOAM case structure">ساختار کیس OpenFOAM</h3>
+        <p data-fa="درک ساختار پوشه‌های 0، constant و system و اینکه تقریباً تمام تنظیمات حل، مش، فیزیک و کنترل اجرا در Dictionaryها تعریف می‌شود." data-en="Understanding the 0, constant and system folders, where dictionaries define fields, physics, mesh and run-time control.">درک ساختار پوشه‌های 0، constant و system و اینکه تقریباً تمام تنظیمات حل، مش، فیزیک و کنترل اجرا در Dictionaryها تعریف می‌شود.</p>
+      </article>
+
+      <article class="of-card reveal">
+        <div class="num">02</div>
+        <h3>blockMesh</h3>
+        <p data-fa="تعریف دامنه ساده با blockMeshDict؛ شامل vertices، blocks، edges، boundary patches، simpleGrading و کنترل کیفیت با checkMesh." data-en="Creating simple domains through blockMeshDict: vertices, blocks, edges, boundary patches, simpleGrading and checkMesh quality review.">تعریف دامنه ساده با blockMeshDict؛ شامل vertices، blocks، edges، boundary patches، simpleGrading و کنترل کیفیت با checkMesh.</p>
+      </article>
+
+      <article class="of-card reveal">
+        <div class="num">03</div>
+        <h3>snappyHexMesh</h3>
+        <p data-fa="مش‌بندی هندسه‌های پیچیده با STL، refinement، snapping، boundary layer و meshQualityControls برای تولید مش body-fitted." data-en="Meshing complex STL geometries with refinement, snapping, boundary layers and meshQualityControls to obtain body-fitted meshes.">مش‌بندی هندسه‌های پیچیده با STL، refinement، snapping، boundary layer و meshQualityControls برای تولید مش body-fitted.</p>
+      </article>
+
+      <article class="of-card reveal">
+        <div class="num">04</div>
+        <h3>codeStream</h3>
+        <p data-fa="استفاده از #codeStream برای نوشتن مستقیم کد C++ داخل Dictionary و ساخت شرایط مرزی یا اولیه سفارشی بدون ورود کامل به توسعه Solver." data-en="Using #codeStream to write C++ directly inside dictionaries for custom boundary or initial conditions without full solver development.">استفاده از #codeStream برای نوشتن مستقیم کد C++ داخل Dictionary و ساخت شرایط مرزی یا اولیه سفارشی بدون ورود کامل به توسعه Solver.</p>
+      </article>
+
+      <article class="of-card reveal">
+        <div class="num">05</div>
+        <h3>codedFixedValue</h3>
+        <p data-fa="تعریف پروفیل‌های سرعت مثل parabolic یا paraboloid روی patchها و دسترسی به مختصات مرکز faceها و زمان حل." data-en="Defining velocity profiles such as parabolic or paraboloid inputs using patch face centers and simulation time access.">تعریف پروفیل‌های سرعت مثل parabolic یا paraboloid روی patchها و دسترسی به مختصات مرکز faceها و زمان حل.</p>
+      </article>
+
+      <article class="of-card reveal">
+        <div class="num">06</div>
+        <h3 data-fa="برنامه‌نویسی سطح بالا" data-en="High-level programming">برنامه‌نویسی سطح بالا</h3>
+        <p data-fa="آشنایی با ساخت boundary condition جدید به‌صورت کتابخانه، فایل‌های .C و .H، دستور wmake و لینک کردن library به solver." data-en="Introductory high-level BC programming: building a new library with .C/.H files, compiling with wmake and linking it to solvers.">آشنایی با ساخت boundary condition جدید به‌صورت کتابخانه، فایل‌های .C و .H، دستور wmake و لینک کردن library به solver.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">03</span>
+        <p class="eyebrow" data-fa="SNAPPYHEXMESH WORKFLOW" data-en="SNAPPYHEXMESH WORKFLOW">SNAPPYHEXMESH WORKFLOW</p>
+        <h2 data-fa="منطق مش‌بندی هندسه‌های پیچیده" data-en="Logic of meshing complex geometries">منطق مش‌بندی هندسه‌های پیچیده</h2>
+      </div>
+    </div>
+
+    <div class="of-flow reveal">
+      <div><b>01</b><span data-fa="ساخت base mesh" data-en="Background mesh">ساخت base mesh</span></div>
+      <div><b>02</b><span data-fa="خواندن STL" data-en="Geometry/STL">خواندن STL</span></div>
+      <div><b>03</b><span data-fa="Feature refinement" data-en="Feature refinement">Feature refinement</span></div>
+      <div><b>04</b><span data-fa="Surface refinement" data-en="Surface refinement">Surface refinement</span></div>
+      <div><b>05</b><span data-fa="Cell removal" data-en="Cell removal">Cell removal</span></div>
+      <div><b>06</b><span data-fa="Snapping" data-en="Snapping">Snapping</span></div>
+      <div><b>07</b><span data-fa="Boundary layers" data-en="Boundary layers">Boundary layers</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">04</span>
+        <p class="eyebrow" data-fa="COMMAND CHEATSHEET" data-en="COMMAND CHEATSHEET">COMMAND CHEATSHEET</p>
+        <h2 data-fa="دستورهای کلیدی که در دوره تمرین شد" data-en="Core commands practiced in the course">دستورهای کلیدی که در دوره تمرین شد</h2>
+      </div>
+    </div>
+
+    <div class="of-code-grid">
+      <div class="of-code-box reveal">
+        <h3>Meshing workflow</h3>
+        <pre>foamCleanTutorials
+blockMesh
+surfaceFeatureExtract
+snappyHexMesh -overwrite
+checkMesh -latestTime
+paraFoam</pre>
+      </div>
+      <div class="of-code-box reveal">
+        <h3>Programming workflow</h3>
+        <pre>foamNewBC -f -v myParabolicVelocity
+cd myParabolicVelocity
+wmake
+
+# Load compiled library
+libs ("libmyParabolicVelocity.so");</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-index">05</span>
+        <p class="eyebrow" data-fa="RESEARCH VALUE" data-en="RESEARCH VALUE">RESEARCH VALUE</p>
+        <h2 data-fa="ارزش این دوره برای مسیر پژوهشی من" data-en="Why this matters for my research track">ارزش این دوره برای مسیر پژوهشی من</h2>
+      </div>
+    </div>
+    <ul class="of-checklist reveal">
+      <li><strong data-fa="مش مستقل:" data-en="Independent meshing:">مش مستقل:</strong> <span data-fa="توانایی ساخت، کنترل و ارزیابی mesh خارج از محیط‌های GUI." data-en="Ability to build, control and evaluate meshes outside GUI-based workflows.">توانایی ساخت، کنترل و ارزیابی mesh خارج از محیط‌های GUI.</span></li>
+      <li><strong data-fa="شفافیت عددی:" data-en="Numerical transparency:">شفافیت عددی:</strong> <span data-fa="درک بهتر اینکه هر شرط مرزی، کیفیت مش و dictionary چگونه روی حل اثر می‌گذارد." data-en="Better understanding of how boundary conditions, mesh quality and dictionaries affect the solution.">درک بهتر اینکه هر شرط مرزی، کیفیت مش و dictionary چگونه روی حل اثر می‌گذارد.</span></li>
+      <li><strong data-fa="قابلیت بازتولید:" data-en="Reproducibility:">قابلیت بازتولید:</strong> <span data-fa="مناسب برای ساخت کیس‌های قابل تکرار در مقاله، گزارش و اپلای PhD." data-en="Useful for reproducible cases in papers, technical reports and PhD applications.">مناسب برای ساخت کیس‌های قابل تکرار در مقاله، گزارش و اپلای PhD.</span></li>
+      <li><strong data-fa="آمادگی برای توسعه Solver:" data-en="Solver development readiness:">آمادگی برای توسعه Solver:</strong> <span data-fa="شروع منطقی برای ورود به C++، API و توسعه boundary condition یا solver در OpenFOAM." data-en="A logical entry point toward C++, OpenFOAM API and custom BC/solver development.">شروع منطقی برای ورود به C++، API و توسعه boundary condition یا solver در OpenFOAM.</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="footer-brand" href="index.html">AM</a><p data-fa="پورتفولیوی مهندسی حرفه‌ای و پژوهش آکادمیک." data-en="Professional engineering and academic research portfolio.">پورتفولیوی مهندسی حرفه‌ای و پژوهش آکادمیک.</p></div>
+    <div class="footer-links">
+      <a href="mailto:amir.a.mosaferi@gmail.com" data-fa="ایمیل" data-en="Email">ایمیل</a>
+      <a href="https://www.linkedin.com/in/amir-aslan-mosaferi-04a82521a" target="_blank" rel="noopener" data-fa="لینکدین" data-en="LinkedIn">لینکدین</a>
+      <a href="https://scholar.google.com/citations?user=fCem3NcAAAAJ" target="_blank" rel="noopener" data-fa="گوگل اسکالر" data-en="Google Scholar">گوگل اسکالر</a>
+      <a href="https://orcid.org/0000-0001-9829-2598" target="_blank" rel="noopener">ORCID</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> <span data-fa="امیر اصلان مسافری" data-en="Amir Aslan Mosaferi">امیر اصلان مسافری</span></p>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

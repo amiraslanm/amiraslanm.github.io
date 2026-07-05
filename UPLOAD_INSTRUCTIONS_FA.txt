@@ -1,18 +1,30 @@
-آپدیت فارسی/انگلیسی کامل صفحه اصلی
+آپدیت OpenFOAM برای سایت GitHub
 
 روش آپلود:
-1) ZIP را Extract کن.
-2) در Repository سایت روی Add file > Upload files بزن.
-3) فایل‌های داخل پوشه را آپلود کن.
-4) مسیرهای مهم:
-   index.html
-   assets/app.js
-   README_HOME_BILINGUAL_FA.md
-5) Commit message:
-   Make homepage fully bilingual
-6) Commit directly to main
-7) بعد از چند دقیقه Ctrl + Shift + R بزن.
+1) فایل ZIP را Extract کن.
+2) داخل Repository سایت برو.
+3) روی Add file > Upload files بزن.
+4) همه فایل‌ها و پوشه‌های داخل فولدر Extract شده را Drag & Drop کن.
+5) مطمئن شو این مسیرها دیده می‌شوند:
 
-نتیجه:
-صفحه اصلی به صورت پیش‌فرض فارسی است.
-با دکمه EN، همه متن‌های اصلی صفحه انگلیسی می‌شوند.
+openfoam-training.html
+certifications.html
+education.html
+research.html
+cv.html
+index.html
+sitemap.xml
+assets/openfoam-training.css
+assets/certificates/basic-openfoam-certificate-privacy.webp
+assets/certificates/basic-openfoam-certificate-privacy.jpg
+README_OPENFOAM_TRAINING_FA.md
+
+6) Commit message:
+Add OpenFOAM training notes and certificate
+
+7) Commit directly to main
+8) بعد از چند دقیقه Ctrl + Shift + R بزن.
+
+آدرس‌های جدید:
+https://amiraslanm.github.io/openfoam-training.html
+https://amiraslanm.github.io/certifications.html
