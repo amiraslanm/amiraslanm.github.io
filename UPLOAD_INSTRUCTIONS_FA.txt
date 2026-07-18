@@ -1,20 +1,25 @@
-آپدیت مبنای انگلیسی سایت
-
-این آپدیت باعث می‌شود سایت برای همه بازدیدکننده‌های جدید اول انگلیسی باز شود.
-فارسی فقط با دکمه «فا» فعال می‌شود.
+آپدیت نمونه‌کارهای مهندسی بدون اطلاعات محرمانه
 
 روش آپلود:
-1) ZIP را Extract کن.
+1) فایل ZIP را Extract کن.
 2) داخل Repository اصلی سایت برو:
    amiraslanm/amiraslanm.github.io
 3) روی Add file > Upload files بزن.
-4) همه فایل‌ها و پوشه‌های داخل فولدر Extract شده را Drag & Drop کن.
-5) Commit message:
-   Set English as default website language
-6) Commit directly to main
-7) بعد از Deploy سایت را با Ctrl + Shift + R رفرش کن.
+4) فایل‌ها و پوشه‌های داخل فولدر Extract شده را Drag & Drop کن.
+5) مطمئن شو این مسیرها دیده می‌شوند:
 
-نکته:
-اگر مرورگر خودت قبلاً فارسی را ذخیره کرده باشد، ممکن است برای خودت فارسی باز شود.
-برای تست مثل استادها، سایت را در Incognito باز کن:
-https://amiraslanm.github.io/
+engineering-projects.html
+professional.html
+index.html
+cv.html
+assets/project-portfolio.css
+README_PROJECT_PORTFOLIO_FA.md
+
+6) Commit message:
+   Add confidential-safe engineering project portfolio
+
+7) Commit directly to main
+8) بعد از چند دقیقه سایت را با Ctrl + Shift + R رفرش کن.
+
+آدرس صفحه جدید:
+https://amiraslanm.github.io/engineering-projects.html
